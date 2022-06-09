@@ -1,4 +1,4 @@
-/* Declare variables */
+/* Declare variables ----------------- */
 
 :root {
   --dark: hsl(20, 7%, 65%);
@@ -6,17 +6,22 @@
   --light: hsl(20, 7%, 85%);
   --bggrey: #eee;
   --highlight: #fff;
+
+  --stripeGrad: linear-gradient(-90deg, black 0%, var(--darker) 40%, var(--darker) 60%, var(--dark) 90%, black 100%);
+  --StripeSize: 10px 20px;
 }
 
+
+/* Common ----------------- */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   font-family: Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
-  /* background-color: var(--light); */
 }
 
+/* Tags ----------------- */
 html,
 body,
 .wrapper {
@@ -31,31 +36,11 @@ body {
   background-color: #f9fbfd;
 }
 
+/* Classes ----------------- */
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-header {
-  text-align: center;
-  padding: 10px;
-  padding-top: 0px;
-  margin: 0 auto;
-  color: var(--darkest);
-  text-shadow: 0px 4px 8px black;
-  background-image: linear-gradient(-90deg, black 0%, var(--darker) 40%, var(--darker) 60%, var(--light) 90%,black 100%);
-  background-size: 20px 40px;
-  max-width: 800px;
-}
-
-header h1 {
-  color: var(--highlight);
-  /* text-shadow: 0px 4px 8px black;
-  background-image: linear-gradient(90deg, black 22.50%, var(--darker) 22.50%, var(--darker) 45%, var(--highlight) 45%, var(--highlight) 50%, black 50%, black 72.50%, var(--darker) 72.50%, var(--darker) 95%, var(--highlight) 95%, var(--highlight) 100%);
-  background-size: 20px 40px; */
-  padding: 10px 0;
-  
 }
 
 .card {
@@ -71,36 +56,6 @@ header h1 {
   padding: 30px 40px;
 }
 
-/* .card-header::after {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-} */
-
-.card-body {
-  min-height: 100px;
-  position: relative;
-}
-
-.card-footer {
-  text-align: center;
-}
-
-/* .card-footer::before {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-}
-
-.card-footer::after {
-  content: " ";
-  display: block;
-  clear: both;
-} */
 
 .btn {
   /* border: none; */
@@ -125,13 +80,14 @@ header h1 {
 
 .btn:hover {
   background-image: linear-gradient(var(--darker) 10%,
-  var(--dark) 35%,
-  var(--dark) 55%,
-  var(--darker) 90%);
+      var(--dark) 35%,
+      var(--dark) 55%,
+      var(--darker) 90%);
 }
 
 .btn:active {
-  background-image: linear-gradient(135deg, var(--dark) 0%, var(--darker) 25%);}
+  background-image: linear-gradient(135deg, var(--dark) 0%, var(--darker) 25%);
+}
 
 button[disabled] {
   cursor: default;
@@ -141,6 +97,43 @@ button[disabled] {
 .float-right {
   float: right;
 }
+
+/* IDs */
+
+#header-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-image: var(--stripeGrad);
+  background-size: var(--StripeSize);
+}
+#header-nav{
+display: flex;
+align-items: flex-end;
+margin: 5px ;
+background-color: var(--darker);
+}
+
+#header-div h1 {
+  /* display: flex; */
+/* justify-content: left; */
+  background-color: black;
+  /* border-radius: 10px; */
+  padding: 10px 30px;
+  margin: 5px;
+  
+  color: var(--highlight);
+  font-size: 1.5rem;
+}
+
+/* #header-nav,  */
+#header-nav button{
+  display: flex;
+  justify-content: right;
+}
+
+
 
 #password {
   -webkit-appearance: none;
@@ -161,7 +154,7 @@ button[disabled] {
   margin-bottom: 10px;
   border: 2px dashed #c0c7cf;
   border-radius: 20px;
-  resize:none;
+  resize: none;
   /* overflow:hidden ; */
   box-shadow: inset 5px 5px 12px 0px var(--dark);
 }
@@ -173,13 +166,13 @@ button[disabled] {
 
 #copyCode {
   display: none;
-position: absolute;
-right:-20px;
-top:-30px;
-padding:3px 8px;
-font-size: 14px;
-color: var(--highlight) ;
-background-color: var(--darker);
+  position: absolute;
+  right: -20px;
+  top: -30px;
+  padding: 3px 8px;
+  font-size: 14px;
+  color: var(--highlight);
+  background-color: var(--darker);
 }
 
 @media (max-width: 690px) {
@@ -195,9 +188,8 @@ background-color: var(--darker);
 }
 
 @media (max-width: 500px) {
-  
+
   .btn {
     font-size: 0.8rem;
   }
 }
-
