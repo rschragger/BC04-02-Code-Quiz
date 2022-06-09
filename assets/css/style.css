@@ -1,0 +1,203 @@
+/* Declare variables */
+
+:root {
+  --dark: hsl(20, 7%, 65%);
+  --darker: hsl(20, 7%, 35%);
+  --light: hsl(20, 7%, 85%);
+  --bggrey: #eee;
+  --highlight: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  /* background-color: var(--light); */
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(var(--light) 70%, var(--darker) 100%);
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f9fbfd;
+}
+
+.wrapper {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 10px;
+  padding-top: 0px;
+  margin: 0 auto;
+  color: var(--darkest);
+  text-shadow: 0px 4px 8px black;
+  background-image: linear-gradient(-90deg, black 0%, var(--darker) 40%, var(--darker) 60%, var(--light) 90%,black 100%);
+  background-size: 20px 40px;
+  max-width: 800px;
+}
+
+header h1 {
+  color: var(--highlight);
+  /* text-shadow: 0px 4px 8px black;
+  background-image: linear-gradient(90deg, black 22.50%, var(--darker) 22.50%, var(--darker) 45%, var(--highlight) 45%, var(--highlight) 50%, black 50%, black 72.50%, var(--darker) 72.50%, var(--darker) 95%, var(--highlight) 95%, var(--highlight) 100%);
+  background-size: 20px 40px; */
+  padding: 10px 0;
+  
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: var(--darkest);
+  /*hsl(206, 17%, 28%);*/
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+}
+
+/* .card-header::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+} */
+
+.card-body {
+  min-height: 100px;
+  position: relative;
+}
+
+.card-footer {
+  text-align: center;
+}
+
+/* .card-footer::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+
+.card-footer::after {
+  content: " ";
+  display: block;
+  clear: both;
+} */
+
+.btn {
+  /* border: none; */
+  /* background-color: hsl(360, 91%, 36%); */
+  background-image: linear-gradient(var(--darker) 0%,
+      var(--dark) 40%,
+      var(--dark) 60%,
+      var(--darker) 100%);
+  border: 2px solid var(--darker);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+
+.btn:hover {
+  background-image: linear-gradient(var(--darker) 10%,
+  var(--dark) 35%,
+  var(--dark) 55%,
+  var(--darker) 90%);
+}
+
+.btn:active {
+  background-image: linear-gradient(135deg, var(--dark) 0%, var(--darker) 25%);}
+
+button[disabled] {
+  cursor: default;
+  background: #c0c7cf;
+}
+
+.float-right {
+  float: right;
+}
+
+#password {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px dashed #c0c7cf;
+  border-radius: 20px;
+  resize:none;
+  /* overflow:hidden ; */
+  box-shadow: inset 5px 5px 12px 0px var(--dark);
+}
+
+#password:hover {
+  box-shadow: inset 8px 8px 12px 2px var(--dark);
+
+}
+
+#copyCode {
+  display: none;
+position: absolute;
+right:-20px;
+top:-30px;
+padding:3px 8px;
+font-size: 14px;
+color: var(--highlight) ;
+background-color: var(--darker);
+}
+
+@media (max-width: 690px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  #password {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .btn {
+    font-size: 0.8rem;
+  }
+}
+
