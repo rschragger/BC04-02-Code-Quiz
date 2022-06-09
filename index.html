@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,13 +8,12 @@
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
-
 <body>
   <div id="header-div">
     <h1>Coding Quiz</h1>
     <div id="header-nav">
       <button id="high-score-btn">High Scores</button>
-      <button id="high-score-btn">High Scores</button>
+      <button id="settings-btn">Settings</button>
 
     </div>
   </div>
@@ -23,8 +21,11 @@
   <!-- This "screens" div section contains child divs that are shown and hidden   -->
   <div id="screens">
 
+    <!-- Home Screen ___________________________ -->
     <div id="home-screen">
-      <h1>Home Screen</h1>
+      <h2>Home Screen</h2>
+
+      <button id="start-btn">Start Quiz</button>
     </div>
 
     <!-- Question Screen ___________________________ -->
@@ -37,16 +38,24 @@
 
     <!-- Result Screen ___________________________  -->
     <div id="result-screen">
-
+      <h2>Result</h2>
     </div>
 
     <!-- High Score Screen  ___________________________  -->
-    <div id="highScore-screen">Footer sec</div>
+    <div id="high-score-screen">
+      <h1>High Scores</h1>
+    </div>
 
+    <!-- Settings Screen ___________________________ -->
+    <div id="settings-screen">
+      <h2>Settings</h2>
+    </div>
 
   </div> <!-- end of screens div * * * * * -->
 
-  <div id="footer"></div>
+  <div id="footer">
+    <p>Copyright © Reeve Schragger 2022</p>
+  </div>
 
   <script src="./assets/js/script.js"></script>
 </body>

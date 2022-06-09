@@ -100,6 +100,11 @@ button[disabled] {
 
 /* IDs */
 
+/* This resets the screens to disappear */
+#screens div{
+  /* display:none; */
+}
+
 #header-div {
   display: flex;
   flex-wrap: wrap;
@@ -130,7 +135,10 @@ background-color: var(--darker);
 /* #header-nav,  */
 #header-nav button{
   display: flex;
-  justify-content: right;
+  justify-content: center;
+  padding: 5px ;
+  margin-left: 3px;
+  background-color: var(--darker);
 }
 
 
