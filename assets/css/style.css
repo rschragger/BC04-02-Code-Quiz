@@ -103,7 +103,10 @@ button[disabled] {
 /* This resets the screens to disappear */
 #screens div{
   /* display:none; */
-}
+  background-color: var(--highlight);
+  width: 90%;
+  padding: 10px ;
+margin: auto;}
 
 #header-div {
   display: flex;

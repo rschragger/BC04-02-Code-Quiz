@@ -1,0 +1,2322 @@
+DNYANSAGAR ARTS AND COMMERCE COLLEGE, BALEWADI,PUNE-45
+
+Class:-TYBBA(CA) -Semester V
+
+Subject :- WEB TECHNOLOGY
+
+Question Bank Multiple Choice Questions (MCQ)
+
+Unit 1: Web Essentials
+
+-----------------------------------------------------------------------------------------------------
+
+1. The tag used to create a hypertext relationship between current document
+
+and another URL is
+
+A. <ISINDEX
+
+B. <A>
+
+C. <LINK>
+
+D. none of these
+
+2. How can you make an e-mail link?
+
+A. <mail href +"xxx@y.com">
+
+B. <a href ="mail to:xxx@y.com">
+
+C. <a href = "xxx@y.com">
+
+D. Both (b) and (c)
+
+3. To create a combo box (drop down box) which tag  will you use?
+
+A. <select>
+
+B. <list>
+
+C. <input type="dropdown">
+
+D. all of above
+
+4. HTML stands for?
+
+A. Hyper Text Markup Language
+
+B. High Text Markup Language
+
+C. Hyper Tabular Markup Language
+
+D. None of these
+
+
+
+5.  Which of the following tag is used to mark a beginning of Paragraph?
+
+A. <TD>
+
+B. <br>
+
+C. <P>
+
+D. <TR>
+
+6.  Correct HTML tag for the largest heading is
+
+A. <head>
+
+B. <heading>
+
+C. <h6>
+
+D. <h1>
+
+7.  The attribute of <form> tag
+
+A. Method
+
+B. Action
+
+C. Both (a)&(b)
+
+D. None of these
+
+8.  Web pages starts with which off the following tag?
+
+A. <Body>
+
+B. <Title>
+
+C. <HTML>
+
+D. <Form>
+
+9.  How can you open a link in a new browser window?
+
+A. < a href = "url" target = "new">
+
+B. <a href = "url" target= "_blank">
+
+C. <a href = "url".new>
+
+D. <a href = "url" target ="open">
+
+10. The tag used to create a new list item and also include a hyperlink is
+
+A. <LI>
+
+B. <DL>
+
+C. <DD>
+
+D. <UL>
+
+
+
+11. Which of the tag is used to creates a number list?
+
+A. <LI>
+
+B. <OL>
+
+C. <LI> and <OL>
+
+D. None of these
+
+12. The tag used to create a hypertext relationship between current document
+
+and another URL is
+
+A. <ISINDEX>
+
+B. <A>
+
+C. <LINK>
+
+D. None of these
+
+13. The text inside the <TEXT AREA> tag works like
+
+A. <P> formatted text
+
+B. <T> formatted text
+
+C. <PRE> formatted text
+
+D. none of these
+
+14. What is the correct HTML for adding a background color?
+
+A. <background>yellow<Background>
+
+B. <body color = "yellow">
+
+C. <body bgcolor = "yellow">
+
+D. <body bg ="yellow"
+
+15. Which tag allows you to add a row in a table?
+
+A. <td> and </td>
+
+B. <cr> and </cr>
+
+C. <th> and </th>
+
+D. <tr> and </tr>
+
+16. How can you make a bulleted list?
+
+A. <list>
+
+B. <nl>
+
+C. <ul>
+
+D. <ol>
+
+17. Choose the correct HTML tag to make a text italic
+
+A. <ii>
+
+B. <italics>
+
+C. <italic>
+
+D. <i>
+
+
+
+18. Choose the correct HTML tag to make a text bold?
+
+A. <b>
+
+B.  <bold>
+
+C.  <bb>
+
+D. <bld>
+
+19. Which tag creates a check box for a form in HTML?
+
+A. <checkbox>
+
+B.  <input type="checkbox">
+
+C.  <input=checkbox>
+
+D. <input checkbox>
+
+20 . To create a combo box (drop down box) which tag will you use?
+
+A.  <select>
+
+B.  <list>
+
+C.  <input type="dropdown">
+
+D.  all of above
+
+21) Which of the following attributes is used to specify elements to bind style
+
+rules to?
+
+a)  Id
+
+b)  Class
+
+c)  Tag
+
+d)  all of the mentioned
+
+22) Which selector is used to specify a rule to bind a particular unique
+
+element?
+
+a)  Id
+
+b)  Class
+
+c)  Tag
+
+d)  both class and tag
+
+23) __________ has introduced text, list, box, margin, border, color, and
+
+background properties.
+
+Answer:- CSS
+
+a)css
+
+b)selector
+
+c) declaration
+
+d) text color
+
+PROF. YOGESH P.DESHMUKH  www.dacc.edu.in
+DNYANSAGAR ARTS AND COMMERCE COLLEGE, BALEWADI,PUNE-45
+
+24) The _______property is used to set the color of the text.
+
+Answer:- Text color
+
+a)css
+
+b)selector
+
+c) declaration
+
+d) text color
+
+25) The CSS __________properties is used to define the background effects.
+
+Answer:- background
+
+a)css
+
+b)selector
+
+c) background
+
+d) text color
+
+26) _______ is a platform independent light weighted objet based scripting
+
+language.
+
+a) java script
+
+b) head
+
+c) number ,string & boolean
+
+d) none of these
+
+27) JavaScript support three primitive data types: ___________.
+
+a) java script
+
+b) head
+
+c) number ,string & Boolean
+
+d) none of these
+
+28) JavaScript allows two composite data types: __________
+
+a) objects and array
+
+b) head & title
+
+c) number & Boolean
+
+d) none of these
+
+
+
+29) The script tag must be place in the ______.
+
+a)  title
+
+b) head
+
+c)body
+
+d) none of these
+
+30) _________ keyword is used to declare variables in java script
+
+a) dim
+
+b) head
+
+c) var
+
+d) none of these
+
+31) DOM stand for ___________
+
+a) document object model
+
+b) document object memory
+
+c) document oriented memory
+
+d) none of these
+
+32) Assignment operators are used to assign values to JavaScript variables.
+
+a) true
+
+b) false
+
+c) both a & b
+
+d) none of these .
+
+33) Break statement indicates the end of that Many case.
+
+a) true
+
+b) false
+
+c) both a & b
+
+d) none of these .
+
+
+
+34) A string simply stores a series of characters.
+
+a) true
+
+b) false
+
+c) both a & b
+
+d) none of these .
+
+35) JavaScript support three primitive data types: ________.
+
+a) number, string and Boolean.
+
+b) Object based scripting language
+
+c) nevigator
+
+d) live wire
+
+36) _________ is a platform independent objet based scripting language.
+
+a) java script
+
+b) Object based scripting language
+
+c) nevigator
+
+d) live wire
+
+37) __________ java script is also called client side java script
+
+a) java script
+
+b) Object based scripting language
+
+c) nevigator
+
+d) live wire
+
+38) ________  java script is also called server side java script
+
+a) java script
+
+b) Object based scripting language
+
+c) nevigator
+
+d) live wire
+
+
+
+39) Increment operator, increases the value of variable by what number?
+
+a) 1
+
+b) 2
+
+c) 3
+
+d) 4
+
+40) FUCTION is a block of statements that performs certain task.
+
+a) true
+
+b) false
+
+c) both a and b
+
+d) none of these ..
+
+1(c) 2(b) 3(a)  4(a)  5(c) 6(d) 7(c)  8(c)  9(b) 10(a)
+
+11(c) 12(c)  13(c) 14(c) 15(d)  16(c) 17(d) 18(a) 19(b) 20(a)
+
+21(d) 22(a)  23(a) 24(d) 25(c)  26(a) 27(c) 28(a) 29(b) 30(c)
+
+31(a) 32(a)  33(b) 34(a) 35(a)  36(a) 37(c) 38(d) 39(a) 40(a)
+
+
+
+Unit - 2: Markup Languages
+
+Question Bank Multiple Choice Questions (MCQ)
+
+--------------------------------------------------------------------------
+
+1) __________means the amount of data that can be sent from one point to another in a
+
+certain period of time
+
+a) bandwidth
+
+b) html
+
+c)href
+
+d) none of these
+
+2) HTML color are specified using predefined color names or ________ values.
+
+a) RGB,
+
+b) RGBA
+
+c) HSLA
+
+d) all of these
+
+3) HTML supports__________ standard color names.
+
+a) 140
+
+b) 3
+
+c) 120
+
+d)7
+
+
+
+4) ____this tag is used to give paragraph
+
+a) <p>
+
+b)br
+
+c) <pre>
+
+d) <marquee>
+
+5) ________ tag is used to brake the line it is single tag
+
+a) <p>
+
+b)<br>
+
+c) <pre>
+
+d) <marquee>
+
+6) ________ is pre formatted tags it is used ,it show the without formatted text .
+
+a) <p>
+
+b)br
+
+c) <pre>
+
+d) <marquee>
+
+7)__________tag is used to create a scrolling effect to th selected text
+
+a) <p>
+
+b)<br>
+
+c) <pre>
+
+d) <marquee>
+
+
+
+8)__________ element is used to indicated text quoted from another scource..
+
+a) <blockquote>
+
+b)br
+
+c) <pre>
+
+d) <marquee>
+
+9)_______- it is used to show list by order wise .
+
+a) <ol>
+
+b)br
+
+c) <pre>
+
+d) <marquee>
+
+10)_____________ it is used to show list by no particular order wise .it show bulleted
+
+wise .
+
+a) <ul>
+
+b)br
+
+c) <pre>
+
+d) <marquee>
+
+11)________it is a comment , it is used to show additional information in html.
+
+a) <!---->
+
+b)br
+
+c) <pre>
+
+d) <marquee>
+
+
+
+12)_________ it is italic tag , it is used to show the italic font.
+
+a) <i>
+
+b)br
+
+c) <pre>
+
+d) <marquee>
+
+13)_________ it is used to display a font in a bigger font size .
+
+a) <big>
+
+b)br
+
+c) <pre>
+
+d) <marquee>
+
+14)_________ this definition tag is used to define the concept .
+
+a) <def>
+
+b)br
+
+c) <pre>
+
+d) <marquee>
+
+15)________citation tag is used to display a citation in html document .
+
+a) <cite>
+
+b)br
+
+c) <pre>
+
+d) <marquee>
+
+
+
+16) Tag is divided into 2 tags
+
+a) physical
+
+b) logical
+
+c) center tag
+
+d) a and b b both
+
+17)__________ this tag is used to make taxt to be aligned cantered.
+
+a) <p>
+
+b)<center>
+
+c) <pre>
+
+d) <marquee>
+
+18) To link to the another web site following link is used
+
+<a href="https://www.lokmat.com/html/">Visit our lokamat paper </a
+
+a) True
+
+b) False
+
+c) Both a and b
+
+d)None of these.
+
+19)________ the space between is the space between content of the cell and cell wall .
+
+a) <p>
+
+b)<center>
+
+c)cell spacing
+
+d) <marquee>
+
+20) __________ of the table is used to specify the thickness of the table .
+
+
+
+a) border
+
+b)<center>
+
+c)cell spacing
+
+d) <marquee>
+
+21) _____tag is used to create the rows in a table
+
+a)<tr>
+
+b)<th>
+
+c)<frameset>
+
+d) <a>
+
+22) __________tag is used to create the table heading of the table
+
+a)<tr>
+
+b)<th>
+
+c)<frameset>
+
+d) <a>
+
+23) To make a cell span more than one column, it is called use the _______attribute
+
+a)<tr>
+
+b)colspan
+
+c)<frameset>
+
+d)rowspan
+
+
+
+24) To make a cell span more than one row, it is called use the _______ attribute.
+
+a)<tr>
+
+b)colspan
+
+c)<frameset>
+
+d)rowspan
+
+25) __________ is used to manage the layout the page.
+
+a)<tr>
+
+b)colspan
+
+c)<frame>
+
+d)rowspan
+
+26) In html __________ is used to divide the browser the screen into 2 or more then one
+
+part.
+
+a)<tr>
+
+b)columun
+
+c)frame
+
+d)rowspan
+
+27) ______ tag is devide the tag horizontally or vertically .
+
+a)<tr>
+
+b)colspan
+
+c)<frameset>
+
+d)rowspan
+
+
+
+28) ___________stands for Transmission Control Protocol/Internet Protocol
+
+a) tcp/ip
+
+b)FTP
+
+c) Physical
+
+d) hyperlink
+
+29) ________is a set of standardized rules that allow computers to communicate on a
+
+network such as the internet.
+
+a) tcp/ip
+
+b)FTP
+
+c) Physical
+
+d) hyperlink
+
+30) The __________ is a standard network protocol used for the transfer of computer
+
+files between a client and server on a computer network
+
+a) tcp/ip
+
+b)FTP
+
+c) Physical
+
+d) hyperlink
+
+31)The ____________element contains meta information about the HTML page
+
+a) <head>
+
+b)FTP
+
+c) Physical
+
+d) hyperlink
+
+
+
+32) The ________element defines the document's body, and is a container for all
+
+the visible contents, such as headings, paragraphs, images, hyperlinks, tables,
+
+lists, etc.
+
+a) <head>
+
+b)<body>
+
+c) Physical
+
+d) hyperlink
+
+33) _______tag are used to indicate exactly how specific characters are to be formatted
+
+a) tcp/ip
+
+b)FTP
+
+c) Physical
+
+d) hyperlink
+
+34) The LINKS starts at the ((Source)) anchor and points to the ((Destination)) anchor. These
+
+LINKIS are called as ___________
+
+a) <head>
+
+b)<body>
+
+c) Physical
+
+d) hyperlink
+
+
+
+35) _______it is used to To create a link to another documents by using href attribute
+
+a)<a>
+
+b)checkbox
+
+c)<textarea>
+
+d)<text>
+
+36) __________accept only true or false we can select more then one option out of given
+
+option
+
+a)<a>
+
+b)checkbox
+
+c)<textarea>
+
+d)<text>
+
+37) _________it is used to give the show the input box with multiple rows and column.
+
+a)<a>
+
+b)checkbox
+
+c)<textarea>
+
+d)<text>
+
+38) __________- accept the any text in intput box..
+
+a)<a>
+
+b)checkbox
+
+c)<textarea>
+
+d)<text>
+
+
+
+39)  _____________it is used to submit the button ( accept the data) to upload
+
+a)<submit>
+
+b)checkbox
+
+c)<textarea>
+
+d)<text>
+
+40)  ____________ it is used with text , when we use to hide the text matter
+
+a)<password>
+
+b)checkbox
+
+c)<textarea>
+
+d)<text>
+
+1(a)  2(d) 3(a) 4(a)  5(b) 6(c)  7(d) 8(d)  9(a)  10(a)
+
+11(a) 12(a) 13(a)  14(a) 15(a) 16(d) 17(b) 18(a) 19(c) 20(a)
+
+21(a) 22(b) 23(b)  24(d) 25(c) 26(c) 27(c) 28(a) 29(a) 30(b)
+
+31(a) 32(b) 33(c)  34(d) 35(a) 36(b) 37(c) 38(d) 39(a) 40(a)
+
+===================================//===================================
+
+
+
+Unit - 3: JAVA Script
+
+Question Bank Multiple Choice Questions (MCQ)
+
+------------------------------------------------------------------------
+
+1. Which data type value is returned by all transcendental math functions?
+
+a) int
+
+b) float
+
+c) double
+
+d) long
+
+2. Which of these coding types is used for data type characters in Java?
+
+a) ASCII
+
+b) ISO-LATIN-1
+
+c) UNICODE
+
+d) None of the mentioned
+
+3. Which of these values can a boolean variable contain?
+
+a) True & False
+
+b) 0 & 1
+
+c) Any integer value
+
+d) true
+
+4. Which of these operators is used to allocate memory to array variable in Java
+
+script?
+
+a) malloc
+
+b) alloc
+
+c) new
+
+d) new malloc
+
+PROF. YOGESH P.DESHMUKH  www.dacc.edu.in
+DNYANSAGAR ARTS AND COMMERCE COLLEGE, BALEWADI,PUNE-45
+
+5. Which of these is an incorrect array declaration?
+
+a) int x[] = new int[5]
+
+b) int [] arr = new int[5]
+
+c) intarr[] = new int[5]
+
+d) int x[] = int [5] new
+
+6. Decrement operator, --, decreases the value of variable by what number?
+
+a) 1
+
+b) 2
+
+c) 3
+
+d) 4
+
+7. Which of these is not a bitwise operator?
+
+a) &
+
+b) &=
+
+c) |=
+
+d) <=
+
+8. Which right shift operator preserves the sign of the value?
+
+a) <<
+
+b) >>
+
+c) <<=
+
+d) >>=
+
+9. What is the output of relational operators?
+
+a) Integer
+
+b) Boolean
+
+c) Characters
+
+d) Double
+
+10. . Which of these is returned by "greater than", "less than" and "equal to"
+
+operators?
+
+a) Integers
+
+b) Floating ­ point numbers
+
+c) Boolean
+
+d) None of the mentioned
+
+
+
+11. Which of these selection statements test only for equality?
+
+a) if
+
+b) switch
+
+c) if & switch
+
+d) none of the mentioned
+
+12. Which of the following loops will execute the body of loop even when
+
+condition controlling the loop is initially false?
+
+a) do-while
+
+b) while
+
+c) for
+
+13. Which of these jump statements can skip processing the remainder of the
+
+code in its body for a particular iteration?
+
+a) break
+
+b) return
+
+c) exit
+
+d) continue
+
+14. Which of the following is not a decision making statement?
+
+a) if
+
+b) if-else
+
+c) switch
+
+d) do-while
+
+15. Which of the following is not a valid flow control statement?
+
+a) exit()
+
+b) break
+
+c) continue
+
+d) return
+
+
+
+16) The CSS background properties are used to define the ___________effects.
+
+a)background
+
+b) customize
+
+c) class
+
+d) id rule
+
+17) CSS border properties allow us to__________ the borders.
+
+a)background
+
+b) customize
+
+c) class
+
+d) id rule
+
+18) By applying an_______ a style can be applied to just a single tag.
+
+a)background
+
+b) customize
+
+c) class
+
+d) id rule
+
+19) _________selectors are used to specify a group of elements.
+
+a)background
+
+b) customize
+
+c) class
+
+d) id rule
+
+20) In CSS, "font-size" can be called as ________
+
+a)property name
+
+b)selector
+
+c) declaration
+
+d) text color
+
+
+
+21) In CSS, h1 can be called as _______
+
+a)property name
+
+b)selector
+
+c) declaration
+
+d) text color
+
+22) In , CSS "color:red" can be called as _____________
+
+a)property name
+
+b)selector
+
+c) declaration
+
+d) text color
+
+23) Reset (button) :- it is used to reset the button ( cancel the data) to upload
+
+a)<reset>
+
+b)checkbox
+
+c)<textarea>
+
+d)<text>
+
+24) CSS different the tags and data .... it menace it store the data in different file and
+
+store the tags in different file . ...it minimize the size of the file .
+
+. a)css
+
+b)html
+
+c)<textarea>
+
+d)<text>
+
+
+
+25) _______ describes how HTML elements are to be displayed on screen, paper, or in
+
+other media
+
+a)css
+
+b)html
+
+c)<textarea>
+
+d)<text>
+
+26) Central Computer which is powerful than other computers in the network
+
+is called as ________
+
+a) server
+
+b) protocol
+
+c) network
+
+d) Internet
+
+27) HTTP is a __________ protocol.
+
+a) server
+
+b) protocol
+
+c) connection oriented
+
+d) Internet
+
+28)The FTP is a protocol that is used to transfer files between two computers
+
+over a ______________.
+
+a) server and protocol
+
+b) protocol & internet
+
+c) connection  & oriented
+
+d) network and Internet
+
+
+
+29) A client can use the ________request to get a web resource from  the server.
+
+a. PUT
+
+b. POST
+
+c. GET
+
+d)  HEAD
+
+30) Websites are uploaded _______
+
+a) address
+
+b) serve
+
+c) cache
+
+d) client
+
+31) HTML web pages can be read and rendered by __________
+
+a) web browser
+
+b) server
+
+c) empty
+
+d) head tag
+
+32) The _________ tag is an inline container used to mark up a part of a text, or a part of
+
+a document.
+
+a) <map>
+
+b) <span>
+
+c) <img>
+
+d) <tt>
+
+33) <INPUT> is ________tag.
+
+a) web browser
+
+b) server
+
+c) empty
+
+d) head tag
+
+
+
+34) The HTML tag to left align the content inside a table cell is
+
+<td align = "left">.
+
+a) true
+
+b) false
+
+c) both a and b
+
+d) none of these
+
+35) The body tag usually used after _________
+
+a) web browser
+
+b) server
+
+c) empty
+
+d) head tag
+
+36) Tags and text that are not directly displayed on the page are written in
+
+___________section.
+
+a) web browser
+
+b) title
+
+c) empty
+
+d) head
+
+37) Some tags enclose the text. Those tags are known as ___________
+
+a) single tag
+
+b) paired tag
+
+c) empty
+
+d) head
+
+38) The <strike> tag is used to _________the text or sentence.
+
+a) single tag
+
+b) paired tag
+
+c)strikeout
+
+d) head
+
+
+
+39) The <del> tag is used to display ________ text form a document
+
+a) single tag
+
+b) paired tag
+
+c)strikeout
+
+d) deleted
+
+40) _________ is used to give additional information.
+
+a) title tag
+
+b) paired tag
+
+c)strikeout
+
+d) deleted
+
+1(c)  2(c)  3(a) 4(c)  5(d) 6(a)  7(d) 8(b)  9(b) 10(c)
+
+11(a) 12(a) 13(d) 14(d) 15(a) 16(a) 17(b) 18(d) 19(c) 20(a)
+
+21(b) 22(c) 23(a) 24(a) 25(a) 26(a) 27(c) 28(d) 29(c) 30(b)
+
+31(a) 32(b) 33(c) 34(a) 35(d) 36(d) 37(a) 38(c) 39(d) 40(a)
+
+===================//=============================
+
+
+
+Unit- 4: Function and String in PHP
+
+Question Bank Multiple Choice Questions (MCQ)
+
+----------------------------------------------------------------------------------------------
+
+1. What is the range of short data type in Java script ?
+
+a) -128 to 127
+
+b) -32768 to 32767
+
+c) -2147483648 to 2147483647
+
+d) None of the mentioned
+
+2. What is the range of byte data type in Java script?
+
+a) -128 to 127
+
+b) -32768 to 32767
+
+c) -2147483648 to 2147483647
+
+d) None of the mentioned
+
+3. An expression involving byte, int, and literal numbers is promoted to
+
+which of these?
+
+a) int
+
+b) long
+
+c) byte
+
+d) float
+
+4. Which data type value is returned by all transcendental math functions?
+
+a) int
+
+b) float
+
+c) double
+
+d) long
+
+5. What is the numerical range of a char data type in Java script?
+
+a) -128 to 127
+
+b) 0 to 256
+
+c) 0 to 32767
+
+d) 0 to 65535
+
+
+
+6. Which of these coding types is used for data type characters in Java script?
+
+a) ASCII
+
+b) ISO-LATIN-1
+
+c) UNICODE
+
+d) None of the mentioned
+
+7. Which of these values can a Boolean variable contain?
+
+a) True & False
+
+b) 0 & 1
+
+c) Any integer value
+
+d) true
+
+8. Which one is a valid declaration of a Boolean?
+
+a) boolean b1 = 1;
+
+b) boolean b2 = `false';
+
+c) boolean b3 = false;
+
+d) boolean b4 = `true'
+
+9. Which of these operators is used to allocate memory to array variable in
+
+Java script?
+
+a) malloc
+
+b) alloc
+
+c) new
+
+d) new malloc
+
+10. Which of these is an incorrect array declaration?
+
+a) intarr[] = new int[5]
+
+b) int [] arr = new int[5]
+
+c) intarr[] = new int[5]
+
+d) intarr[] = int [5] new
+
+
+
+11. Which of these is necessary to specify at time of array initialization?
+
+a) Row
+
+b) Column
+
+c) Both Row and Column
+
+d) None of the mentioned
+
+12. Which of the following can be operands of arithmetic operators?
+
+a) Numeric
+
+b) Boolean
+
+c) Characters
+
+d) Both Numeric & Characters
+
+13. Modulus operator, %, can be applied to which of these?
+
+a) Integers
+
+b) Floating ­ point numbers
+
+c) Both Integers and floating ­ point numbers
+
+d) None of the mentioned
+
+14. Decrement operator, --, decreases the value of variable by what number?
+
+a) 1
+
+b) 2
+
+c) 3
+
+d) 4
+
+15. Which of these is not a bitwise operator?
+
+a) &
+
+b) &=
+
+c) |=
+
+d) <=
+
+
+
+16. Which operator is used to invert all the digits in a binary representation of
+
+a number?
+
+a) ~
+
+b) <<<
+
+c) >>>
+
+d) ^
+
+17. On applying Left shift operator, <<, on integer bits are lost one they are
+
+shifted past which position bit?
+
+a) 1
+
+b) 32
+
+c) 33
+
+d) 31
+
+18. Which right shift operator preserves the sign of the value?
+
+a) <<
+
+b) >>
+
+c) <<=
+
+d) >>=
+
+19. Which of these statements are incorrect?
+
+a) The left shift operator, <<, shifts all of the bits in a value to the left
+
+specified number of times
+
+b) The right shift operator, >>, shifts all of the bits in a value to the right
+
+specified number of times
+
+c) The left shift operator can be used as an alternative to multiplying by 2
+
+d) The right shift operator automatically fills the higher order bits with 0
+
+20. What is the output of relational operators?
+
+a) Integer
+
+b) Boolean
+
+c) Characters
+
+d) Double
+
+
+
+21. . Which of these is returned by "greater than", "less than" and "equal to"
+
+operators?
+
+a) Integers
+
+b) Floating ­ point numbers
+
+c) Boolean
+
+d) None of the mentioned
+
+22. Which of these operators can skip evaluating right hand operand?
+
+a) !
+
+b) |
+
+c) &
+
+d) &&
+
+23. Which of these have highest precedence?
+
+a) ()
+
+b) ++
+
+c) *
+
+d) >>
+
+24. Which of these statements are incorrect?
+
+a) Equal to operator has least precedence
+
+b) Brackets () have highest precedence
+
+c) Division operator, /, has higher precedence than multiplication operator
+
+d) Addition operator, +, and subtraction operator have equal precedence
+
+25. Which of these selection statements test only for equality?
+
+a) if
+
+b) switch
+
+c) if & switch
+
+d) none of the mentioned
+
+
+
+26. . Which of these are selection statements in Java script?
+
+a) if()
+
+b) for()
+
+c) continue
+
+d) break
+
+27. Which of the following loops will execute the body of loop even when
+
+condition controlling the loop is initially false?
+
+a) do-while
+
+b) while
+
+c) for
+
+28. Which of these jump statements can skip processing the remainder of the
+
+code in its body for a particular iteration?
+
+a) break
+
+b) return
+
+c) exit
+
+d) continue
+
+29. Which of the following is not a decision making statement?
+
+a) if
+
+b) if-else
+
+c) switch
+
+d) do-while
+
+30. Which of the following is not a valid jump statement?
+
+a) break
+
+b) goto
+
+c) continue
+
+d) return
+
+31. Which of the following is not a valid flow control statement?
+
+a) exit()
+
+b) break
+
+c) continue
+
+d) return
+
+
+
+32) web browser support JPEG .PNG ,GIE ,Image ,and PDF
+
+a) true
+
+b) false
+
+c) both a & b
+
+d) none of these
+
+33) _______is the measured as the amount of data that can be transferred from one
+
+point to another point within a specific amount of time.
+
+a) HTTP
+
+b) Bandwidth
+
+c) webpage
+
+d) Dream viewer
+
+34) A ___________ is a document, typically written in plain text distributed with
+
+formatting instruction of Hypertext markup languages like HTML,XHTML
+
+a) HTTP
+
+b) Bandwidth
+
+c) webpage
+
+d) Dream viewer
+
+35)___________ Stands for Hypertext markup languages for displaying web
+
+pages and other information that can be displayed in a web browser
+
+a) HTTP
+
+b) Bandwidth
+
+c) webpage
+
+d) Dream viewer
+
+
+
+36) client server model Requires regular maintenance and updates .
+
+a) true
+
+b) false
+
+c) both a & b
+
+d) none of these
+
+37) Cost of buying and  running a server for client serve model are high .
+
+a) true
+
+b) false
+
+c) both a & b
+
+d) none of these
+
+38) client server model are Dependence on a central location for operation.
+
+a) true
+
+b) false
+
+c) both a & b
+
+d) none of these
+
+
+
+39) A section in a document that will have a light blue background color:
+
+following tags are true or false
+
+<div style="background-color:lightblue">
+
+<h3>This is a heading</h3>
+
+<p>This is a paragraph.</p>
+
+</div>
+
+a) true
+
+b) false
+
+c) both a & b
+
+d) none of these
+
+40) Following are the types of CSS , which one is not type of CSS.
+
+a)  Inline CSS:
+
+b)  Internal or Embedded CSS
+
+c)  External CSS:
+
+d) none of these.
+
+1(b) 2(a)  3(a) 4(c)  5(d)  6(c)  7(a)  8(c)  9(c) 10(d)
+
+11(a) 12(d) 13(c) 14(a) 15(d) 16(a) 17(d) 18(b) 19(d)  20(b)
+
+21(c) 22(d) 23(a) 24(d) 25(b) 26(a) 27(a) 28(d) 29(d)  30(d)
+
+31(a) 32(a) 33(b) 34(c) 35(a) 36(a) 37(a) 38(a) 39(a)  40(d)
+
+==================//========================
+
+
+
+Unit - 5 Arrays in PHP
+
+Question Bank Multiple Choice Questions (MCQ)
+
+-----------------------------------------------------------------
+
+1) The _______tag is used to define a client-side image-map. An image-map is an image with
+
+clickable area
+
+a) <map>
+
+b) <span>
+
+c) <img>
+
+d) <tt>
+
+2) The move from one page to another page in website is called as.__________
+
+a) server machine
+
+b) links
+
+c) page layout
+
+d) navigation
+
+3) The _______tag is an inline container used to mark up a part of a text, or a part of a
+
+document.
+
+a) <map>
+
+b) <span>
+
+c) <img>
+
+d) <tt>
+
+
+
+4) The _______ tag provides no visual change by itself, but when it is marked, you can
+
+style it with CSS, or manipulate it with JavaScript.
+
+a) <map>
+
+b) <span>
+
+c) <img>
+
+d) <tt>
+
+5) The _________ tag defines an image in an HTML page.
+
+a) <map>
+
+b) <span>
+
+c) <img>
+
+d) <tt>
+
+6) The ____________tag has two required attributes: src and alt.
+
+a) <map>
+
+b) <span>
+
+c) <img>
+
+d) <tt>
+
+7) The _____________element is often used as a container for other HTML elements to
+
+style them with CSS or to perform certain tasks with JavaScript.
+
+a) <map>
+
+b) <div>
+
+c) <img>
+
+d) <tt>
+
+
+
+8) _________tag  Indicates that the text should be used with a font such as Courier that
+
+allots the same width to each character.
+
+a) <map>
+
+b) <span>
+
+c) <img>
+
+d) <tt>
+
+9) _____________ tag Indicates that the text should be displayed in a small font.
+
+Available in HTML 3.0 or higher.
+
+a) <small>
+
+b) <em>
+
+c) <u>
+
+d) <strong >
+
+10) ______tag Indicates that the text should be displayed underlined. Not all browsers
+
+support this tag.
+
+a) <small>
+
+b) <em>
+
+c) <u>
+
+d) <strong >
+
+
+
+11)  ___________Indicates that characters should be emphasized in some way. Usually
+
+displayed in italics.
+
+a) <small>
+
+b) <em>
+
+c) <u>
+
+d) <strong >
+
+12) _________Emphasizes characters more strongly than <EM>. Usually displayed in a bold
+
+font
+
+a) <small>
+
+b) <em>
+
+c) <u>
+
+d) <strong >
+
+13) _________tag Used to offset text that the user should enter. Often displayed in a
+
+Courier font or a similar font that allots the same width to each character.
+
+a) <small>
+
+b) <em>
+
+c) <kbd >
+
+d) <strong >
+
+
+
+14) ________Indicates a variable. Often displayed in italics or underlined.
+
+a) <var>
+
+b) <em>
+
+c) <kbd >
+
+d) <strong >
+
+15) _________Indicates short quotes or citations. Often italized by browsers.
+
+a) <small>
+
+b) <cite>
+
+c) <kbd >
+
+d) <strong >
+
+16) The _________tag defines a hyperlink, which is used to link from one page to
+
+another.
+
+a) <a>
+
+b) <cite>
+
+c) <kbd >
+
+d) <strong >
+
+
+
+17) The ________ele1ment defines a table row, the <th> element defines a table header,
+
+and the <td> element defines a table cell.
+
+a) <small>
+
+b) <tr>
+
+c) <kbd >
+
+d) <strong >
+
+18) The _______ tag is used to create in an HTML table.
+
+a) <table>
+
+b) <tr>
+
+c) <td >
+
+d) <th >
+
+19) CSS stands for ___________
+
+a) Cascading Style Sheets
+
+b) Cascading super Sheets
+
+c) Cascading Style excel sheet
+
+d)none of these
+
+
+
+20)  _________means the way to move from one page to another page in website.
+
+To move from one page to another pages hyperlinks are used.
+
+a) HTTP
+
+b) Bandwidth
+
+c) Navigation
+
+d) Dream viewer
+
+21) __________ is Web development software . Create, code and manage dynamic
+
+websites easily with a smart, simplified coding engine
+
+a) HTTP
+
+b) Bandwidth
+
+c) webpage
+
+d) Dream viewer
+
+22) ________ is a server scripting language, and a powerful tool for making dynamic
+
+and interactive Web pages.
+
+a) PHP
+
+b) java script
+
+c) Angular js
+
+d) none of these
+
+23) _______ is a object oriented programming language , it is used to create the
+
+object...
+
+a) PHP
+
+b) java script
+
+c)  Angular js
+
+d) none of these
+
+
+
+24) A ________ script can be placed anywhere in the document.
+
+a) PHP
+
+b) java script c
+
+c)  Angular js
+
+d) none of these
+
+25) The default file extension for PHP files is _________
+
+a) .PHP
+
+b) .js
+
+c) .Ajs
+
+d) none of these
+
+26) __________ is used to show the out put ...or give message..same as printf in c
+
+language...
+
+a) Echo
+
+b) java script
+
+c)  Angular js
+
+d) none of these
+
+27) A PHP script starts with <?php and ends with ?>:
+
+<?php
+
+// PHP code goes here
+
+?>
+
+a) true
+
+b) false
+
+c) both a and b
+
+d) none of these
+
+
+
+28) PHP code is executed on the server, and the result is returned to the browser as
+
+plain HTML
+
+a) true
+
+b) false
+
+c) both a and b
+
+d) none of these
+
+29) PHP files can contain text, HTML, CSS, JavaScript, and PHP code
+
+a) true
+
+b) false
+
+c) both a and b
+
+d) none of these
+
+30) PHP runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)
+
+a) true
+
+b) false
+
+c) both a and b
+
+d) none of these
+
+31) PHP is compatible with almost all servers used today (Apache, IIS, etc.)
+
+a) true
+
+b) false
+
+c) both a and b
+
+d) none of these
+
+
+
+32) PHP supports a ___________ range of databases
+
+a) wide
+
+b) small
+
+c) short
+
+d) none of these
+
+33) PHP supports the following data types:
+
+a)String
+
+b) Integer
+
+c) Float (floating point numbers - also called double)
+
+d) all of the above .
+
+34) In PHP, an object must be_________declared.
+
+a) explicitly
+
+b) implicitly
+
+c) both a and b
+
+d) None of these
+
+35) PHP divides the operators in the following groups:
+
+a)Increment/Decrement operators
+
+b)Logical operators
+
+c)String operators
+
+d) all of the above
+
+
+
+36)  The basic assignment operator in PHP is __________ It means that the left operand
+
+gets set to the value of the assignment expression on the right.
+
+a) =
+
+b) ++
+
+c) ==
+
+d) ?
+
+37)  the _________ statement is used to perform different actions based on different
+
+conditions
+
+a) switch
+
+b) if condition
+
+c) foreach
+
+d) while
+
+38) In PHP, we have the following loop types:
+
+a) while loop
+
+b) for loop
+
+c) foreach
+
+d) all the these.
+
+
+
+39) In php, A ___________ is a block of statements that can be used repeatedly in a
+
+program.
+
+a) function
+
+b) procedure
+
+c) block
+
+d) loop
+
+40) In php A function will not execute automatically when a page loads.
+
+a) true
+
+b) false
+
+c) both a and b
+
+d) none of these
+
+1(a) 2(d) 3(a)  4(b)  5(a) 6(a)  7(b)  8(d)  9(a) 10(c)
+
+11(b) 12(d) 13(c) 14(a) 15(b) 16(a) 17(b) 18(a) 19(a) 20(c)
+
+21(d) 22(a) 23(a) 24(a) 25(a) 26(a) 27(a) 28(a) 29(a) 30(a)
+
+31(a) 32(a) 33(d) 34(a) 35(d) 36(a) 37(a) 38(d) 39(a) 40(a)
+
+======================//end//=====================
+
+PROF. YOGESH P.DESHMUKH www.dacc.edu.in
+

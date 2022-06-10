@@ -16,11 +16,12 @@ var startBtn = document.querySelector("start-btn");
 
 // Functions ---------------------------------------------------------
 function init() {
-  // screensDiv.setAttribute("style", "display:none");
-clearScreens()
-  // homeScreen.setAttribute("style", "display:block");
+ clearScreens()
   goToHomeScreen()
-  // console.log("home block");
+
+  //Use section below to test functions whilst developing
+  
+  
 }
 
 //Clear Screens - this function makes all screen divs disappear so that we can turn on the screen we want
@@ -30,22 +31,23 @@ for(i=0; i<screensDiv.length ; i++){
   screensDiv[i].setAttribute("style", "display:none");
 }}
 
-//Show other screens
+//Show other screens functions - - - -
 function goToHomeScreen(){
   homeScreen.setAttribute("style", "display:block");
 }
 function goToQuestionScreen(){
   questionScreen.setAttribute("style", "display:block");
 }
-function goToresultScreen(){
+function goToResultScreen(){
   resultScreen.setAttribute("style", "display:block");
 }
-function goTohighScoreScreen(){
+function goToHighScoreScreen(){
   highScoreScreen.setAttribute("style", "display:block");
 }
-function goTohighsettingsScreen(){
+function goToHighsettingsScreen(){
   settingsScreen.setAttribute("style", "display:block");
 }
+//End show other screens functions - - - -
 
 
 
