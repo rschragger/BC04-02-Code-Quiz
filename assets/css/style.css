@@ -183,6 +183,11 @@ background-color: var(--darker);
   background-color: var(--darker);
 }
 
+#footer, #footer p {
+font-size: 10pt;
+text-align: right;
+}
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
