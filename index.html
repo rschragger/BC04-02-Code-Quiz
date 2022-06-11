@@ -26,8 +26,8 @@
     <div id="home-screen">
       <h2>Home Screen</h2>
       <p>This is a quiz to determine your competency with coding. You'll be given 10 random questions from a list. <br>
-        You'll have <span id="timeForQuiz">2 minutes</span> to answer the questions. <br>
-        You'll get a point for every correct answer, but you'll have <span id="timeDeducted">5 seconds</span> deducted from your time if you get an answer wrong!
+        You'll have <span id="time-for-quiz">2 minutes</span> to answer the questions. <br>
+        You'll get a point for every correct answer, but you'll have <span id="time-deducted">5 seconds</span> deducted from your time if you get an answer wrong!
       </p>
       <button id="start-btn">Start Quiz</button>
     </div>
@@ -53,6 +53,19 @@
     <!-- Settings Screen ___________________________ -->
     <div id="settings-screen">
       <h2>Settings</h2>
+      <form>
+       
+        <p>Which area(s) do you want your questions to come from?</p>
+        <div class="pCheckbox">
+          <p>
+          <input class="checkbox" id="question-type1" type="checkbox" />
+          <label for="question-type1">Unit - 1: Web Essentials</label><br>
+          <input class="checkbox" id="question-type2" type="checkbox" />
+          <label for="question-type2">Unit - 2: Markup Languages</label><br>
+          <input class="checkbox" id="question-type3" type="checkbox" />
+          <label for="question-type3">Unit - 3: JAVA Script</label>
+       </p> </div>
+      </form>
     </div>
 
   </div> <!-- end of screens div * * * * * -->

@@ -94,6 +94,11 @@ button[disabled] {
   background: #c0c7cf;
 }
 
+.pCheckbox{
+  text-align: left;
+  text-justify: center;
+}
+
 .float-right {
   float: right;
 }
