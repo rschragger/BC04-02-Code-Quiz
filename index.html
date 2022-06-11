@@ -31,7 +31,7 @@
         You'll get a point for every correct answer, but you'll have <span id="time-deducted">5 seconds</span> deducted
         from your time if you get an answer wrong!
       </p>
-      <button id="start-btn">Start Quiz</button>
+      <button class="btn" id="start-btn">Start Quiz</button>
     </div>
 
     <!-- Question Screen ___________________________ -->
@@ -58,7 +58,12 @@
       <form id="settings-form">
         <p>
           <label for="quiz-time">Time allowed for quiz</label>
-          <input id="quiz-time" type="text" default="2" /> minutes<br><br>
+          <input id="quiz-time" type="text" /> minutes<br><br>
+        </p>
+
+        <p>
+          <label for="deducted-time">Time deducted for a wrong answer</label>
+          <input id="deducted-time" type="text"  /> seconds<br><br>
         </p>
 
         <p>Which area(s) do you want your questions to come from?</p>
@@ -72,6 +77,7 @@
             <label for="question-type3">Unit - 3: JAVA Script</label><br>
           </p>
         </div>
+        <button class="btn" id="submit-settings-btn">Save Settings</button>
       </form>
     </div>
 
