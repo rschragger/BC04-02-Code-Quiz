@@ -157,12 +157,12 @@ background-color: var(--darker);
 
 /* #settings-checkbox +{
   text-align: left;
-  /* text-justify: center; */
+  text-justify: center;
 } */
 
-/* #footer-sec,  */
+#footer-sec, 
 #footer-sec p {
-  margin: 5px ;
+  margin: 10px 10px 0 5px ;
 font-size: 10px;
 text-align: right;
 }

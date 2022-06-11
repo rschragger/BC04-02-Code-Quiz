@@ -1,5 +1,15 @@
 //Create variables ---------------------------------------------------------
 //var IDs
+//defaults
+
+var defaultVals = {
+  timeForQuiz: 5,
+  timeForMistake: 20,
+  subjectNames: ["Unit - 1: Web Essentials", "Unit - 2: Markup Languages", "Unit - 3: JAVA Script"],
+  subjectSelect: [1, 2],
+
+}
+
 //Screens
 var screens = document.getElementById("screens");
 var screensDiv = document.querySelectorAll("#screens div");
@@ -14,9 +24,34 @@ var timeForQuizSpan = document.getElementById("time-for-quiz");
 var timeDeductedSpan = document.getElementById("time-deducted");
 
 // var Buttons
-var highScoresBtn = document.querySelector("high-score-btn");
-var settingsBtn = document.querySelector("settings-btn");
-var startBtn = document.querySelector("start-btn");
+//goto buttons
+var homeBtn = document.querySelector("#home-btn");
+homeBtn.addEventListener("click", function () {
+  console.log("home button pushed");
+  goToHomeScreen();
+});
+var highScoresBtn = document.querySelector("#high-score-btn");
+highScoresBtn.addEventListener("click", function () {
+  console.log("home button pushed");
+  goToHighScoreScreen();
+});
+var settingsBtn = document.querySelector("#settings-btn");
+settingsBtn.addEventListener("click", function () {
+  goToSettingsScreen()
+});
+//Other buttons
+var startBtn = document.querySelector("#start-btn");
+
+
+//var buttons
+var checkQ1 = document.querySelector("#question-type1");
+var checkQ2 = document.querySelector("#question-type1");
+var checkQ3 = document.querySelector("#question-type1");
+
+//Form Items
+//Settings
+var quizTimeSetting = document.querySelector("#quiz-time");
+var timeForQuizMS = quizTimeSetting.value * 1000; //in milliseconds
 
 
 // Functions ---------------------------------------------------------
@@ -46,25 +81,56 @@ function clearScreens() {
 function goToHomeScreen() {
   clearScreens()
   homeScreen.setAttribute("style", "display:block");
+  homeBtn.setAttribute("style", "display:none");
+  settingsBtn.setAttribute("style", "display:block");
+  highScoresBtn.setAttribute("style", "display:block");
+
 }
 function goToQuestionScreen() {
   clearScreens()
   questionScreen.setAttribute("style", "display:block");
+  homeBtn.setAttribute("style", "display:none");
+  settingsBtn.setAttribute("style", "display:none");
+  highScoresBtn.setAttribute("style", "display:none");
+
 }
 function goToResultScreen() {
   clearScreens()
   resultScreen.setAttribute("style", "display:block");
+    //set buttons
+    homeBtn.setAttribute("style", "display:block");
+    settingsBtn.setAttribute("style", "display:block");
+    highScoresBtn.setAttribute("style", "display:block");
 }
 function goToHighScoreScreen() {
   clearScreens()
   highScoreScreen.setAttribute("style", "display:block");
+  //set buttons
+  homeBtn.setAttribute("style", "display:block");
+  settingsBtn.setAttribute("style", "display:block");
+  highScoresBtn.setAttribute("style", "display:none");
 }
 function goToSettingsScreen() {
   clearScreens()
   settingsScreen.setAttribute("style", "display:block");
+  //set buttons
+  homeBtn.setAttribute("style", "display:block");
+  settingsBtn.setAttribute("style", "display:none");
+  highScoresBtn.setAttribute("style", "display:block");
+
 }
 //End show other screens functions - - - -
 
-
-
+function setSettings() {
+  if (localStorage.getItem("timeForQuiz") == 0); {
+    //set default
+    localStorage.setItem("timeForQuiz", defaultVals.timeForQuiz)
+  }
+  //apply to settings
+  quizTimeSetting.value = localStorage.getItem("timeForQuiz");
+  //Also apply to span on home page
+  timeForQuizSpan.value = localStorage.getItem("timeForQuiz");
+}
 init()
+
+setSettings()
