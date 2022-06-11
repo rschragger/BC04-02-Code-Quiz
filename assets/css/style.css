@@ -36,6 +36,10 @@ body {
   background-color: #f9fbfd;
 }
 
+h2{
+  margin: 20px ;
+}
+
 /* Classes ----------------- */
 .wrapper {
   padding-top: 30px;
@@ -94,10 +98,7 @@ button[disabled] {
   background: #c0c7cf;
 }
 
-.pCheckbox{
-  text-align: left;
-  text-justify: center;
-}
+
 
 .float-right {
   float: right;
@@ -150,49 +151,19 @@ background-color: var(--darker);
 }
 
 
-
-#password {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  display: block;
-  position: relative;
-  width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
-  border-radius: 20px;
-  resize: none;
-  /* overflow:hidden ; */
-  box-shadow: inset 5px 5px 12px 0px var(--dark);
+#settings-form * {
+  text-align: left;
 }
 
-#password:hover {
-  box-shadow: inset 8px 8px 12px 2px var(--dark);
+/* #settings-checkbox +{
+  text-align: left;
+  /* text-justify: center; */
+} */
 
-}
-
-#copyCode {
-  display: none;
-  position: absolute;
-  right: -20px;
-  top: -30px;
-  padding: 3px 8px;
-  font-size: 14px;
-  color: var(--highlight);
-  background-color: var(--darker);
-}
-
-#footer, #footer p {
-font-size: 10pt;
+/* #footer-sec,  */
+#footer-sec p {
+  margin: 5px ;
+font-size: 10px;
 text-align: right;
 }
 
