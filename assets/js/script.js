@@ -3,6 +3,7 @@
 //defaults
 
 var defaultVals = {
+  qtyOfQuestions: 11,
   timeForQuiz: 5,
   timeDeducted: 20,
   subjectNames: ["Unit - 1: Web Essentials", "Unit - 2: Markup Languages", "Unit - 3: JAVA Script"],
@@ -51,23 +52,30 @@ submitSettingsBtn.addEventListener("click", function () {
 });
 
 //Checkboxes
-var checkQ1 = document.querySelector("#question-type1");
+//Will want to change to an array we can select from
+{ var checkQ1 = document.querySelector("#question-type1");
 var checkQ2 = document.querySelector("#question-type1");
 var checkQ3 = document.querySelector("#question-type1");
+}
 
 //spans
-var timeForQuizSpan = document.getElementById("time-for-quiz");
+{ var timeForQuizSpan = document.getElementById("time-for-quiz");
 var timeDeductedSpan = document.getElementById("time-deducted");
+var qtyOfQuestionsSpan = document.getElementById("qty-of-questions");
+}
 
 //Form Items
 //Settings
+var qtyOfQuestionsSetting = document.querySelector("#question-qty");
+qtyOfQuestionsSpan.textContent = localStorage.getItem("qtyOfQuestions");
+
 var quizTimeSetting = document.querySelector("#quiz-time");
 var timeForQuizMS = quizTimeSetting.value * 1000 * 60; //in milliseconds
-var quizTimeForm = document.querySelector("#quiz-time");
+// var quizTimeForm = document.querySelector("#quiz-time");
 timeForQuizSpan.textContent = localStorage.getItem("timeForQuiz") + " minutes";
-// quizTimeSetting.value
+
 var deductedTimeSetting = document.querySelector("#deducted-time");
-var timeForDeductMS = quizTimeSetting.value * 1000; //in milliseconds
+var timeForDeductMS = deductedTimeSetting.value * 1000; //in milliseconds
 
 
 // Functions ---------------------------------------------------------
@@ -140,12 +148,19 @@ function init() {
 }
 
 function InitSettings() {
-  //Set time for quiz
-  if (localStorage.getItem("timeForQuiz") == null ) {
+  //Set qty of questions
+  if (localStorage.getItem("qtyOfQuestions") == null ) {
     //set default
-    localStorage.setItem("timeForQuiz", defaultVals.timeForQuiz);
+    localStorage.setItem("qtyOfQuestions", defaultVals.qtyOfQuestions);
   }
-  quizTimeSetting.value = localStorage.getItem("timeForQuiz") ;
+  qtyOfQuestionsSetting.value = localStorage.getItem("qtyOfQuestions") ;
+
+    //Set time for quiz
+    if (localStorage.getItem("timeForQuiz") == null ) {
+      //set default
+      localStorage.setItem("timeForQuiz", defaultVals.timeForQuiz);
+    }
+    quizTimeSetting.value = localStorage.getItem("timeForQuiz") ;
 
   //Set  deducted time for mistake
   if (localStorage.getItem("timeDeducted") == null) {
@@ -157,38 +172,19 @@ function InitSettings() {
   saveSettings()
 }
 
-function InitSettingsX() {
-  //Set time for quiz
-  {
-    if (localStorage.getItem("timeForQuiz") == 0) {
-      //set default
-      localStorage.setItem("timeForQuiz", defaultVals.timeForQuiz)
-    }
-
-    //apply to settings
-    quizTimeSetting.value = localStorage.getItem("timeForQuiz");
-    //Also apply to span on home page
-    timeForQuizSpan.textContent = localStorage.getItem("timeForQuiz") + " minutes";
-  }
-
-  //Set  deducted time for mistake
-  {
-    if (localStorage.getItem("timeDeducted") === 0) {
-      //set default
-      localStorage.setItem("timeDeducted", defaultVals.timeDeducted)
-    }
-    //apply to settings
-    deductedTimeSetting.value = localStorage.getItem("timeDeducted");
-    //Also apply to span on home page
-    timeDeductedSpan.textContent = localStorage.getItem("timeDeducted") + " seconds";
-  }
-}
 
 function saveSettings() {
-  //Set time for quiz
-  localStorage.setItem("timeForQuiz", quizTimeSetting.value)
+  qtyOfQuestionsSpan.textContent = localStorage.getItem("qtyOfQuestions");
+
+  //Set qty of Questions
+  localStorage.setItem("qtyOfQuestions", qtyOfQuestionsSetting.value)
   //Also apply to span on home page
-  timeForQuizSpan.textContent = localStorage.getItem("timeForQuiz") + " minutes";
+  qtyOfQuestionsSpan.textContent = localStorage.getItem("qtyOfQuestions") ;
+
+   //Set time for quiz
+   localStorage.setItem("timeForQuiz", quizTimeSetting.value)
+   //Also apply to span on home page
+   timeForQuizSpan.textContent = localStorage.getItem("timeForQuiz") + " minutes";
 
   //Set  deducted time for mistakes
   localStorage.setItem("timeDeducted", deductedTimeSetting.value);
