@@ -36,16 +36,16 @@ body {
   background-color: #f9fbfd;
 }
 
-h2{
-  margin: 20px ;
+h2 {
+  margin: 20px;
 }
 
 p {
-  margin: 5px 0 ;
+  margin: 5px 0;
 }
 
 /* Classes ----------------- */
-.wrapper {
+/* .wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
@@ -57,12 +57,11 @@ p {
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   color: var(--darkest);
-  /*hsl(206, 17%, 28%);*/
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
-}
+} */
 
 
 .btn {
@@ -75,7 +74,7 @@ p {
   border: 2px solid var(--darker);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
-  color: hsl(0, 0%, 100%);
+  color: var(--highlight); /* hsl(0, 0%, 100%);*/
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -111,12 +110,13 @@ button[disabled] {
 /* IDs */
 
 /* This resets the screens to disappear */
-#screens div{
+#screens div {
   /* display:none; */
   background-color: var(--highlight);
   width: 90%;
-  padding: 10px ;
-margin: auto;}
+  padding: 10px;
+  margin: auto;
+}
 
 #header-div {
   display: flex;
@@ -126,30 +126,31 @@ margin: auto;}
   background-image: var(--stripeGrad);
   background-size: var(--StripeSize);
 }
-#header-nav{
-display: flex;
-align-items: flex-end;
-margin: 5px ;
-background-color: var(--darker);
+
+#header-nav {
+  display: flex;
+  align-items: flex-end;
+  margin: 5px;
+  background-color: var(--darker);
 }
 
 #header-div h1 {
   /* display: flex; */
-/* justify-content: left; */
+  /* justify-content: left; */
   background-color: black;
   /* border-radius: 10px; */
   padding: 10px 30px;
   margin: 5px;
-  
+
   color: var(--highlight);
   font-size: 1.5rem;
 }
 
 /* #header-nav,  */
-#header-nav button{
+#header-nav button {
   display: flex;
   justify-content: center;
-  padding: 5px ;
+  padding: 5px;
   margin-left: 3px;
   background-color: var(--darker);
 }
@@ -173,8 +174,8 @@ background-color: var(--darker);
   box-sizing: content-box;
 }
 
-#answer-list{
-  list-style-type:upper-alpha ;
+#answer-list {
+  list-style-type: upper-alpha;
   /* list-style-position: inside; */
   display: flex;
   justify-content: left;
@@ -183,22 +184,38 @@ background-color: var(--darker);
   margin-left: 20px;
 }
 
-li button {
+.qButton  {
   background-color: var(--dark);
   color: var(--highlight);
+  border: 1px solid var(--darker);
+  border-radius: 0 5px ;
+  box-shadow: inset 1px 1px 3px var(--highlight) ;
   text-align: left;
-  padding:3px;
+  padding: 5px;
   margin: 3px;
+  cursor: pointer;
+  box-sizing: content-box;
 }
-li:nth-child(even) button{
+
+li:nth-child(even) button {
   background-color: var(--darker);
 }
 
-#footer-sec, 
+.qButton:hover{
+  background-color: var(--bggrey);
+  color: black;
+}
+
+.qButton:active{
+  background-color: black;
+  color: var(--highlight);
+}
+
+#footer-sec,
 #footer-sec p {
-  margin: 10px 10px 0 5px ;
-font-size: 10px;
-text-align: right;
+  margin: 10px 10px 0 5px;
+  font-size: 10px;
+  text-align: right;
 }
 
 @media (max-width: 690px) {
