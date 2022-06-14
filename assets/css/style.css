@@ -40,6 +40,10 @@ h2{
   margin: 20px ;
 }
 
+p {
+  margin: 5px 0 ;
+}
+
 /* Classes ----------------- */
 .wrapper {
   padding-top: 30px;
@@ -150,7 +154,6 @@ background-color: var(--darker);
   background-color: var(--darker);
 }
 
-
 #settings-form * {
   text-align: left;
 }
@@ -159,6 +162,37 @@ background-color: var(--darker);
   text-align: left;
   text-justify: center;
 } */
+
+/* Question screen */
+#question-screen {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+  box-sizing: content-box;
+}
+
+#answer-list{
+  list-style-type:upper-alpha ;
+  /* list-style-position: inside; */
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+li button {
+  background-color: var(--dark);
+  color: var(--highlight);
+  text-align: left;
+  padding:3px;
+  margin: 3px;
+}
+li:nth-child(even) button{
+  background-color: var(--darker);
+}
 
 #footer-sec, 
 #footer-sec p {

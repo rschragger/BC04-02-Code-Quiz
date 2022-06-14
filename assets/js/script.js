@@ -69,7 +69,7 @@ submitSettingsBtn.addEventListener("click", function () {
 //Form Items
 //Settings
 var qtyOfQuestionsSetting = document.querySelector("#question-qty");
-var qtyQuestions = 10 ;
+var qtyQuestions = 10;
 // qtyOfQuestionsSpan.textContent = localStorage.getItem("qtyOfQuestions");
 
 var quizTimeSetting = document.querySelector("#quiz-time");
@@ -82,11 +82,14 @@ var deductedTimeSetting = document.querySelector("#deducted-time");
 
 // Functions ---------------------------------------------------------
 function init() {
-  //  clearScreens() ;
+  //  Go to settings to recall client's setting first
+  goToSettingsScreen();
+
+  //Start from this point
   goToHomeScreen();
 
   //Use section below to test functions whilst developing
-  goToSettingsScreen();
+  goToQuestionScreen();
 
 
 }
@@ -115,7 +118,7 @@ function init() {
   }
   function goToQuestionScreen() {
     clearScreens()
-    questionScreen.setAttribute("style", "display:block");
+    questionScreen.setAttribute("style", "display:flex");
     homeBtn.setAttribute("style", "display:none");
     settingsBtn.setAttribute("style", "display:none");
     highScoresBtn.setAttribute("style", "display:none");
@@ -194,10 +197,10 @@ function saveSettings() {
   timeDeductedSpan.textContent = localStorage.getItem("timeDeducted") + " seconds";
 
   //Set global variables
-   window.qtyQuestions = localStorage.getItem("qtyOfQuestions");
+  window.qtyQuestions = localStorage.getItem("qtyOfQuestions");
   //Convert time values into milliseconds as global variables
-   window.timeForQuizMS = localStorage.getItem("timeForQuiz") * 1000 * 60; //in milliseconds
-   window.timeForDeductMS = localStorage.getItem("timeDeducted") * 1000; //in milliseconds
+  window.timeForQuizMS = localStorage.getItem("timeForQuiz") * 1000 * 60; //in milliseconds
+  window.timeForDeductMS = localStorage.getItem("timeDeducted") * 1000; //in milliseconds
 
 } //end saveSettings()
 
