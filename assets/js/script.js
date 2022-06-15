@@ -89,7 +89,7 @@ function init() {
   goToHomeScreen();
 
   //Use section below to test functions whilst developing
-  goToQuestionScreen();
+  startQuiz();
 
 
 }
@@ -204,7 +204,10 @@ function saveSettings() {
 
 } //end saveSettings()
 
+function startQuiz(){
+  goToQuestionScreen();
 
+}
 
 
 init()
