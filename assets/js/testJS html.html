@@ -11,11 +11,12 @@
 <body>
     <div id="question-screen">
         <div class="question-class">
+            <p id="course"></p>
             <h3 id="questionNo">Question 1</h3>
             <p id="questionText">This is q1 text<br></p>
             <ol type="A" id="answer-list">
                 <li id="aAnswer"><button class="qButton" value="A">AnswerA</button></li>
-                <li id="bAnswer"><button class="qButton" value="B">AnswerB</button></li>
+                <li id="bAnswer"><button class="qButton" value="B"></button></li>
                 <li id="cAnswer"><button class="qButton" value="C">AnswerC</button></li>
                 <li id="dAnswer"><button class="qButton" value="D">AnswerD</button></li>
             </ol>
@@ -24,16 +25,16 @@
     <!-- ******** -->
     <script>
         // Test making a question
-        // let text1 = '{ "questionMaster" : [' + '{ "questionNo":1 , "questionText":"This is q1", "aAnswer":"Answer 1" , "bAnswer":"Answer 2" , "cAnswer":"Answer 3" , "dAnswer":"Answer 4" , "correctAnswer": "A" },' +
+        // let text1 = '{ "questionMaster" : [' + '{ "questionNo":1 , "questionText":"This is q1 fixed", "aAnswer":"Answer 1" , "bAnswer":"Answer 2" , "cAnswer":"Answer 3" , "dAnswer":"Answer 4" , "correctAnswer": "A" },' +
         //     '{ "questionNo":2 , "questionText":"This is q2", "aAnswer":"Answer 2.1" , "bAnswer":"Answer 2.2" , "cAnswer":"Answer 2.3" , "dAnswer":"Answer 2.4" , "correctAnswer":"B" },' +
         //     '{ "questionNo":3 , "questionText":"This is q3", "aAnswer":"Answer 3.1" , "bAnswer":"Answer 3.2" , "cAnswer":"Answer 3.3" , "dAnswer":"Answer 3.4" , "correctAnswer":"C" }]}';
 
-            var text1= {"questionMaster":[{"course":"HTML","questionNo":1,"questionText":"This is q1","aAnswer":"Answer 1","bAnswer":"Answer 2","cAnswer":"Answer 3","dAnswer":"Answer 4","correctAnswer":"A"},{"course":"HTML","questionNo":2,"questionText":"This is q2","aAnswer":"Answer 2.1","bAnswer":"Answer 2.2","cAnswer":"Answer 2.3","dAnswer":"Answer 2.4","correctAnswer":"B"},{"course":"Javascript","questionNo":3,"questionText":"This is q3","aAnswer":"Answer 3.1","bAnswer":"Answer 3.2","cAnswer":"Answer 3.3","dAnswer":"Answer 3.4","correctAnswer":"C"}]};
+        var text1 = { "questionMaster": [{ "course": "HTML", "questionNo": 1, "questionText": "This is q1", "aAnswer": "Answer 1", "bAnswer": "Answer 2", "cAnswer": "Answer 3", "dAnswer": "Answer 4", "correctAnswer": "A" }, { "course": "HTML", "questionNo": 2, "questionText": "This is q2", "aAnswer": "Answer 2.1", "bAnswer": "Answer 2.2", "cAnswer": "Answer 2.3", "dAnswer": "Answer 2.4", "correctAnswer": "B" }, { "course": "Javascript", "questionNo": 3, "questionText": "This is q3", "aAnswer": "Answer 3.1", "bAnswer": "Answer 3.2", "cAnswer": "Answer 3.3", "dAnswer": "Answer 3.4", "correctAnswer": "C" }] };
         // const obj = JSON.parse(text1);
-        const objBack = JSON.stringify(text1);
-        const obj = JSON.parse(objBack);
+        const objOrig = JSON.stringify(text1);
+        const obj = JSON.parse(objOrig);
 
-        navigator.clipboard.writeText(objBack);
+        // navigator.clipboard.writeText(objOrig);
 
         console.log(obj.questionMaster[0].questionText + " " + obj.questionMaster[0].aAnswer);
 
@@ -44,10 +45,22 @@
         var questionClass2 = document.querySelector('.question-class');
 
         // get 1 question from list 
-varThisQuestion = obj.questionMaster[0] ;
+        var thisQ = obj.questionMaster[1];
+        var thisQuestion = JSON.stringify(thisQ);
+        // thisQuestion.forEach(applyQuestion());
         //loop through question to get the parts
-        document.getElementById("questionNo").innerHTML = "***TEST***";
+        //        function applyQuestion(){
+        //     document.getElementById(thisQuestion).innerHTML = "***TEST***";
+        // });
 
+        // document.getElementById("questionNo").innerHTML = "***TEST***";
+        var qTags = [ 'course', 'questionText', 'aAnswer', 'bAnswer', 'cAnswer', 'dAnswer', ]
+        for (let q = 0; q < qTags.length; q++) {
+            // document.getElementById(obj[q]).innerHTML = obj[q].value();
+            var thisElement = qTags[q] ;
+            document.getElementById([thisElement]).innerText = thisQ[thisElement];
+        }
+        // location.reload; 
     </script>
 </body>
 

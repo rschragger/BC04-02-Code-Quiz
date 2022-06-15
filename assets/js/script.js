@@ -206,6 +206,7 @@ function saveSettings() {
 
 function startQuiz(){
   goToQuestionScreen();
+  location.reload ; //reset screen
 
 }
 
