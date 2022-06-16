@@ -12,13 +12,14 @@
     <div id="question-screen">
         <div class="question-class">
             <p id="course"></p>
-            <h3 id="questionNo">Question 1</h3>
+            <h3>Question <span id="questionNo">X</span></h3>
             <p id="questionText">This is q1 text<br></p>
             <ol type="A" id="answer-list">
-                <li id="aAnswer"><button class="qButton" value="A">AnswerA</button></li>
-                <li id="bAnswer"><button class="qButton" value="B"></button></li>
-                <li id="cAnswer"><button class="qButton" value="C">AnswerC</button></li>
-                <li id="dAnswer"><button class="qButton" value="D">AnswerD</button></li>
+                <li><button id="aAnswer" class="qButton" value="A">AnswerA</button></li>
+                <li><button id="bAnswer" class="qButton" value="B"></button></li>
+                <li><button id="cAnswer" class="qButton" value="C">AnswerC</button></li>
+                <li><button id="dAnswer" class="qButton" value="D">AnswerD</button></li>
+                <!-- <li id="correctAnswer"></li> -->
             </ol>
         </div>
     </div>
@@ -36,17 +37,17 @@
 
         // navigator.clipboard.writeText(objOrig);
 
-        console.log(obj.questionMaster[0].questionText + " " + obj.questionMaster[0].aAnswer);
+        // console.log(obj.questionMaster[0].questionText + " " + obj.questionMaster[0].aAnswer);
 
-        console.log(obj);
+        // console.log(obj);
 
         // Append loop
-        var questionClass = document.querySelectorAll('.question-class');
-        var questionClass2 = document.querySelector('.question-class');
+        // var questionClass = document.querySelectorAll('.question-class');
+        // var questionClass2 = document.querySelector('.question-class');
 
         // get 1 question from list 
         var thisQ = obj.questionMaster[1];
-        var thisQuestion = JSON.stringify(thisQ);
+        // var thisQuestion = JSON.stringify(thisQ);
         // thisQuestion.forEach(applyQuestion());
         //loop through question to get the parts
         //        function applyQuestion(){
@@ -54,13 +55,15 @@
         // });
 
         // document.getElementById("questionNo").innerHTML = "***TEST***";
-        var qTags = [ 'course', 'questionText', 'aAnswer', 'bAnswer', 'cAnswer', 'dAnswer', ]
+        var qTags = ['course', 'questionNo','questionText', 'aAnswer', 'bAnswer', 'cAnswer', 'dAnswer', ];//'correctAnswer'
         for (let q = 0; q < qTags.length; q++) {
             // document.getElementById(obj[q]).innerHTML = obj[q].value();
-            var thisElement = qTags[q] ;
-            document.getElementById([thisElement]).innerText = thisQ[thisElement];
+            var thisElement = qTags[q];
+            if (document.getElementById([thisElement]) != null) {
+                document.getElementById([thisElement]).innerText = thisQ[thisElement];
+            }
         }
-        // location.reload; 
+        // location.reload;
     </script>
 </body>
 

@@ -1,0 +1,57 @@
+[
+ {
+   "course": "Unit - 1: Web Essentials",
+   "questionNo": 1,
+   "qID": "1_1_7352",
+   "questionText": "The tag used to create a hypertext relationship between current document and another URL is",
+   "aAnswer": "<ISINDEX",
+   "bAnswer": "<A>",
+   "cAnswer": "<LINK>",
+   "dAnswer": "none of these",
+   "correctAnswer": "c"
+ },
+ {
+   "course": "Unit - 1: Web Essentials",
+   "questionNo": 2,
+   "qID": "1_2_2714",
+   "questionText": "How can you make an e-mail link?",
+   "aAnswer": "<mail href +\"xxx@y.com\">",
+   "bAnswer": "<a href =\"mail to:xxx@y.com\">",
+   "cAnswer": "<a href = \"xxx@y.com\">",
+   "dAnswer": "Both (b) and (c)",
+   "correctAnswer": "b"
+ },
+ {
+   "course": "Unit - 1: Web Essentials",
+   "questionNo": 3,
+   "qID": "1_3_718",
+   "questionText": "To create a combo box (drop down box) which tag will you use?",
+   "aAnswer": "<select>",
+   "bAnswer": "<list>",
+   "cAnswer": "<input type=\"dropdown\">",
+   "dAnswer": "all of above",
+   "correctAnswer": "a"
+ },
+ {
+   "course": "Unit - 5 Arrays in PHP",
+   "questionNo": 39,
+   "qID": "5_39_1314",
+   "questionText": "In php, A ___________ is a block of statements that can be used repeatedly in a program.",
+   "aAnswer": "function",
+   "bAnswer": "procedure",
+   "cAnswer": "block",
+   "dAnswer": "loop",
+   "correctAnswer": "a"
+ },
+ {
+   "course": "Unit - 5 Arrays in PHP",
+   "questionNo": 40,
+   "qID": "5_40_1070",
+   "questionText": "In php A function will not execute automatically when a page loads.",
+   "aAnswer": "true",
+   "bAnswer": "false",
+   "cAnswer": "both a and b",
+   "dAnswer": "none of these",
+   "correctAnswer": "a"
+ }
+]

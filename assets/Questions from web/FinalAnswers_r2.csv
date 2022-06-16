@@ -1,0 +1,201 @@
+course,questionNo,qID,questionText,aAnswer,bAnswer,cAnswer,dAnswer,correctAnswer
+Unit - 1: Web Essentials,1,1_1_7352,The tag used to create a hypertext relationship between current document and another URL is,<ISINDEX,<A>,<LINK>,none of these,c
+Unit - 1: Web Essentials,2,1_2_2714,How can you make an e-mail link?,"<mail href +""xxx@y.com"">","<a href =""mail to:xxx@y.com"">","<a href = ""xxx@y.com"">",Both (b) and (c),b
+Unit - 1: Web Essentials,3,1_3_718,To create a combo box (drop down box) which tag will you use?,<select>,<list>,"<input type=""dropdown"">",all of above,a
+Unit - 1: Web Essentials,4,1_4_7229,HTML stands for?,Hyper Text Markup Language,High Text Markup Language,Hyper Tabular Markup Language,None of these,a
+Unit - 1: Web Essentials,5,1_5_4713,Which of the following tag is used to mark a beginning of Paragraph?,<TD>,<br>,<P>,<TR>,c
+Unit - 1: Web Essentials,6,1_6_9897,Correct HTML tag for the largest heading is,<head>,<heading>,<h6>,<h1>,d
+Unit - 1: Web Essentials,7,1_7_8700,The attribute of <form> tag,Method,Action,Both (a)&(b),None of these,c
+Unit - 1: Web Essentials,8,1_8_1619,Web pages starts with which off the following tag?,<Body>,<Title>,<HTML>,<Form>,c
+Unit - 1: Web Essentials,9,1_9_7823,How can you open a link in a new browser window?,"< a href = ""url"" target = ""new"">","<a href = ""url"" target= ""_blank"">","<a href = ""url"".new>","<a href = ""url"" target =""open"">",b
+Unit - 1: Web Essentials,10,1_10_344,The tag used to create a new list item and also include a hyperlink is,<LI>,<DL>,<DD>,<UL>,a
+Unit - 1: Web Essentials,11,1_11_9306,Which of the tag is used to creates a number list?,<LI>,<OL>,<LI> and <OL>,None of these,c
+Unit - 1: Web Essentials,12,1_12_7348,The tag used to create a hypertext relationship between current document and another URL is,<ISINDEX>,<A>,<LINK>,None of these,c
+Unit - 1: Web Essentials,13,1_13_6815,The text inside the <TEXT AREA> tag works like,<P> formatted text,<T> formatted text,<PRE> formatted text,none of these,c
+Unit - 1: Web Essentials,14,1_14_5083,What is the correct HTML for adding a background color?,<background>yellow<Background>,"<body color = ""yellow"">","<body bgcolor = ""yellow"">","<body bg =""yellow""",c
+Unit - 1: Web Essentials,15,1_15_425,Which tag allows you to add a row in a table?,<td> and </td>,<cr> and </cr>,<th> and </th>,<tr> and </tr>,d
+Unit - 1: Web Essentials,16,1_16_6328,How can you make a bulleted list?,<list>,<nl>,<ul>,<ol>,c
+Unit - 1: Web Essentials,17,1_17_8123,Choose the correct HTML tag to make a text italic,<ii>,<italics>,<italic>,<i>,d
+Unit - 1: Web Essentials,18,1_18_483,Choose the correct HTML tag to make a text bold?,<b>,<bold>,<bb>,<bld>,a
+Unit - 1: Web Essentials,19,1_19_5310,Which tag creates a check box for a form in HTML?,<checkbox>,"<input type=""checkbox"">",<input=checkbox>,<input checkbox>,b
+Unit - 1: Web Essentials,20,1_20_6393,To create a combo box (drop down box) which tag will you use?,<select>,<list>,"<input type=""dropdown"">",all of above,a
+Unit - 1: Web Essentials,21,1_21_8177,Which of the following attributes is used to specify elements to bind style rules to?,Id,Class,Tag,all of the mentioned,d
+Unit - 1: Web Essentials,22,1_22_1681,Which selector is used to specify a rule to bind a particular unique element?,Id,Class,Tag,both class and tag,a
+Unit - 1: Web Essentials,23,1_23_6397,"__________ has introduced text, list, box, margin, border, color, and background properties.",css,selector,declaration,text color,a
+Unit - 1: Web Essentials,24,1_24_9789,The _______property is used to set the color of the text.,css,selector,declaration,text color,d
+Unit - 1: Web Essentials,25,1_25_9703,The CSS __________properties is used to define the background effects.,css,selector,background,text color,c
+Unit - 1: Web Essentials,26,1_26_5792,_______ is a platform independent light weighted object based scripting language.,java script,head,"number ,string & boolean",none of these,a
+Unit - 1: Web Essentials,27,1_27_5457,JavaScript support three primitive data types: ___________.,java script,head,"number ,string & Boolean",none of these,c
+Unit - 1: Web Essentials,28,1_28_1119,JavaScript allows two composite data types: __________,objects and array,head & title,number & Boolean,none of these,a
+Unit - 1: Web Essentials,29,1_29_1652,The script tag must be place in the ______.,title,head,body,none of these,b
+Unit - 1: Web Essentials,30,1_30_3804,_________ keyword is used to declare variables in java script,dim,head,var,none of these,c
+Unit - 1: Web Essentials,31,1_31_3046,DOM stand for ___________,document object model,document object memory,document oriented memory,none of these,a
+Unit - 1: Web Essentials,32,1_32_605,Assignment operators are used to assign values to JavaScript variables.,true,false,both a & b,none of these .,a
+Unit - 1: Web Essentials,33,1_33_6246,Break statement indicates the end of that Many case.,true,false,both a & b,none of these .,b
+Unit - 1: Web Essentials,34,1_34_4863,A string simply stores a series of characters.,true,false,both a & b,none of these .,a
+Unit - 1: Web Essentials,35,1_35_8553,JavaScript support three primitive data types: ________.,"number, string and Boolean.",Object based scripting language,nevigator,live wire,a
+Unit - 1: Web Essentials,36,1_36_3864,_________ is a platform independent objet based scripting language.,java script,Object based scripting language,nevigator,live wire,a
+Unit - 1: Web Essentials,37,1_37_9447,__________ java script is also called client side java script,java script,Object based scripting language,nevigator,live wire,c
+Unit - 1: Web Essentials,38,1_38_9928,________ java script is also called server side java script,java script,Object based scripting language,nevigator,live wire,d
+Unit - 1: Web Essentials,39,1_39_2886,"Increment operator, increases the value of variable by what number?",1,2,3,4,a
+Unit - 1: Web Essentials,40,1_40_285,FUCTION is a block of statements that performs certain task.,true,false,both a and b,none of these ..,a
+Unit - 2: Markup Languages,1,2_1_1691,__________means the amount of data that can be sent from one point to another in a certain period of time,bandwidth,html,href,none of these,a
+Unit - 2: Markup Languages,2,2_2_1488,HTML color are specified using predefined color names or ________ values.,"RGB,",RGBA,HSLA,all of these,d
+Unit - 2: Markup Languages,3,2_3_3874,HTML supports__________ standard color names.,140,3,120,7,a
+Unit - 2: Markup Languages,4,2_4_1775,____this tag is used to give paragraph,<p>,br,<pre>,<marquee>,a
+Unit - 2: Markup Languages,5,2_5_8121,________ tag is used to brake the line it is single tag,<p>,<br>,<pre>,<marquee>,b
+Unit - 2: Markup Languages,6,2_6_669,"________ is pre formatted tags it is used ,it show the without formatted text .",<p>,br,<pre>,<marquee>,c
+Unit - 2: Markup Languages,7,2_7_6009,__________tag is used to create a scrolling effect to th selected text,<p>,<br>,<pre>,<marquee>,d
+Unit - 2: Markup Languages,8,2_8_1677,__________ element is used to indicated text quoted from another scource..,<blockquote>,br,<pre>,<marquee>,d
+Unit - 2: Markup Languages,9,2_9_8380,_______- it is used to show list by order wise .,<ol>,br,<pre>,<marquee>,a
+Unit - 2: Markup Languages,10,2_10_896,_____________ it is used to show list by no particular order wise .it show bulleted wise .,<ul>,br,<pre>,<marquee>,a
+Unit - 2: Markup Languages,11,2_11_7493,"________it is a comment , it is used to show additional information in html.",<!---->,br,<pre>,<marquee>,a
+Unit - 2: Markup Languages,12,2_12_1279,"_________ it is italic tag , it is used to show the italic font.",<i>,br,<pre>,<marquee>,a
+Unit - 2: Markup Languages,13,2_13_3849,_________ it is used to display a font in a bigger font size .,<big>,br,<pre>,<marquee>,a
+Unit - 2: Markup Languages,14,2_14_7832,_________ this definition tag is used to define the concept .,<def>,br,<pre>,<marquee>,a
+Unit - 2: Markup Languages,15,2_15_3447,________citation tag is used to display a citation in html document .,<cite>,br,<pre>,<marquee>,a
+Unit - 2: Markup Languages,16,2_16_6028,Tag is divided into 2 tags,physical,logical,center tag,a and b b both,d
+Unit - 2: Markup Languages,17,2_17_7323,__________ this tag is used to make taxt to be aligned cantered.,<p>,<center>,<pre>,<marquee>,b
+Unit - 2: Markup Languages,18,2_18_7325,"To link to the another web site following link is used <a href=""https://www.lokmat.com/html/"">Visit our lokamat paper </a",True,False,Both a and b,None of these.,a
+Unit - 2: Markup Languages,19,2_19_9443,________ the space between is the space between content of the cell and cell wall .,<p>,<center>,cell spacing,<marquee>,c
+Unit - 2: Markup Languages,20,2_20_1965,__________ of the table is used to specify the thickness of the table .,border,<center>,cell spacing,<marquee>,a
+Unit - 2: Markup Languages,21,2_21_5062,_____tag is used to create the rows in a table,<tr>,<th>,<frameset>,<a>,a
+Unit - 2: Markup Languages,22,2_22_6347,__________tag is used to create the table heading of the table,<tr>,<th>,<frameset>,<a>,b
+Unit - 2: Markup Languages,23,2_23_5992,"To make a cell span more than one column, it is called use the _______attribute",<tr>,colspan,<frameset>,rowspan,b
+Unit - 2: Markup Languages,24,2_24_4380,"To make a cell span more than one row, it is called use the _______ attribute.",<tr>,colspan,<frameset>,rowspan,d
+Unit - 2: Markup Languages,25,2_25_8388,__________ is used to manage the layout the page.,<tr>,colspan,<frame>,rowspan,c
+Unit - 2: Markup Languages,26,2_26_9849,In html __________ is used to divide the browser the screen into 2 or more then one part.,<tr>,columun,frame,rowspan,c
+Unit - 2: Markup Languages,27,2_27_7937,______ tag is devide the tag horizontally or vertically .,<tr>,colspan,<frameset>,rowspan,c
+Unit - 2: Markup Languages,28,2_28_714,___________stands for Transmission Control Protocol/Internet Protocol,tcp/ip,FTP,Physical,hyperlink,a
+Unit - 2: Markup Languages,29,2_29_9687,________is a set of standardized rules that allow computers to communicate on a network such as the internet.,tcp/ip,FTP,Physical,hyperlink,a
+Unit - 2: Markup Languages,30,2_30_8568,The __________ is a standard network protocol used for the transfer of computer files between a client and server on a computer network,tcp/ip,FTP,Physical,hyperlink,b
+Unit - 2: Markup Languages,31,2_31_5814,The ____________element contains meta information about the HTML page,<head>,FTP,Physical,hyperlink,a
+Unit - 2: Markup Languages,32,2_32_1990,"The ________element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.",<head>,<body>,Physical,hyperlink,b
+Unit - 2: Markup Languages,33,2_33_2850,_______tag are used to indicate exactly how specific characters are to be formatted,tcp/ip,FTP,Physical,hyperlink,c
+Unit - 2: Markup Languages,34,2_34_8025,The LINKS starts at the ((Source)) anchor and points to the ((Destination)) anchor. These LINKS are called as ___________,<head>,<body>,Physical,hyperlink,d
+Unit - 2: Markup Languages,35,2_35_9928,_______it is used to To create a link to another documents by using href attribute,<a>,checkbox,<textarea>,<text>,a
+Unit - 2: Markup Languages,36,2_36_4247,__________accept only true or false we can select more then one option out of given option,<a>,checkbox,<textarea>,<text>,b
+Unit - 2: Markup Languages,37,2_37_410,_________it is used to give the show the input box with multiple rows and column.,<a>,checkbox,<textarea>,<text>,c
+Unit - 2: Markup Languages,38,2_38_9000,__________- accept the any text in intput box..,<a>,checkbox,<textarea>,<text>,d
+Unit - 2: Markup Languages,39,2_39_5255,_____________it is used to submit the button ( accept the data) to upload,<submit>,checkbox,<textarea>,<text>,a
+Unit - 2: Markup Languages,40,2_40_8250,"____________ it is used with text , when we use to hide the text matter",<password>,checkbox,<textarea>,<text>,a
+Unit - 3: JAVA Script,1,3_1_758,Which data type value is returned by all transcendental math functions?,int,float,double,long,c
+Unit - 3: JAVA Script,2,3_2_9726,Which of these coding types is used for data type characters in Java?,ASCII,ISO-LATIN-1,UNICODE,None of the mentioned,c
+Unit - 3: JAVA Script,3,3_3_8355,Which of these values can a boolean variable contain?,True & False,0 & 1,Any integer value,true,a
+Unit - 3: JAVA Script,4,3_4_2013,Which of these operators is used to allocate memory to array variable in Javascript?,malloc,alloc,new,new malloc,c
+Unit - 3: JAVA Script,5,3_5_6057,Which of these is an incorrect array declaration?,int x[] = new int[5],int [] arr = new int[5],intarr[] = new int[5],int x[] = int [5] new,d
+Unit - 3: JAVA Script,6,3_6_9003,"Decrement operator, --, decreases the value of variable by what number?",1,2,3,4,a
+Unit - 3: JAVA Script,7,3_7_3193,Which of these is not a bitwise operator?,&,&=,|=,<=,d
+Unit - 3: JAVA Script,8,3_8_5237,Which right shift operator preserves the sign of the value?,<<,>>,<<=,>>=,b
+Unit - 3: JAVA Script,9,3_9_9452,What is the output of relational operators?,Integer,Boolean,Characters,Double,b
+Unit - 3: JAVA Script,10,3_10_5172,". Which of these is returned by ""greater than"", ""less than"" and ""equal to"" operators?",Integers,Floating ­ point numbers,Boolean,None of the mentioned,c
+Unit - 3: JAVA Script,11,3_11_2786,Which of these selection statements test only for equality?,if,switch,if & switch,none of the mentioned,a
+Unit - 3: JAVA Script,12,3_12_2488,Which of the following loops will execute the body of loop even when condition controlling the loop is initially false?,do-while,while,for,,a
+Unit - 3: JAVA Script,13,3_13_8248,Which of these jump statements can skip processing the remainder of the code in its body for a particular iteration?,break,return,exit,continue,d
+Unit - 3: JAVA Script,14,3_14_3340,Which of the following is not a decision making statement?,if,if-else,switch,do-while,d
+Unit - 3: JAVA Script,15,3_15_3767,Which of the following is not a valid flow control statement?,exit(),break,continue,return,a
+Unit - 3: JAVA Script,16,3_16_9058,The CSS background properties are used to define the ___________effects.,background,customize,class,id rule,a
+Unit - 3: JAVA Script,17,3_17_1827,CSS border properties allow us to__________ the borders.,background,customize,class,id rule,b
+Unit - 3: JAVA Script,18,3_18_7036,By applying an_______ a style can be applied to just a single tag.,background,customize,class,id rule,d
+Unit - 3: JAVA Script,19,3_19_6138,_________selectors are used to specify a group of elements.,background,customize,class,id rule,c
+Unit - 3: JAVA Script,20,3_20_5800,"In CSS, ""font-size"" can be called as ________",property name,selector,declaration,text color,a
+Unit - 3: JAVA Script,21,3_21_2906,"In CSS, h1 can be called as _______",property name,selector,declaration,text color,b
+Unit - 3: JAVA Script,22,3_22_1554,"In , CSS ""color:red"" can be called as _____________",property name,selector,declaration,text color,c
+Unit - 3: JAVA Script,23,3_23_7923,Reset (button) :- it is used to reset the button ( cancel the data) to upload,<reset>,checkbox,<textarea>,<text>,a
+Unit - 3: JAVA Script,24,3_24_4763,CSS different the tags and data .... it menace it store the data in different file and store the tags in different file . ...it minimize the size of the file .,css,html,<textarea>,<text>,a
+Unit - 3: JAVA Script,25,3_25_8294,"_______ describes how HTML elements are to be displayed on screen, paper, or in other media",css,html,<textarea>,<text>,a
+Unit - 3: JAVA Script,26,3_26_198,Central Computer which is powerful than other computers in the network is called as ________,server,protocol,network,Internet,a
+Unit - 3: JAVA Script,27,3_27_9123,HTTP is a __________ protocol.,server,protocol,connection oriented,Internet,c
+Unit - 3: JAVA Script,28,3_28_5377,The FTP is a protocol that is used to transfer files between two computers over a ______________.,server and protocol,protocol & internet,connection & oriented,network and Internet,d
+Unit - 3: JAVA Script,29,3_29_1933,A client can use the ________request to get a web resource from the server.,PUT,POST,GET,HEAD,c
+Unit - 3: JAVA Script,30,3_30_6694,Websites are uploaded _______,address,serve,cache,client,b
+Unit - 3: JAVA Script,31,3_31_9470,HTML web pages can be read and rendered by __________,web browser,server,empty,head tag,a
+Unit - 3: JAVA Script,32,3_32_7153,"The _________ tag is an inline container used to mark up a part of a text, or a part of a document.",<map>,<span>,<img>,<tt>,b
+Unit - 3: JAVA Script,33,3_33_6704,<INPUT> is ________tag.,web browser,server,empty,head tag,c
+Unit - 3: JAVA Script,34,3_34_9231,"The HTML tag to left align the content inside a table cell is <td align = ""left"">.",true,false,both a and b,none of these,a
+Unit - 3: JAVA Script,35,3_35_6781,The body tag usually used after _________,web browser,server,empty,head tag,d
+Unit - 3: JAVA Script,36,3_36_4153,Tags and text that are not directly displayed on the page are written in ___________section.,web browser,title,empty,head,d
+Unit - 3: JAVA Script,37,3_37_7949,Some tags enclose the text. Those tags are known as ___________,single tag,paired tag,empty,head,a
+Unit - 3: JAVA Script,38,3_38_1373,The <strike> tag is used to _________the text or sentence.,single tag,paired tag,strikeout,head,c
+Unit - 3: JAVA Script,39,3_39_1191,The <del> tag is used to display ________ text form a document,single tag,paired tag,strikeout,deleted,d
+Unit - 3: JAVA Script,40,3_40_7624,_________ is used to give additional information.,title tag,paired tag,strikeout,deleted,a
+Unit - 4: Function and String in PHP,1,4_1_8167,What is the range of short data type in Java script ?,-128 to 127,-32768 to 32767,-2147483648 to 2147483647,None of the mentioned,b
+Unit - 4: Function and String in PHP,2,4_2_7284,What is the range of byte data type in Java script?,-128 to 127,-32768 to 32767,-2147483648 to 2147483647,None of the mentioned,a
+Unit - 4: Function and String in PHP,3,4_3_836,"An expression involving byte, int, and literal numbers is promoted to which of these?",int,long,byte,float,a
+Unit - 4: Function and String in PHP,4,4_4_285,Which data type value is returned by all transcendental math functions?,int,float,double,long,c
+Unit - 4: Function and String in PHP,5,4_5_4407,What is the numerical range of a char data type in Java script?,-128 to 127,0 to 256,0 to 32767,0 to 65535,d
+Unit - 4: Function and String in PHP,6,4_6_3814,Which of these coding types is used for data type characters in Java script?,ASCII,ISO-LATIN-1,UNICODE,None of the mentioned,c
+Unit - 4: Function and String in PHP,7,4_7_1348,Which of these values can a Boolean variable contain?,True & False,0 & 1,Any integer value,true,a
+Unit - 4: Function and String in PHP,8,4_8_311,Which one is a valid declaration of a Boolean?,boolean b1 = 1;,boolean b2 = `false';,boolean b3 = false;,boolean b4 = `true',c
+Unit - 4: Function and String in PHP,9,4_9_3968,Which of these operators is used to allocate memory to array variable in Java script?,malloc,alloc,new,new malloc,c
+Unit - 4: Function and String in PHP,10,4_10_498,Which of these is an incorrect array declaration?,intarr[] = new int[5],int [] arr = new int[5],intarr[] = new int[5],intarr[] = int [5] new,d
+Unit - 4: Function and String in PHP,11,4_11_6784,Which of these is necessary to specify at time of array initialization?,Row,Column,Both Row and Column,None of the mentioned,a
+Unit - 4: Function and String in PHP,12,4_12_8095,Which of the following can be operands of arithmetic operators?,Numeric,Boolean,Characters,Both Numeric & Characters,d
+Unit - 4: Function and String in PHP,13,4_13_5133,"Modulus operator, %, can be applied to which of these?",Integers,Floating ­ point numbers,Both Integers and floating ­ point numbers,None of the mentioned,c
+Unit - 4: Function and String in PHP,14,4_14_5295,"Decrement operator, --, decreases the value of variable by what number?",1,2,3,4,a
+Unit - 4: Function and String in PHP,15,4_15_4257,Which of these is not a bitwise operator?,&,&=,|=,<=,d
+Unit - 4: Function and String in PHP,16,4_16_2048,Which operator is used to invert all the digits in a binary representation of a number?,~,<<<,>>>,^,a
+Unit - 4: Function and String in PHP,17,4_17_8629,"On applying Left shift operator, <<, on integer bits are lost one they are hifted past which position bit?",1,32,33,31,d
+Unit - 4: Function and String in PHP,18,4_18_4858,Which right shift operator preserves the sign of the value?,<<,>>,<<=,>>=,b
+Unit - 4: Function and String in PHP,19,4_19_4986,Which of these statements are incorrect?,"The left shift operator, <<, shifts all of the bits in a value to the left specified number of times","The right shift operator, >>, shifts all of the bits in a value to the right specified number of times",The left shift operator can be used as an alternative to multiplying by 2,The right shift operator automatically fills the higher order bits with 0,d
+Unit - 4: Function and String in PHP,20,4_20_9391,What is the output of relational operators?,Integer,Boolean,Characters,Double,b
+Unit - 4: Function and String in PHP,21,4_21_6324,". Which of these is returned by ""greater than"", ""less than"" and ""equal to"" operators?",Integers,Floating ­ point numbers,Boolean,None of the mentioned,c
+Unit - 4: Function and String in PHP,22,4_22_1692,Which of these operators can skip evaluating right hand operand?,!,|,&,&&,d
+Unit - 4: Function and String in PHP,23,4_23_3128,Which of these have highest precedence?,(),++,*,>>,a
+Unit - 4: Function and String in PHP,24,4_24_7888,Which of these statements are incorrect?,Equal to operator has least precedence,Brackets () have highest precedence,"Division operator, /, has higher precedence than multiplication operator","Addition operator, +, and subtraction operator have equal precedence",d
+Unit - 4: Function and String in PHP,25,4_25_806,Which of these selection statements test only for equality?,if,switch,if & switch,none of the mentioned,b
+Unit - 4: Function and String in PHP,26,4_26_5392,. Which of these are selection statements in Java script?,if(),for(),continue,break,a
+Unit - 4: Function and String in PHP,27,4_27_4825,Which of the following loops will execute the body of loop even when condition controlling the loop is initially false?,do-while,while,for,,a
+Unit - 4: Function and String in PHP,28,4_28_926,Which of these jump statements can skip processing the remainder of the code in its body for a particular iteration?,break,return,exit,continue,d
+Unit - 4: Function and String in PHP,29,4_29_9888,Which of the following is not a decision making statement?,if,if-else,switch,do-while,d
+Unit - 4: Function and String in PHP,30,4_30_9176,Which of the following is not a valid jump statement?,break,goto,continue,return,d
+Unit - 4: Function and String in PHP,31,4_31_4179,Which of the following is not a valid flow control statement?,exit(),break,continue,return,a
+Unit - 4: Function and String in PHP,32,4_32_6202,"web browser support JPEG .PNG ,GIE ,Image ,and PDF",true,false,both a & b,none of these,a
+Unit - 4: Function and String in PHP,33,4_33_6754,_______is the measured as the amount of data that can be transferred from one point to another point within a specific amount of time.,HTTP,Bandwidth,webpage,Dream viewer,b
+Unit - 4: Function and String in PHP,34,4_34_942,"A ___________ is a document, typically written in plain text distributed with formatting instruction of Hypertext markup languages like HTML,XHTML",HTTP,Bandwidth,webpage,Dream viewer,c
+Unit - 4: Function and String in PHP,35,4_35_3230,___________ Stands for Hypertext markup languages for displaying web pages and other information that can be displayed in a web browser,HTTP,Bandwidth,webpage,Dream viewer,a
+Unit - 4: Function and String in PHP,36,4_36_3237,client server model Requires regular maintenance and updates .,true,false,both a & b,none of these,a
+Unit - 4: Function and String in PHP,37,4_37_1149,Cost of buying and running a server for client serve model are high .,true,false,both a & b,none of these,a
+Unit - 4: Function and String in PHP,38,4_38_1555,client server model are Dependence on a central location for operation.,true,false,both a & b,none of these,a
+Unit - 4: Function and String in PHP,39,4_39_5290,"A section in a document that will have a light blue background color: following tags are true or false\n<div style=""""""""background-color:lightblue"""""""">\n<h3>This is a heading</h3>\n<p>This is a paragraph.</p>\n</div>""""""",true,false,both a & b,none of these,a
+Unit - 4: Function and String in PHP,40,4_40_7706,"Following are the types of CSS , which one is not type of CSS.",Inline CSS:,Internal or Embedded CSS,External CSS:,none of these.,d
+Unit - 5 Arrays in PHP,1,5_1_5664,The _______tag is used to define a client-side image-map. An image-map is an image with clickable area,<map>,<span>,<img>,<tt>,a
+Unit - 5 Arrays in PHP,2,5_2_5415,The move from one page to another page in website is called as.__________,server machine,links,page layout,navigation,d
+Unit - 5 Arrays in PHP,3,5_3_2622,"The _______tag is an inline container used to mark up a part of a text, or a part of a document.",<map>,<span>,<img>,<tt>,a
+Unit - 5 Arrays in PHP,4,5_4_4209,"The _______ tag provides no visual change by itself, but when it is marked, you can style it with CSS, or manipulate it with JavaScript.",<map>,<span>,<img>,<tt>,b
+Unit - 5 Arrays in PHP,5,5_5_6180,The _________ tag defines an image in an HTML page.,<map>,<span>,<img>,<tt>,a
+Unit - 5 Arrays in PHP,6,5_6_3648,The ____________tag has two required attributes: src and alt.,<map>,<span>,<img>,<tt>,a
+Unit - 5 Arrays in PHP,7,5_7_1995,The _____________element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.,<map>,<div>,<img>,<tt>,b
+Unit - 5 Arrays in PHP,8,5_8_2202,_________tag Indicates that the text should be used with a font such as Courier that allots the same width to each character.,<map>,<span>,<img>,<tt>,d
+Unit - 5 Arrays in PHP,9,5_9_1402,_____________ tag Indicates that the text should be displayed in a small font. Available in HTML 3.0 or higher.,<small>,<em>,<u>,<strong >,a
+Unit - 5 Arrays in PHP,10,5_10_4375,______tag Indicates that the text should be displayed underlined. Not all browsers support this tag.,<small>,<em>,<u>,<strong >,c
+Unit - 5 Arrays in PHP,11,5_11_5759,___________Indicates that characters should be emphasized in some way. Usually displayed in italics.,<small>,<em>,<u>,<strong >,b
+Unit - 5 Arrays in PHP,12,5_12_2737,_________Emphasizes characters more strongly than <EM>. Usually displayed in a bold font,<small>,<em>,<u>,<strong >,d
+Unit - 5 Arrays in PHP,13,5_13_5494,_________tag Used to offset text that the user should enter. Often displayed in a Courier font or a similar font that allots the same width to each character.,<small>,<em>,<kbd >,<strong >,c
+Unit - 5 Arrays in PHP,14,5_14_81,________Indicates a variable. Often displayed in italics or underlined.,<var>,<em>,<kbd >,<strong >,a
+Unit - 5 Arrays in PHP,15,5_15_5227,_________Indicates short quotes or citations. Often italized by browsers.,<small>,<cite>,<kbd >,<strong >,b
+Unit - 5 Arrays in PHP,16,5_16_5886,"The _________tag defines a hyperlink, which is used to link from one page to another.",<a>,<cite>,<kbd >,<strong >,a
+Unit - 5 Arrays in PHP,17,5_17_1019,"The ________ele1ment defines a table row, the <th> element defines a table header, and the <td> element defines a table cell.",<small>,<tr>,<kbd >,<strong >,b
+Unit - 5 Arrays in PHP,18,5_18_2302,The _______ tag is used to create in an HTML table.,<table>,<tr>,<td >,<th >,a
+Unit - 5 Arrays in PHP,19,5_19_6986,CSS stands for ___________,Cascading Style Sheets,Cascading super Sheets,Cascading Style excel sheet,none of these,a
+Unit - 5 Arrays in PHP,20,5_20_8861,_________means the way to move from one page to another page in website. To move from one page to another pages hyperlinks are used.,HTTP,Bandwidth,Navigation,Dream viewer,c
+Unit - 5 Arrays in PHP,21,5_21_3982,"__________ is Web development software . Create, code and manage dynamic websites easily with a smart, simplified coding engine",HTTP,Bandwidth,webpage,Dream viewer,d
+Unit - 5 Arrays in PHP,22,5_22_823,"________ is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.",PHP,java script,Angular js,none of these,a
+Unit - 5 Arrays in PHP,23,5_23_184,"_______ is a object oriented programming language , it is used to create the object...",PHP,java script,Angular js,none of these,a
+Unit - 5 Arrays in PHP,24,5_24_2783,A ________ script can be placed anywhere in the document.,PHP,java script c,Angular js,none of these,a
+Unit - 5 Arrays in PHP,25,5_25_3557,The default file extension for PHP files is _________,.PHP,.js,.Ajs,none of these,a
+Unit - 5 Arrays in PHP,26,5_26_2200,__________ is used to show the out put ...or give message..same as printf in c language...,Echo,java script,Angular js,none of these,a
+Unit - 5 Arrays in PHP,27,5_27_5402,A PHP script starts with <?php and ends with ?>:<?php// PHP code goes here?>,true,false,both a and b,none of these,a
+Unit - 5 Arrays in PHP,28,5_28_49,"PHP code is executed on the server, and the result is returned to the browser as plain HTML",true,false,both a and b,none of these,a
+Unit - 5 Arrays in PHP,29,5_29_449,"PHP files can contain text, HTML, CSS, JavaScript, and PHP code",true,false,both a and b,none of these,a
+Unit - 5 Arrays in PHP,30,5_30_4337,"PHP runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)",true,false,both a and b,none of these,a
+Unit - 5 Arrays in PHP,31,5_31_6154,"PHP is compatible with almost all servers used today (Apache, IIS, etc.)",true,false,both a and b,none of these,a
+Unit - 5 Arrays in PHP,32,5_32_682,PHP supports a ___________ range of databases,wide,small,short,none of these,a
+Unit - 5 Arrays in PHP,33,5_33_263,PHP supports the following data types:,String,Integer,Float (floating point numbers - also called double),all of the above .,d
+Unit - 5 Arrays in PHP,34,5_34_9268,"In PHP, an object must be_________declared.",explicitly,implicitly,both a and b,None of these,a
+Unit - 5 Arrays in PHP,35,5_35_713,PHP divides the operators in the following groups:,Increment/Decrement operators,Logical operators,String operators,all of the above,d
+Unit - 5 Arrays in PHP,36,5_36_7682,The basic assignment operator in PHP is __________ It means that the left operand gets set to the value of the assignment expression on the right.,=,++,==,?,a
+Unit - 5 Arrays in PHP,37,5_37_5734,the _________ statement is used to perform different actions based on different conditions,switch,if condition,foreach,while,a
+Unit - 5 Arrays in PHP,38,5_38_6740,"In PHP, we have the following loop types:",while loop,for loop,foreach,all the these.,d
+Unit - 5 Arrays in PHP,39,5_39_1314,"In php, A ___________ is a block of statements that can be used repeatedly in a program.",function,procedure,block,loop,a
+Unit - 5 Arrays in PHP,40,5_40_1070,In php A function will not execute automatically when a page loads.,true,false,both a and b,none of these,a
