@@ -82,19 +82,24 @@ document.querySelector([corrBtnName]).style = ("background-color:green");
 
 //Other buttons
 var startBtn = document.querySelector("#start-btn");
+startBtn.addEventListener("click", function () {
+  startQuiz();
+});
 
 var submitSettingsBtn = document.querySelector("#submit-settings-btn");
 submitSettingsBtn.addEventListener("click", function () {
-  console.log("Y");
+  // console.log("Y");
   saveSettings()
 });
 
 //Checkboxes
 //Will want to change to an array we can select from
 {
-  var checkQ1 = document.querySelector("#question-type1");
-  var checkQ2 = document.querySelector("#question-type1");
-  var checkQ3 = document.querySelector("#question-type1");
+  var checkQ1 = document.querySelector("#question-type1"); //checkQ1.checked
+  var checkQ2 = document.querySelector("#question-type2");
+  var checkQ3 = document.querySelector("#question-type3");
+  var checkQ4 = document.querySelector("#question-type4");
+  var checkQ5 = document.querySelector("#question-type5");
 }
 
 //spans
@@ -129,7 +134,7 @@ function init() {
   goToHomeScreen();
 
   //Use section below to test functions whilst developing
-  startQuiz();
+  // startQuiz();
 
 
 }
@@ -244,9 +249,19 @@ function saveSettings() {
 
 } //end saveSettings()
 
+//Use Settings to get the required questions, time and deductions
+function getQuestions(   ){
+  var qCount = qtyQuestions ; //get global setting
+
+
+}
+
 function startQuiz() {
   goToQuestionScreen();
   location.reload; //reset screen
+
+//Use Settings to get the required questions, time and deductions
+ getQuestions()
 
   // Setup question in HTML 
   window.thisQ = qAndA[120]; //********* */

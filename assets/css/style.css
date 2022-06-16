@@ -152,8 +152,9 @@ button[disabled] {
 #header-nav button {
   display: flex;
   justify-content: center;
-  padding: 5px;
+  padding: 5px 10px;
   margin-left: 3px;
+  color:var(--highlight);
   background-color: var(--darker);
 }
 
@@ -234,6 +235,7 @@ li:nth-child(even) button {
   margin: 10px 10px 0 5px;
   font-size: 10px;
   text-align: right;
+  color:var(--dark); 
 }
 
 @media (max-width: 690px) {
