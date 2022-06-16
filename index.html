@@ -26,7 +26,8 @@
     <!-- Home Screen ___________________________ -->
     <div id="home-screen">
       <h2>Home Screen</h2>
-      <p>This is a quiz to determine your competency with coding.<br>You'll be given <span id="qty-of-questions">10</span> random questions from a list. <br>
+      <p>This is a quiz to determine your competency with coding.<br>You'll be given <span
+          id="qty-of-questions">10</span> random questions from a list. <br>
         You'll have <span id="time-for-quiz">2 minutes</span> to answer the questions. <br>
         You'll get a point for every correct answer, but you'll have <span id="time-deducted">5 seconds</span> deducted
         from your time if you get an answer wrong!
@@ -39,27 +40,29 @@
       <h3 id="question-head">Question 1</h3>
       <p id="question">This is q1 text<br></p>
       <ol type="A" id="answer-list" >
-        <li  id="Q0"><button class="qButton" value="A">AnswerA xx</button></li> 
-        <li  id="Q1"><button class="qButton" value="B">AnswerB xxxx</button></li> 
-        <li  id="Q2"><button class="qButton" value="C">AnswerC xxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxxxxxxx xxxx</button></li> 
-        <li  id="Q3"><button class="qButton" value="D">AnswerD xxxxxxxx</button></li> 
+        <li  id="Q0"><button class="aButton" value="A">AnswerA xx</button></li> 
+        <li  id="Q1"><button class="aButton" value="B">AnswerB xxxx</button></li> 
+        <li  id="Q2"><button class="aButton" value="C">AnswerC xxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxxxxxxxx xxxx</button></li> 
+        <li  id="Q3"><button class="aButton" value="D">AnswerD xxxxxxxx</button></li> 
 
       </ol>
     </div> -->
     <div id="question-screen">
       <div class="question-class">
-          <p id="course"></p>
-          <h3>Question <span id="questionNo">X</span></h3>
-          <p id="questionText">This is q1 text<br></p>
-          <ol type="A" id="answer-list">
-              <li><button id="aAnswer" class="qButton" value="A">AnswerA</button></li>
-              <li><button id="bAnswer" class="qButton" value="B">AnswerB</button></li>
-              <li><button id="cAnswer" class="qButton" value="C">AnswerC</button></li>
-              <li><button id="dAnswer" class="qButton" value="D">AnswerD</button></li>
-              <li id="correctAnswer"></li>
-          </ol>
+        <p id="course"></p>
+        <h3>Question <span id="questionNo">X</span></h3>
+        <p id="questionText">This is q1 text<br></p>
+        <ol type="A" id="answer-list">
+          <li><button id="aAnswer" class="aButton" data-value="A">AnswerA</button></li>
+          <li><button id="bAnswer" class="aButton" data-value="B">AnswerB</button></li>
+          <li><button id="cAnswer" class="aButton" data-value="C">AnswerC</button></li>
+          <li><button id="dAnswer" class="aButton" data-value="D">AnswerD</button></li>
+          <!--  -->
+          <li id="correctAnswer"></li>
+          <!--  -->
+        </ol>
       </div>
-  </div>
+    </div>
 
     <!-- Result Screen ___________________________  -->
     <div id="result-screen">
@@ -87,7 +90,7 @@
 
         <p>
           <label for="deducted-time">Time deducted for a wrong answer</label>
-          <input id="deducted-time" type="text"  /> seconds<br><br>
+          <input id="deducted-time" type="text" /> seconds<br><br>
         </p>
 
         <p>Which area(s) do you want your questions to come from?</p>

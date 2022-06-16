@@ -47,6 +47,15 @@ const qTags = ['course', 'qID', 'questionNo','questionText', 'aAnswer', 'bAnswer
   });
 }
 
+//Answer button
+// var answerBtn = document.getElementsByClassName(".aButton");
+var answerBtn = document.querySelector('#aAnswer');
+
+answerBtn.addEventListener("click", function () {
+    var clickedAnswer = answerBtn['data-value'];
+    alert(clickedAnswer)
+  });
+
 //Other buttons
 var startBtn = document.querySelector("#start-btn");
 
@@ -216,18 +225,18 @@ function startQuiz(){
   location.reload ; //reset screen
 
   // Setup question in HTML 
-  var thisQ = qAndA[56]; //********* */
+  var thisQ = qAndA[5]; //********* */
+  setoutQuestion(thisQ)
+}
 
-
+function setoutQuestion(thisQ){
   for (let q = 0; q < qTags.length; q++) {
     // document.getElementById(obj[q]).innerHTML = obj[q].value();
     var thisElement = qTags[q];
     if (document.getElementById([thisElement]) != null) {
         document.getElementById([thisElement]).innerText = thisQ[thisElement];
     }
-}
-}
-
+}}
 
 init()
 

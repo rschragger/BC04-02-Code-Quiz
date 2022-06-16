@@ -184,7 +184,7 @@ button[disabled] {
   margin-left: 20px;
 }
 
-.qButton  {
+.aButton  {
   background-color: var(--dark);
   color: var(--highlight);
   border: 1px solid var(--darker);
@@ -201,12 +201,12 @@ li:nth-child(even) button {
   background-color: var(--darker);
 }
 
-.qButton:hover{
+.aButton:hover{
   background-color: var(--bggrey);
   color: black;
 }
 
-.qButton:active{
+.aButton:active{
   background-color: black;
   color: var(--highlight);
 }
