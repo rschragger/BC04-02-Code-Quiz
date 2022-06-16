@@ -11,6 +11,11 @@ var defaultVals = {
 
 }
 
+//Get JSON object for Q and As
+const qAndA = JSON.parse(localStorage.getItem("jsonQandA"));
+//Establish what the tags are in this data
+const qTags = ['course', 'qID', 'questionNo','questionText', 'aAnswer', 'bAnswer', 'cAnswer', 'dAnswer', 'correctAnswer'];
+
 //Screens
 {
   var screens = document.getElementById("screens");
@@ -84,6 +89,8 @@ var deductedTimeSetting = document.querySelector("#deducted-time");
 function init() {
   //  Go to settings to recall client's setting first
   goToSettingsScreen();
+
+
 
   //Start from this point
   goToHomeScreen();
@@ -208,6 +215,17 @@ function startQuiz(){
   goToQuestionScreen();
   location.reload ; //reset screen
 
+  // Setup question in HTML 
+  var thisQ = qAndA[56]; //********* */
+
+
+  for (let q = 0; q < qTags.length; q++) {
+    // document.getElementById(obj[q]).innerHTML = obj[q].value();
+    var thisElement = qTags[q];
+    if (document.getElementById([thisElement]) != null) {
+        document.getElementById([thisElement]).innerText = thisQ[thisElement];
+    }
+}
 }
 
 

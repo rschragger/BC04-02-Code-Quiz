@@ -4,7 +4,7 @@
 function init(){
   localStorage.setItem("jsonQandA", jsonData );
 }
-var jsonData =[
+var jsonData =JSON.stringify([
   {
     "course": "Unit - 1: Web Essentials",
     "questionNo": 1,
@@ -2205,6 +2205,6 @@ var jsonData =[
     "dAnswer": "none of these",
     "correctAnswer": "a"
   }
- ];
+ ]);
 
 init()

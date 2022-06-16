@@ -35,7 +35,7 @@
     </div>
 
     <!-- Question Screen ___________________________ -->
-    <div id="question-screen">
+    <!-- <div id="question-screen">
       <h3 id="question-head">Question 1</h3>
       <p id="question">This is q1 text<br></p>
       <ol type="A" id="answer-list" >
@@ -45,7 +45,21 @@
         <li  id="Q3"><button class="qButton" value="D">AnswerD xxxxxxxx</button></li> 
 
       </ol>
-    </div>
+    </div> -->
+    <div id="question-screen">
+      <div class="question-class">
+          <p id="course"></p>
+          <h3>Question <span id="questionNo">X</span></h3>
+          <p id="questionText">This is q1 text<br></p>
+          <ol type="A" id="answer-list">
+              <li><button id="aAnswer" class="qButton" value="A">AnswerA</button></li>
+              <li><button id="bAnswer" class="qButton" value="B">AnswerB</button></li>
+              <li><button id="cAnswer" class="qButton" value="C">AnswerC</button></li>
+              <li><button id="dAnswer" class="qButton" value="D">AnswerD</button></li>
+              <li id="correctAnswer"></li>
+          </ol>
+      </div>
+  </div>
 
     <!-- Result Screen ___________________________  -->
     <div id="result-screen">
@@ -97,6 +111,9 @@
     <p>Copyright © Reeve Schragger 2022</p>
   </div>
 
+  <!-- Separate file for Q and As  -->
+  <script src="./assets/js/storeJSON.js"></script>
+  <!-- Script to run quiz  -->
   <script src="./assets/js/script.js"></script>
 </body>
 
