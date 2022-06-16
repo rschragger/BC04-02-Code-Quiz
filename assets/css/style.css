@@ -74,7 +74,8 @@ p {
   border: 2px solid var(--darker);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
-  color: var(--highlight); /* hsl(0, 0%, 100%);*/
+  color: var(--highlight);
+  /* hsl(0, 0%, 100%);*/
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -174,6 +175,20 @@ button[disabled] {
   box-sizing: content-box;
 }
 
+#question-screen h3,
+#question-screen p {
+  text-align: left;
+}
+
+#question-screen #course {
+  color: var(--highlight);
+  background-color: var(--darker);
+  font-size: 10px;
+  text-align: right;
+  padding: 3px 10px 3px 3px;
+  justify-content: flex-end;
+}
+
 #answer-list {
   list-style-type: upper-alpha;
   /* list-style-position: inside; */
@@ -184,12 +199,12 @@ button[disabled] {
   margin-left: 20px;
 }
 
-.aButton  {
+.aButton {
   background-color: var(--dark);
   color: var(--highlight);
   border: 1px solid var(--darker);
-  border-radius: 0 5px ;
-  box-shadow: inset 1px 1px 3px var(--highlight) ;
+  border-radius: 0 5px;
+  box-shadow: inset 1px 1px 3px var(--highlight);
   text-align: left;
   padding: 5px;
   margin: 3px;
@@ -201,15 +216,17 @@ li:nth-child(even) button {
   background-color: var(--darker);
 }
 
-.aButton:hover{
+.aButton:hover {
   background-color: var(--bggrey);
   color: black;
 }
 
-.aButton:active{
+.aButton:active {
   background-color: black;
   color: var(--highlight);
 }
+
+
 
 #footer-sec,
 #footer-sec p {

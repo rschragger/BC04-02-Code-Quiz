@@ -8,13 +8,14 @@ var defaultVals = {
   timeDeducted: 20,
   subjectNames: ["Unit - 1: Web Essentials", "Unit - 2: Markup Languages", "Unit - 3: JAVA Script"],
   subjectSelect: [1, 2],
-
 }
 
 //Get JSON object for Q and As
 const qAndA = JSON.parse(localStorage.getItem("jsonQandA"));
 //Establish what the tags are in this data
-const qTags = ['course', 'qID', 'questionNo','questionText', 'aAnswer', 'bAnswer', 'cAnswer', 'dAnswer', 'correctAnswer'];
+const qTags = ['course', 'qID', 'questionNo', 'questionText', 'aAnswer', 'bAnswer', 'cAnswer', 'dAnswer', 'correctAnswer'];
+var thisQ = [];
+var answerResult = "";
 
 //Screens
 {
@@ -47,14 +48,35 @@ const qTags = ['course', 'qID', 'questionNo','questionText', 'aAnswer', 'bAnswer
   });
 }
 
-//Answer button
-// var answerBtn = document.getElementsByClassName(".aButton");
-var answerBtn = document.querySelector('#aAnswer');
-
-answerBtn.addEventListener("click", function () {
-    var clickedAnswer = answerBtn['data-value'];
-    alert(clickedAnswer)
+//Answer buttons - A,B,C,D - causes function isAnswerCorrect()
+{
+  var answerBtnA = document.querySelector('#aAnswer');
+  answerBtnA.addEventListener("click", function () {
+    isAnswerCorrect("A");
   });
+  var answerBtnB = document.querySelector('#bAnswer');
+  answerBtnB.addEventListener("click", function () {
+    isAnswerCorrect("B");
+  });
+  var answerBtnC = document.querySelector('#cAnswer');
+  answerBtnC.addEventListener("click", function () {
+    isAnswerCorrect("C");
+  });
+  var answerBtnD = document.querySelector('#dAnswer');
+  answerBtnD.addEventListener("click", function () {
+    isAnswerCorrect("D");
+  });
+}
+function isAnswerCorrect(ansText) {
+  // alert(ansText)
+  window.answerResult = "Correct";
+  if (thisQ['correctAnswer'].toUpperCase() == ansText.toUpperCase()) {
+    //  console.log("Correct");
+  } else {
+    //  console.log("Wrong")
+    window.answerResult = "Wrong";
+  };
+}
 
 //Other buttons
 var startBtn = document.querySelector("#start-btn");
@@ -220,23 +242,24 @@ function saveSettings() {
 
 } //end saveSettings()
 
-function startQuiz(){
+function startQuiz() {
   goToQuestionScreen();
-  location.reload ; //reset screen
+  location.reload; //reset screen
 
   // Setup question in HTML 
-  var thisQ = qAndA[5]; //********* */
+  window.thisQ = qAndA[120]; //********* */
   setoutQuestion(thisQ)
 }
 
-function setoutQuestion(thisQ){
+function setoutQuestion(thisQ) {
   for (let q = 0; q < qTags.length; q++) {
     // document.getElementById(obj[q]).innerHTML = obj[q].value();
     var thisElement = qTags[q];
     if (document.getElementById([thisElement]) != null) {
-        document.getElementById([thisElement]).innerText = thisQ[thisElement];
+      document.getElementById([thisElement]).innerText = thisQ[thisElement];
     }
-}}
+  }
+}
 
 init()
 
