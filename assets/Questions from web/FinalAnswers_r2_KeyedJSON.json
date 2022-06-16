@@ -1,0 +1,2012 @@
+{
+   "Unit - 1: Web Essentials": [
+      {
+         "questionNo": 1,
+         "qID": "1_1_7352",
+         "questionText": "The tag used to create a hypertext relationship between current document and another URL is",
+         "aAnswer": "<ISINDEX",
+         "bAnswer": "<A>",
+         "cAnswer": "<LINK>",
+         "dAnswer": "none of these",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 2,
+         "qID": "1_2_2714",
+         "questionText": "How can you make an e-mail link?",
+         "aAnswer": "<mail href +\"xxx@y.com\">",
+         "bAnswer": "<a href =\"mail to:xxx@y.com\">",
+         "cAnswer": "<a href = \"xxx@y.com\">",
+         "dAnswer": "Both (b) and (c)",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 3,
+         "qID": "1_3_718",
+         "questionText": "To create a combo box (drop down box) which tag will you use?",
+         "aAnswer": "<select>",
+         "bAnswer": "<list>",
+         "cAnswer": "<input type=\"dropdown\">",
+         "dAnswer": "all of above",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 4,
+         "qID": "1_4_7229",
+         "questionText": "HTML stands for?",
+         "aAnswer": "Hyper Text Markup Language",
+         "bAnswer": "High Text Markup Language",
+         "cAnswer": "Hyper Tabular Markup Language",
+         "dAnswer": "None of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 5,
+         "qID": "1_5_4713",
+         "questionText": "Which of the following tag is used to mark a beginning of Paragraph?",
+         "aAnswer": "<TD>",
+         "bAnswer": "<br>",
+         "cAnswer": "<P>",
+         "dAnswer": "<TR>",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 6,
+         "qID": "1_6_9897",
+         "questionText": "Correct HTML tag for the largest heading is",
+         "aAnswer": "<head>",
+         "bAnswer": "<heading>",
+         "cAnswer": "<h6>",
+         "dAnswer": "<h1>",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 7,
+         "qID": "1_7_8700",
+         "questionText": "The attribute of <form> tag",
+         "aAnswer": "Method",
+         "bAnswer": "Action",
+         "cAnswer": "Both (a)&(b)",
+         "dAnswer": "None of these",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 8,
+         "qID": "1_8_1619",
+         "questionText": "Web pages starts with which off the following tag?",
+         "aAnswer": "<Body>",
+         "bAnswer": "<Title>",
+         "cAnswer": "<HTML>",
+         "dAnswer": "<Form>",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 9,
+         "qID": "1_9_7823",
+         "questionText": "How can you open a link in a new browser window?",
+         "aAnswer": "< a href = \"url\" target = \"new\">",
+         "bAnswer": "<a href = \"url\" target= \"_blank\">",
+         "cAnswer": "<a href = \"url\".new>",
+         "dAnswer": "<a href = \"url\" target =\"open\">",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 10,
+         "qID": "1_10_344",
+         "questionText": "The tag used to create a new list item and also include a hyperlink is",
+         "aAnswer": "<LI>",
+         "bAnswer": "<DL>",
+         "cAnswer": "<DD>",
+         "dAnswer": "<UL>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 11,
+         "qID": "1_11_9306",
+         "questionText": "Which of the tag is used to creates a number list?",
+         "aAnswer": "<LI>",
+         "bAnswer": "<OL>",
+         "cAnswer": "<LI> and <OL>",
+         "dAnswer": "None of these",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 12,
+         "qID": "1_12_7348",
+         "questionText": "The tag used to create a hypertext relationship between current document and another URL is",
+         "aAnswer": "<ISINDEX>",
+         "bAnswer": "<A>",
+         "cAnswer": "<LINK>",
+         "dAnswer": "None of these",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 13,
+         "qID": "1_13_6815",
+         "questionText": "The text inside the <TEXT AREA> tag works like",
+         "aAnswer": "<P> formatted text",
+         "bAnswer": "<T> formatted text",
+         "cAnswer": "<PRE> formatted text",
+         "dAnswer": "none of these",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 14,
+         "qID": "1_14_5083",
+         "questionText": "What is the correct HTML for adding a background color?",
+         "aAnswer": "<background>yellow<Background>",
+         "bAnswer": "<body color = \"yellow\">",
+         "cAnswer": "<body bgcolor = \"yellow\">",
+         "dAnswer": "<body bg =\"yellow\"",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 15,
+         "qID": "1_15_425",
+         "questionText": "Which tag allows you to add a row in a table?",
+         "aAnswer": "<td> and </td>",
+         "bAnswer": "<cr> and </cr>",
+         "cAnswer": "<th> and </th>",
+         "dAnswer": "<tr> and </tr>",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 16,
+         "qID": "1_16_6328",
+         "questionText": "How can you make a bulleted list?",
+         "aAnswer": "<list>",
+         "bAnswer": "<nl>",
+         "cAnswer": "<ul>",
+         "dAnswer": "<ol>",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 17,
+         "qID": "1_17_8123",
+         "questionText": "Choose the correct HTML tag to make a text italic",
+         "aAnswer": "<ii>",
+         "bAnswer": "<italics>",
+         "cAnswer": "<italic>",
+         "dAnswer": "<i>",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 18,
+         "qID": "1_18_483",
+         "questionText": "Choose the correct HTML tag to make a text bold?",
+         "aAnswer": "<b>",
+         "bAnswer": "<bold>",
+         "cAnswer": "<bb>",
+         "dAnswer": "<bld>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 19,
+         "qID": "1_19_5310",
+         "questionText": "Which tag creates a check box for a form in HTML?",
+         "aAnswer": "<checkbox>",
+         "bAnswer": "<input type=\"checkbox\">",
+         "cAnswer": "<input=checkbox>",
+         "dAnswer": "<input checkbox>",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 20,
+         "qID": "1_20_6393",
+         "questionText": "To create a combo box (drop down box) which tag will you use?",
+         "aAnswer": "<select>",
+         "bAnswer": "<list>",
+         "cAnswer": "<input type=\"dropdown\">",
+         "dAnswer": "all of above",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 21,
+         "qID": "1_21_8177",
+         "questionText": "Which of the following attributes is used to specify elements to bind style rules to?",
+         "aAnswer": "Id",
+         "bAnswer": "Class",
+         "cAnswer": "Tag",
+         "dAnswer": "all of the mentioned",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 22,
+         "qID": "1_22_1681",
+         "questionText": "Which selector is used to specify a rule to bind a particular unique element?",
+         "aAnswer": "Id",
+         "bAnswer": "Class",
+         "cAnswer": "Tag",
+         "dAnswer": "both class and tag",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 23,
+         "qID": "1_23_6397",
+         "questionText": "__________ has introduced text, list, box, margin, border, color, and background properties.",
+         "aAnswer": "css",
+         "bAnswer": "selector",
+         "cAnswer": "declaration",
+         "dAnswer": "text color",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 24,
+         "qID": "1_24_9789",
+         "questionText": "The _______property is used to set the color of the text.",
+         "aAnswer": "css",
+         "bAnswer": "selector",
+         "cAnswer": "declaration",
+         "dAnswer": "text color",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 25,
+         "qID": "1_25_9703",
+         "questionText": "The CSS __________properties is used to define the background effects.",
+         "aAnswer": "css",
+         "bAnswer": "selector",
+         "cAnswer": "background",
+         "dAnswer": "text color",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 26,
+         "qID": "1_26_5792",
+         "questionText": "_______ is a platform independent light weighted object based scripting language.",
+         "aAnswer": "java script",
+         "bAnswer": "head",
+         "cAnswer": "number ,string & boolean",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 27,
+         "qID": "1_27_5457",
+         "questionText": "JavaScript support three primitive data types: ___________.",
+         "aAnswer": "java script",
+         "bAnswer": "head",
+         "cAnswer": "number ,string & Boolean",
+         "dAnswer": "none of these",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 28,
+         "qID": "1_28_1119",
+         "questionText": "JavaScript allows two composite data types: __________",
+         "aAnswer": "objects and array",
+         "bAnswer": "head & title",
+         "cAnswer": "number & Boolean",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 29,
+         "qID": "1_29_1652",
+         "questionText": "The script tag must be place in the ______.",
+         "aAnswer": "title",
+         "bAnswer": "head",
+         "cAnswer": "body",
+         "dAnswer": "none of these",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 30,
+         "qID": "1_30_3804",
+         "questionText": "_________ keyword is used to declare variables in java script",
+         "aAnswer": "dim",
+         "bAnswer": "head",
+         "cAnswer": "var",
+         "dAnswer": "none of these",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 31,
+         "qID": "1_31_3046",
+         "questionText": "DOM stand for ___________",
+         "aAnswer": "document object model",
+         "bAnswer": "document object memory",
+         "cAnswer": "document oriented memory",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 32,
+         "qID": "1_32_605",
+         "questionText": "Assignment operators are used to assign values to JavaScript variables.",
+         "aAnswer": "true",
+         "bAnswer": "false",
+         "cAnswer": "both a & b",
+         "dAnswer": "none of these .",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 33,
+         "qID": "1_33_6246",
+         "questionText": "Break statement indicates the end of that Many case.",
+         "aAnswer": "true",
+         "bAnswer": "false",
+         "cAnswer": "both a & b",
+         "dAnswer": "none of these .",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 34,
+         "qID": "1_34_4863",
+         "questionText": "A string simply stores a series of characters.",
+         "aAnswer": "true",
+         "bAnswer": "false",
+         "cAnswer": "both a & b",
+         "dAnswer": "none of these .",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 35,
+         "qID": "1_35_8553",
+         "questionText": "JavaScript support three primitive data types: ________.",
+         "aAnswer": "number, string and Boolean.",
+         "bAnswer": "Object based scripting language",
+         "cAnswer": "nevigator",
+         "dAnswer": "live wire",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 36,
+         "qID": "1_36_3864",
+         "questionText": "_________ is a platform independent objet based scripting language.",
+         "aAnswer": "java script",
+         "bAnswer": "Object based scripting language",
+         "cAnswer": "nevigator",
+         "dAnswer": "live wire",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 37,
+         "qID": "1_37_9447",
+         "questionText": "__________ java script is also called client side java script",
+         "aAnswer": "java script",
+         "bAnswer": "Object based scripting language",
+         "cAnswer": "nevigator",
+         "dAnswer": "live wire",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 38,
+         "qID": "1_38_9928",
+         "questionText": "________ java script is also called server side java script",
+         "aAnswer": "java script",
+         "bAnswer": "Object based scripting language",
+         "cAnswer": "nevigator",
+         "dAnswer": "live wire",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 39,
+         "qID": "1_39_2886",
+         "questionText": "Increment operator, increases the value of variable by what number?",
+         "aAnswer": "1",
+         "bAnswer": "2",
+         "cAnswer": "3",
+         "dAnswer": "4",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 40,
+         "qID": "1_40_285",
+         "questionText": "FUCTION is a block of statements that performs certain task.",
+         "aAnswer": "true",
+         "bAnswer": "false",
+         "cAnswer": "both a and b",
+         "dAnswer": "none of these ..",
+         "correctAnswer": "a"
+      }
+   ],
+   "Unit - 2: Markup Languages": [
+      {
+         "questionNo": 1,
+         "qID": "2_1_1691",
+         "questionText": "__________means the amount of data that can be sent from one point to another in a certain period of time",
+         "aAnswer": "bandwidth",
+         "bAnswer": "html",
+         "cAnswer": "href",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 2,
+         "qID": "2_2_1488",
+         "questionText": "HTML color are specified using predefined color names or ________ values.",
+         "aAnswer": "RGB,",
+         "bAnswer": "RGBA",
+         "cAnswer": "HSLA",
+         "dAnswer": "all of these",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 3,
+         "qID": "2_3_3874",
+         "questionText": "HTML supports__________ standard color names.",
+         "aAnswer": "140",
+         "bAnswer": "3",
+         "cAnswer": "120",
+         "dAnswer": "7",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 4,
+         "qID": "2_4_1775",
+         "questionText": "____this tag is used to give paragraph",
+         "aAnswer": "<p>",
+         "bAnswer": "br",
+         "cAnswer": "<pre>",
+         "dAnswer": "<marquee>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 5,
+         "qID": "2_5_8121",
+         "questionText": "________ tag is used to brake the line it is single tag",
+         "aAnswer": "<p>",
+         "bAnswer": "<br>",
+         "cAnswer": "<pre>",
+         "dAnswer": "<marquee>",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 6,
+         "qID": "2_6_669",
+         "questionText": "________ is pre formatted tags it is used ,it show the without formatted text .",
+         "aAnswer": "<p>",
+         "bAnswer": "br",
+         "cAnswer": "<pre>",
+         "dAnswer": "<marquee>",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 7,
+         "qID": "2_7_6009",
+         "questionText": "__________tag is used to create a scrolling effect to th selected text",
+         "aAnswer": "<p>",
+         "bAnswer": "<br>",
+         "cAnswer": "<pre>",
+         "dAnswer": "<marquee>",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 8,
+         "qID": "2_8_1677",
+         "questionText": "__________ element is used to indicated text quoted from another scource..",
+         "aAnswer": "<blockquote>",
+         "bAnswer": "br",
+         "cAnswer": "<pre>",
+         "dAnswer": "<marquee>",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 9,
+         "qID": "2_9_8380",
+         "questionText": "_______- it is used to show list by order wise .",
+         "aAnswer": "<ol>",
+         "bAnswer": "br",
+         "cAnswer": "<pre>",
+         "dAnswer": "<marquee>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 10,
+         "qID": "2_10_896",
+         "questionText": "_____________ it is used to show list by no particular order wise .it show bulleted wise .",
+         "aAnswer": "<ul>",
+         "bAnswer": "br",
+         "cAnswer": "<pre>",
+         "dAnswer": "<marquee>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 11,
+         "qID": "2_11_7493",
+         "questionText": "________it is a comment , it is used to show additional information in html.",
+         "aAnswer": "<!---->",
+         "bAnswer": "br",
+         "cAnswer": "<pre>",
+         "dAnswer": "<marquee>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 12,
+         "qID": "2_12_1279",
+         "questionText": "_________ it is italic tag , it is used to show the italic font.",
+         "aAnswer": "<i>",
+         "bAnswer": "br",
+         "cAnswer": "<pre>",
+         "dAnswer": "<marquee>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 13,
+         "qID": "2_13_3849",
+         "questionText": "_________ it is used to display a font in a bigger font size .",
+         "aAnswer": "<big>",
+         "bAnswer": "br",
+         "cAnswer": "<pre>",
+         "dAnswer": "<marquee>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 14,
+         "qID": "2_14_7832",
+         "questionText": "_________ this definition tag is used to define the concept .",
+         "aAnswer": "<def>",
+         "bAnswer": "br",
+         "cAnswer": "<pre>",
+         "dAnswer": "<marquee>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 15,
+         "qID": "2_15_3447",
+         "questionText": "________citation tag is used to display a citation in html document .",
+         "aAnswer": "<cite>",
+         "bAnswer": "br",
+         "cAnswer": "<pre>",
+         "dAnswer": "<marquee>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 16,
+         "qID": "2_16_6028",
+         "questionText": "Tag is divided into 2 tags",
+         "aAnswer": "physical",
+         "bAnswer": "logical",
+         "cAnswer": "center tag",
+         "dAnswer": "a and b b both",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 17,
+         "qID": "2_17_7323",
+         "questionText": "__________ this tag is used to make taxt to be aligned cantered.",
+         "aAnswer": "<p>",
+         "bAnswer": "<center>",
+         "cAnswer": "<pre>",
+         "dAnswer": "<marquee>",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 18,
+         "qID": "2_18_7325",
+         "questionText": "To link to the another web site following link is used <a href=\"https://www.lokmat.com/html/\">Visit our lokamat paper </a",
+         "aAnswer": "True",
+         "bAnswer": "False",
+         "cAnswer": "Both a and b",
+         "dAnswer": "None of these.",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 19,
+         "qID": "2_19_9443",
+         "questionText": "________ the space between is the space between content of the cell and cell wall .",
+         "aAnswer": "<p>",
+         "bAnswer": "<center>",
+         "cAnswer": "cell spacing",
+         "dAnswer": "<marquee>",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 20,
+         "qID": "2_20_1965",
+         "questionText": "__________ of the table is used to specify the thickness of the table .",
+         "aAnswer": "border",
+         "bAnswer": "<center>",
+         "cAnswer": "cell spacing",
+         "dAnswer": "<marquee>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 21,
+         "qID": "2_21_5062",
+         "questionText": "_____tag is used to create the rows in a table",
+         "aAnswer": "<tr>",
+         "bAnswer": "<th>",
+         "cAnswer": "<frameset>",
+         "dAnswer": "<a>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 22,
+         "qID": "2_22_6347",
+         "questionText": "__________tag is used to create the table heading of the table",
+         "aAnswer": "<tr>",
+         "bAnswer": "<th>",
+         "cAnswer": "<frameset>",
+         "dAnswer": "<a>",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 23,
+         "qID": "2_23_5992",
+         "questionText": "To make a cell span more than one column, it is called use the _______attribute",
+         "aAnswer": "<tr>",
+         "bAnswer": "colspan",
+         "cAnswer": "<frameset>",
+         "dAnswer": "rowspan",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 24,
+         "qID": "2_24_4380",
+         "questionText": "To make a cell span more than one row, it is called use the _______ attribute.",
+         "aAnswer": "<tr>",
+         "bAnswer": "colspan",
+         "cAnswer": "<frameset>",
+         "dAnswer": "rowspan",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 25,
+         "qID": "2_25_8388",
+         "questionText": "__________ is used to manage the layout the page.",
+         "aAnswer": "<tr>",
+         "bAnswer": "colspan",
+         "cAnswer": "<frame>",
+         "dAnswer": "rowspan",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 26,
+         "qID": "2_26_9849",
+         "questionText": "In html __________ is used to divide the browser the screen into 2 or more then one part.",
+         "aAnswer": "<tr>",
+         "bAnswer": "columun",
+         "cAnswer": "frame",
+         "dAnswer": "rowspan",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 27,
+         "qID": "2_27_7937",
+         "questionText": "______ tag is devide the tag horizontally or vertically .",
+         "aAnswer": "<tr>",
+         "bAnswer": "colspan",
+         "cAnswer": "<frameset>",
+         "dAnswer": "rowspan",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 28,
+         "qID": "2_28_714",
+         "questionText": "___________stands for Transmission Control Protocol/Internet Protocol",
+         "aAnswer": "tcp/ip",
+         "bAnswer": "FTP",
+         "cAnswer": "Physical",
+         "dAnswer": "hyperlink",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 29,
+         "qID": "2_29_9687",
+         "questionText": "________is a set of standardized rules that allow computers to communicate on a network such as the internet.",
+         "aAnswer": "tcp/ip",
+         "bAnswer": "FTP",
+         "cAnswer": "Physical",
+         "dAnswer": "hyperlink",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 30,
+         "qID": "2_30_8568",
+         "questionText": "The __________ is a standard network protocol used for the transfer of computer files between a client and server on a computer network",
+         "aAnswer": "tcp/ip",
+         "bAnswer": "FTP",
+         "cAnswer": "Physical",
+         "dAnswer": "hyperlink",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 31,
+         "qID": "2_31_5814",
+         "questionText": "The ____________element contains meta information about the HTML page",
+         "aAnswer": "<head>",
+         "bAnswer": "FTP",
+         "cAnswer": "Physical",
+         "dAnswer": "hyperlink",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 32,
+         "qID": "2_32_1990",
+         "questionText": "The ________element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.",
+         "aAnswer": "<head>",
+         "bAnswer": "<body>",
+         "cAnswer": "Physical",
+         "dAnswer": "hyperlink",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 33,
+         "qID": "2_33_2850",
+         "questionText": "_______tag are used to indicate exactly how specific characters are to be formatted",
+         "aAnswer": "tcp/ip",
+         "bAnswer": "FTP",
+         "cAnswer": "Physical",
+         "dAnswer": "hyperlink",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 34,
+         "qID": "2_34_8025",
+         "questionText": "The LINKS starts at the ((Source)) anchor and points to the ((Destination)) anchor. These LINKS are called as ___________",
+         "aAnswer": "<head>",
+         "bAnswer": "<body>",
+         "cAnswer": "Physical",
+         "dAnswer": "hyperlink",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 35,
+         "qID": "2_35_9928",
+         "questionText": "_______it is used to To create a link to another documents by using href attribute",
+         "aAnswer": "<a>",
+         "bAnswer": "checkbox",
+         "cAnswer": "<textarea>",
+         "dAnswer": "<text>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 36,
+         "qID": "2_36_4247",
+         "questionText": "__________accept only true or false we can select more then one option out of given option",
+         "aAnswer": "<a>",
+         "bAnswer": "checkbox",
+         "cAnswer": "<textarea>",
+         "dAnswer": "<text>",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 37,
+         "qID": "2_37_410",
+         "questionText": "_________it is used to give the show the input box with multiple rows and column.",
+         "aAnswer": "<a>",
+         "bAnswer": "checkbox",
+         "cAnswer": "<textarea>",
+         "dAnswer": "<text>",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 38,
+         "qID": "2_38_9000",
+         "questionText": "__________- accept the any text in intput box..",
+         "aAnswer": "<a>",
+         "bAnswer": "checkbox",
+         "cAnswer": "<textarea>",
+         "dAnswer": "<text>",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 39,
+         "qID": "2_39_5255",
+         "questionText": "_____________it is used to submit the button ( accept the data) to upload",
+         "aAnswer": "<submit>",
+         "bAnswer": "checkbox",
+         "cAnswer": "<textarea>",
+         "dAnswer": "<text>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 40,
+         "qID": "2_40_8250",
+         "questionText": "____________ it is used with text , when we use to hide the text matter",
+         "aAnswer": "<password>",
+         "bAnswer": "checkbox",
+         "cAnswer": "<textarea>",
+         "dAnswer": "<text>",
+         "correctAnswer": "a"
+      }
+   ],
+   "Unit - 3: JAVA Script": [
+      {
+         "questionNo": 1,
+         "qID": "3_1_758",
+         "questionText": "Which data type value is returned by all transcendental math functions?",
+         "aAnswer": "int",
+         "bAnswer": "float",
+         "cAnswer": "double",
+         "dAnswer": "long",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 2,
+         "qID": "3_2_9726",
+         "questionText": "Which of these coding types is used for data type characters in Java?",
+         "aAnswer": "ASCII",
+         "bAnswer": "ISO-LATIN-1",
+         "cAnswer": "UNICODE",
+         "dAnswer": "None of the mentioned",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 3,
+         "qID": "3_3_8355",
+         "questionText": "Which of these values can a boolean variable contain?",
+         "aAnswer": "True & False",
+         "bAnswer": "0 & 1",
+         "cAnswer": "Any integer value",
+         "dAnswer": "true",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 4,
+         "qID": "3_4_2013",
+         "questionText": "Which of these operators is used to allocate memory to array variable in Javascript?",
+         "aAnswer": "malloc",
+         "bAnswer": "alloc",
+         "cAnswer": "new",
+         "dAnswer": "new malloc",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 5,
+         "qID": "3_5_6057",
+         "questionText": "Which of these is an incorrect array declaration?",
+         "aAnswer": "int x[] = new int[5]",
+         "bAnswer": "int [] arr = new int[5]",
+         "cAnswer": "intarr[] = new int[5]",
+         "dAnswer": "int x[] = int [5] new",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 6,
+         "qID": "3_6_9003",
+         "questionText": "Decrement operator, --, decreases the value of variable by what number?",
+         "aAnswer": "1",
+         "bAnswer": "2",
+         "cAnswer": "3",
+         "dAnswer": "4",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 7,
+         "qID": "3_7_3193",
+         "questionText": "Which of these is not a bitwise operator?",
+         "aAnswer": "&",
+         "bAnswer": "&=",
+         "cAnswer": "|=",
+         "dAnswer": "<=",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 8,
+         "qID": "3_8_5237",
+         "questionText": "Which right shift operator preserves the sign of the value?",
+         "aAnswer": "<<",
+         "bAnswer": ">>",
+         "cAnswer": "<<=",
+         "dAnswer": ">>=",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 9,
+         "qID": "3_9_9452",
+         "questionText": "What is the output of relational operators?",
+         "aAnswer": "Integer",
+         "bAnswer": "Boolean",
+         "cAnswer": "Characters",
+         "dAnswer": "Double",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 10,
+         "qID": "3_10_5172",
+         "questionText": ". Which of these is returned by \"greater than\", \"less than\" and \"equal to\" operators?",
+         "aAnswer": "Integers",
+         "bAnswer": "Floating � point numbers",
+         "cAnswer": "Boolean",
+         "dAnswer": "None of the mentioned",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 11,
+         "qID": "3_11_2786",
+         "questionText": "Which of these selection statements test only for equality?",
+         "aAnswer": "if",
+         "bAnswer": "switch",
+         "cAnswer": "if & switch",
+         "dAnswer": "none of the mentioned",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 12,
+         "qID": "3_12_2488",
+         "questionText": "Which of the following loops will execute the body of loop even when condition controlling the loop is initially false?",
+         "aAnswer": "do-while",
+         "bAnswer": "while",
+         "cAnswer": "for",
+         "dAnswer": "",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 13,
+         "qID": "3_13_8248",
+         "questionText": "Which of these jump statements can skip processing the remainder of the code in its body for a particular iteration?",
+         "aAnswer": "break",
+         "bAnswer": "return",
+         "cAnswer": "exit",
+         "dAnswer": "continue",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 14,
+         "qID": "3_14_3340",
+         "questionText": "Which of the following is not a decision making statement?",
+         "aAnswer": "if",
+         "bAnswer": "if-else",
+         "cAnswer": "switch",
+         "dAnswer": "do-while",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 15,
+         "qID": "3_15_3767",
+         "questionText": "Which of the following is not a valid flow control statement?",
+         "aAnswer": "exit()",
+         "bAnswer": "break",
+         "cAnswer": "continue",
+         "dAnswer": "return",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 16,
+         "qID": "3_16_9058",
+         "questionText": "The CSS background properties are used to define the ___________effects.",
+         "aAnswer": "background",
+         "bAnswer": "customize",
+         "cAnswer": "class",
+         "dAnswer": "id rule",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 17,
+         "qID": "3_17_1827",
+         "questionText": "CSS border properties allow us to__________ the borders.",
+         "aAnswer": "background",
+         "bAnswer": "customize",
+         "cAnswer": "class",
+         "dAnswer": "id rule",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 18,
+         "qID": "3_18_7036",
+         "questionText": "By applying an_______ a style can be applied to just a single tag.",
+         "aAnswer": "background",
+         "bAnswer": "customize",
+         "cAnswer": "class",
+         "dAnswer": "id rule",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 19,
+         "qID": "3_19_6138",
+         "questionText": "_________selectors are used to specify a group of elements.",
+         "aAnswer": "background",
+         "bAnswer": "customize",
+         "cAnswer": "class",
+         "dAnswer": "id rule",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 20,
+         "qID": "3_20_5800",
+         "questionText": "In CSS, \"font-size\" can be called as ________",
+         "aAnswer": "property name",
+         "bAnswer": "selector",
+         "cAnswer": "declaration",
+         "dAnswer": "text color",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 21,
+         "qID": "3_21_2906",
+         "questionText": "In CSS, h1 can be called as _______",
+         "aAnswer": "property name",
+         "bAnswer": "selector",
+         "cAnswer": "declaration",
+         "dAnswer": "text color",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 22,
+         "qID": "3_22_1554",
+         "questionText": "In , CSS \"color:red\" can be called as _____________",
+         "aAnswer": "property name",
+         "bAnswer": "selector",
+         "cAnswer": "declaration",
+         "dAnswer": "text color",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 23,
+         "qID": "3_23_7923",
+         "questionText": "Reset (button) :- it is used to reset the button ( cancel the data) to upload",
+         "aAnswer": "<reset>",
+         "bAnswer": "checkbox",
+         "cAnswer": "<textarea>",
+         "dAnswer": "<text>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 24,
+         "qID": "3_24_4763",
+         "questionText": "CSS different the tags and data .... it menace it store the data in different file and store the tags in different file . ...it minimize the size of the file .",
+         "aAnswer": "css",
+         "bAnswer": "html",
+         "cAnswer": "<textarea>",
+         "dAnswer": "<text>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 25,
+         "qID": "3_25_8294",
+         "questionText": "_______ describes how HTML elements are to be displayed on screen, paper, or in other media",
+         "aAnswer": "css",
+         "bAnswer": "html",
+         "cAnswer": "<textarea>",
+         "dAnswer": "<text>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 26,
+         "qID": "3_26_198",
+         "questionText": "Central Computer which is powerful than other computers in the network is called as ________",
+         "aAnswer": "server",
+         "bAnswer": "protocol",
+         "cAnswer": "network",
+         "dAnswer": "Internet",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 27,
+         "qID": "3_27_9123",
+         "questionText": "HTTP is a __________ protocol.",
+         "aAnswer": "server",
+         "bAnswer": "protocol",
+         "cAnswer": "connection oriented",
+         "dAnswer": "Internet",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 28,
+         "qID": "3_28_5377",
+         "questionText": "The FTP is a protocol that is used to transfer files between two computers over a ______________.",
+         "aAnswer": "server and protocol",
+         "bAnswer": "protocol & internet",
+         "cAnswer": "connection & oriented",
+         "dAnswer": "network and Internet",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 29,
+         "qID": "3_29_1933",
+         "questionText": "A client can use the ________request to get a web resource from the server.",
+         "aAnswer": "PUT",
+         "bAnswer": "POST",
+         "cAnswer": "GET",
+         "dAnswer": "HEAD",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 30,
+         "qID": "3_30_6694",
+         "questionText": "Websites are uploaded _______",
+         "aAnswer": "address",
+         "bAnswer": "serve",
+         "cAnswer": "cache",
+         "dAnswer": "client",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 31,
+         "qID": "3_31_9470",
+         "questionText": "HTML web pages can be read and rendered by __________",
+         "aAnswer": "web browser",
+         "bAnswer": "server",
+         "cAnswer": "empty",
+         "dAnswer": "head tag",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 32,
+         "qID": "3_32_7153",
+         "questionText": "The _________ tag is an inline container used to mark up a part of a text, or a part of a document.",
+         "aAnswer": "<map>",
+         "bAnswer": "<span>",
+         "cAnswer": "<img>",
+         "dAnswer": "<tt>",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 33,
+         "qID": "3_33_6704",
+         "questionText": "<INPUT> is ________tag.",
+         "aAnswer": "web browser",
+         "bAnswer": "server",
+         "cAnswer": "empty",
+         "dAnswer": "head tag",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 34,
+         "qID": "3_34_9231",
+         "questionText": "The HTML tag to left align the content inside a table cell is <td align = \"left\">.",
+         "aAnswer": "true",
+         "bAnswer": "false",
+         "cAnswer": "both a and b",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 35,
+         "qID": "3_35_6781",
+         "questionText": "The body tag usually used after _________",
+         "aAnswer": "web browser",
+         "bAnswer": "server",
+         "cAnswer": "empty",
+         "dAnswer": "head tag",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 36,
+         "qID": "3_36_4153",
+         "questionText": "Tags and text that are not directly displayed on the page are written in ___________section.",
+         "aAnswer": "web browser",
+         "bAnswer": "title",
+         "cAnswer": "empty",
+         "dAnswer": "head",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 37,
+         "qID": "3_37_7949",
+         "questionText": "Some tags enclose the text. Those tags are known as ___________",
+         "aAnswer": "single tag",
+         "bAnswer": "paired tag",
+         "cAnswer": "empty",
+         "dAnswer": "head",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 38,
+         "qID": "3_38_1373",
+         "questionText": "The <strike> tag is used to _________the text or sentence.",
+         "aAnswer": "single tag",
+         "bAnswer": "paired tag",
+         "cAnswer": "strikeout",
+         "dAnswer": "head",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 39,
+         "qID": "3_39_1191",
+         "questionText": "The <del> tag is used to display ________ text form a document",
+         "aAnswer": "single tag",
+         "bAnswer": "paired tag",
+         "cAnswer": "strikeout",
+         "dAnswer": "deleted",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 40,
+         "qID": "3_40_7624",
+         "questionText": "_________ is used to give additional information.",
+         "aAnswer": "title tag",
+         "bAnswer": "paired tag",
+         "cAnswer": "strikeout",
+         "dAnswer": "deleted",
+         "correctAnswer": "a"
+      }
+   ],
+   "Unit - 4: Function and String in PHP": [
+      {
+         "questionNo": 1,
+         "qID": "4_1_8167",
+         "questionText": "What is the range of short data type in Java script ?",
+         "aAnswer": "-128 to 127",
+         "bAnswer": "-32768 to 32767",
+         "cAnswer": "-2147483648 to 2147483647",
+         "dAnswer": "None of the mentioned",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 2,
+         "qID": "4_2_7284",
+         "questionText": "What is the range of byte data type in Java script?",
+         "aAnswer": "-128 to 127",
+         "bAnswer": "-32768 to 32767",
+         "cAnswer": "-2147483648 to 2147483647",
+         "dAnswer": "None of the mentioned",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 3,
+         "qID": "4_3_836",
+         "questionText": "An expression involving byte, int, and literal numbers is promoted to which of these?",
+         "aAnswer": "int",
+         "bAnswer": "long",
+         "cAnswer": "byte",
+         "dAnswer": "float",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 4,
+         "qID": "4_4_285",
+         "questionText": "Which data type value is returned by all transcendental math functions?",
+         "aAnswer": "int",
+         "bAnswer": "float",
+         "cAnswer": "double",
+         "dAnswer": "long",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 5,
+         "qID": "4_5_4407",
+         "questionText": "What is the numerical range of a char data type in Java script?",
+         "aAnswer": "-128 to 127",
+         "bAnswer": "0 to 256",
+         "cAnswer": "0 to 32767",
+         "dAnswer": "0 to 65535",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 6,
+         "qID": "4_6_3814",
+         "questionText": "Which of these coding types is used for data type characters in Java script?",
+         "aAnswer": "ASCII",
+         "bAnswer": "ISO-LATIN-1",
+         "cAnswer": "UNICODE",
+         "dAnswer": "None of the mentioned",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 7,
+         "qID": "4_7_1348",
+         "questionText": "Which of these values can a Boolean variable contain?",
+         "aAnswer": "True & False",
+         "bAnswer": "0 & 1",
+         "cAnswer": "Any integer value",
+         "dAnswer": "true",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 8,
+         "qID": "4_8_311",
+         "questionText": "Which one is a valid declaration of a Boolean?",
+         "aAnswer": "boolean b1 = 1;",
+         "bAnswer": "boolean b2 = `false';",
+         "cAnswer": "boolean b3 = false;",
+         "dAnswer": "boolean b4 = `true'",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 9,
+         "qID": "4_9_3968",
+         "questionText": "Which of these operators is used to allocate memory to array variable in Java script?",
+         "aAnswer": "malloc",
+         "bAnswer": "alloc",
+         "cAnswer": "new",
+         "dAnswer": "new malloc",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 10,
+         "qID": "4_10_498",
+         "questionText": "Which of these is an incorrect array declaration?",
+         "aAnswer": "intarr[] = new int[5]",
+         "bAnswer": "int [] arr = new int[5]",
+         "cAnswer": "intarr[] = new int[5]",
+         "dAnswer": "intarr[] = int [5] new",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 11,
+         "qID": "4_11_6784",
+         "questionText": "Which of these is necessary to specify at time of array initialization?",
+         "aAnswer": "Row",
+         "bAnswer": "Column",
+         "cAnswer": "Both Row and Column",
+         "dAnswer": "None of the mentioned",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 12,
+         "qID": "4_12_8095",
+         "questionText": "Which of the following can be operands of arithmetic operators?",
+         "aAnswer": "Numeric",
+         "bAnswer": "Boolean",
+         "cAnswer": "Characters",
+         "dAnswer": "Both Numeric & Characters",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 13,
+         "qID": "4_13_5133",
+         "questionText": "Modulus operator, %, can be applied to which of these?",
+         "aAnswer": "Integers",
+         "bAnswer": "Floating � point numbers",
+         "cAnswer": "Both Integers and floating � point numbers",
+         "dAnswer": "None of the mentioned",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 14,
+         "qID": "4_14_5295",
+         "questionText": "Decrement operator, --, decreases the value of variable by what number?",
+         "aAnswer": "1",
+         "bAnswer": "2",
+         "cAnswer": "3",
+         "dAnswer": "4",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 15,
+         "qID": "4_15_4257",
+         "questionText": "Which of these is not a bitwise operator?",
+         "aAnswer": "&",
+         "bAnswer": "&=",
+         "cAnswer": "|=",
+         "dAnswer": "<=",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 16,
+         "qID": "4_16_2048",
+         "questionText": "Which operator is used to invert all the digits in a binary representation of a number?",
+         "aAnswer": "~",
+         "bAnswer": "<<<",
+         "cAnswer": ">>>",
+         "dAnswer": "^",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 17,
+         "qID": "4_17_8629",
+         "questionText": "On applying Left shift operator, <<, on integer bits are lost one they are hifted past which position bit?",
+         "aAnswer": "1",
+         "bAnswer": "32",
+         "cAnswer": "33",
+         "dAnswer": "31",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 18,
+         "qID": "4_18_4858",
+         "questionText": "Which right shift operator preserves the sign of the value?",
+         "aAnswer": "<<",
+         "bAnswer": ">>",
+         "cAnswer": "<<=",
+         "dAnswer": ">>=",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 19,
+         "qID": "4_19_4986",
+         "questionText": "Which of these statements are incorrect?",
+         "aAnswer": "The left shift operator, <<, shifts all of the bits in a value to the left specified number of times",
+         "bAnswer": "The right shift operator, >>, shifts all of the bits in a value to the right specified number of times",
+         "cAnswer": "The left shift operator can be used as an alternative to multiplying by 2",
+         "dAnswer": "The right shift operator automatically fills the higher order bits with 0",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 20,
+         "qID": "4_20_9391",
+         "questionText": "What is the output of relational operators?",
+         "aAnswer": "Integer",
+         "bAnswer": "Boolean",
+         "cAnswer": "Characters",
+         "dAnswer": "Double",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 21,
+         "qID": "4_21_6324",
+         "questionText": ". Which of these is returned by \"greater than\", \"less than\" and \"equal to\" operators?",
+         "aAnswer": "Integers",
+         "bAnswer": "Floating � point numbers",
+         "cAnswer": "Boolean",
+         "dAnswer": "None of the mentioned",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 22,
+         "qID": "4_22_1692",
+         "questionText": "Which of these operators can skip evaluating right hand operand?",
+         "aAnswer": "!",
+         "bAnswer": "|",
+         "cAnswer": "&",
+         "dAnswer": "&&",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 23,
+         "qID": "4_23_3128",
+         "questionText": "Which of these have highest precedence?",
+         "aAnswer": "()",
+         "bAnswer": "++",
+         "cAnswer": "*",
+         "dAnswer": ">>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 24,
+         "qID": "4_24_7888",
+         "questionText": "Which of these statements are incorrect?",
+         "aAnswer": "Equal to operator has least precedence",
+         "bAnswer": "Brackets () have highest precedence",
+         "cAnswer": "Division operator, /, has higher precedence than multiplication operator",
+         "dAnswer": "Addition operator, +, and subtraction operator have equal precedence",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 25,
+         "qID": "4_25_806",
+         "questionText": "Which of these selection statements test only for equality?",
+         "aAnswer": "if",
+         "bAnswer": "switch",
+         "cAnswer": "if & switch",
+         "dAnswer": "none of the mentioned",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 26,
+         "qID": "4_26_5392",
+         "questionText": ". Which of these are selection statements in Java script?",
+         "aAnswer": "if()",
+         "bAnswer": "for()",
+         "cAnswer": "continue",
+         "dAnswer": "break",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 27,
+         "qID": "4_27_4825",
+         "questionText": "Which of the following loops will execute the body of loop even when condition controlling the loop is initially false?",
+         "aAnswer": "do-while",
+         "bAnswer": "while",
+         "cAnswer": "for",
+         "dAnswer": "",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 28,
+         "qID": "4_28_926",
+         "questionText": "Which of these jump statements can skip processing the remainder of the code in its body for a particular iteration?",
+         "aAnswer": "break",
+         "bAnswer": "return",
+         "cAnswer": "exit",
+         "dAnswer": "continue",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 29,
+         "qID": "4_29_9888",
+         "questionText": "Which of the following is not a decision making statement?",
+         "aAnswer": "if",
+         "bAnswer": "if-else",
+         "cAnswer": "switch",
+         "dAnswer": "do-while",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 30,
+         "qID": "4_30_9176",
+         "questionText": "Which of the following is not a valid jump statement?",
+         "aAnswer": "break",
+         "bAnswer": "goto",
+         "cAnswer": "continue",
+         "dAnswer": "return",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 31,
+         "qID": "4_31_4179",
+         "questionText": "Which of the following is not a valid flow control statement?",
+         "aAnswer": "exit()",
+         "bAnswer": "break",
+         "cAnswer": "continue",
+         "dAnswer": "return",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 32,
+         "qID": "4_32_6202",
+         "questionText": "web browser support JPEG .PNG ,GIE ,Image ,and PDF",
+         "aAnswer": "true",
+         "bAnswer": "false",
+         "cAnswer": "both a & b",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 33,
+         "qID": "4_33_6754",
+         "questionText": "_______is the measured as the amount of data that can be transferred from one point to another point within a specific amount of time.",
+         "aAnswer": "HTTP",
+         "bAnswer": "Bandwidth",
+         "cAnswer": "webpage",
+         "dAnswer": "Dream viewer",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 34,
+         "qID": "4_34_942",
+         "questionText": "A ___________ is a document, typically written in plain text distributed with formatting instruction of Hypertext markup languages like HTML,XHTML",
+         "aAnswer": "HTTP",
+         "bAnswer": "Bandwidth",
+         "cAnswer": "webpage",
+         "dAnswer": "Dream viewer",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 35,
+         "qID": "4_35_3230",
+         "questionText": "___________ Stands for Hypertext markup languages for displaying web pages and other information that can be displayed in a web browser",
+         "aAnswer": "HTTP",
+         "bAnswer": "Bandwidth",
+         "cAnswer": "webpage",
+         "dAnswer": "Dream viewer",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 36,
+         "qID": "4_36_3237",
+         "questionText": "client server model Requires regular maintenance and updates .",
+         "aAnswer": "true",
+         "bAnswer": "false",
+         "cAnswer": "both a & b",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 37,
+         "qID": "4_37_1149",
+         "questionText": "Cost of buying and running a server for client serve model are high .",
+         "aAnswer": "true",
+         "bAnswer": "false",
+         "cAnswer": "both a & b",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 38,
+         "qID": "4_38_1555",
+         "questionText": "client server model are Dependence on a central location for operation.",
+         "aAnswer": "true",
+         "bAnswer": "false",
+         "cAnswer": "both a & b",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 39,
+         "qID": "4_39_5290",
+         "questionText": "A section in a document that will have a light blue background color: following tags are true or false\\n<div style=\"\"\"\"background-color:lightblue\"\"\"\">\\n<h3>This is a heading</h3>\\n<p>This is a paragraph.</p>\\n</div>\"\"\"",
+         "aAnswer": "true",
+         "bAnswer": "false",
+         "cAnswer": "both a & b",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 40,
+         "qID": "4_40_7706",
+         "questionText": "Following are the types of CSS , which one is not type of CSS.",
+         "aAnswer": "Inline CSS:",
+         "bAnswer": "Internal or Embedded CSS",
+         "cAnswer": "External CSS:",
+         "dAnswer": "none of these.",
+         "correctAnswer": "d"
+      }
+   ],
+   "Unit - 5 Arrays in PHP": [
+      {
+         "questionNo": 1,
+         "qID": "5_1_5664",
+         "questionText": "The _______tag is used to define a client-side image-map. An image-map is an image with clickable area",
+         "aAnswer": "<map>",
+         "bAnswer": "<span>",
+         "cAnswer": "<img>",
+         "dAnswer": "<tt>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 2,
+         "qID": "5_2_5415",
+         "questionText": "The move from one page to another page in website is called as.__________",
+         "aAnswer": "server machine",
+         "bAnswer": "links",
+         "cAnswer": "page layout",
+         "dAnswer": "navigation",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 3,
+         "qID": "5_3_2622",
+         "questionText": "The _______tag is an inline container used to mark up a part of a text, or a part of a document.",
+         "aAnswer": "<map>",
+         "bAnswer": "<span>",
+         "cAnswer": "<img>",
+         "dAnswer": "<tt>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 4,
+         "qID": "5_4_4209",
+         "questionText": "The _______ tag provides no visual change by itself, but when it is marked, you can style it with CSS, or manipulate it with JavaScript.",
+         "aAnswer": "<map>",
+         "bAnswer": "<span>",
+         "cAnswer": "<img>",
+         "dAnswer": "<tt>",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 5,
+         "qID": "5_5_6180",
+         "questionText": "The _________ tag defines an image in an HTML page.",
+         "aAnswer": "<map>",
+         "bAnswer": "<span>",
+         "cAnswer": "<img>",
+         "dAnswer": "<tt>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 6,
+         "qID": "5_6_3648",
+         "questionText": "The ____________tag has two required attributes: src and alt.",
+         "aAnswer": "<map>",
+         "bAnswer": "<span>",
+         "cAnswer": "<img>",
+         "dAnswer": "<tt>",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 7,
+         "qID": "5_7_1995",
+         "questionText": "The _____________element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.",
+         "aAnswer": "<map>",
+         "bAnswer": "<div>",
+         "cAnswer": "<img>",
+         "dAnswer": "<tt>",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 8,
+         "qID": "5_8_2202",
+         "questionText": "_________tag Indicates that the text should be used with a font such as Courier that allots the same width to each character.",
+         "aAnswer": "<map>",
+         "bAnswer": "<span>",
+         "cAnswer": "<img>",
+         "dAnswer": "<tt>",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 9,
+         "qID": "5_9_1402",
+         "questionText": "_____________ tag Indicates that the text should be displayed in a small font. Available in HTML 3.0 or higher.",
+         "aAnswer": "<small>",
+         "bAnswer": "<em>",
+         "cAnswer": "<u>",
+         "dAnswer": "<strong >",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 10,
+         "qID": "5_10_4375",
+         "questionText": "______tag Indicates that the text should be displayed underlined. Not all browsers support this tag.",
+         "aAnswer": "<small>",
+         "bAnswer": "<em>",
+         "cAnswer": "<u>",
+         "dAnswer": "<strong >",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 11,
+         "qID": "5_11_5759",
+         "questionText": "___________Indicates that characters should be emphasized in some way. Usually displayed in italics.",
+         "aAnswer": "<small>",
+         "bAnswer": "<em>",
+         "cAnswer": "<u>",
+         "dAnswer": "<strong >",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 12,
+         "qID": "5_12_2737",
+         "questionText": "_________Emphasizes characters more strongly than <EM>. Usually displayed in a bold font",
+         "aAnswer": "<small>",
+         "bAnswer": "<em>",
+         "cAnswer": "<u>",
+         "dAnswer": "<strong >",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 13,
+         "qID": "5_13_5494",
+         "questionText": "_________tag Used to offset text that the user should enter. Often displayed in a Courier font or a similar font that allots the same width to each character.",
+         "aAnswer": "<small>",
+         "bAnswer": "<em>",
+         "cAnswer": "<kbd >",
+         "dAnswer": "<strong >",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 14,
+         "qID": "5_14_81",
+         "questionText": "________Indicates a variable. Often displayed in italics or underlined.",
+         "aAnswer": "<var>",
+         "bAnswer": "<em>",
+         "cAnswer": "<kbd >",
+         "dAnswer": "<strong >",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 15,
+         "qID": "5_15_5227",
+         "questionText": "_________Indicates short quotes or citations. Often italized by browsers.",
+         "aAnswer": "<small>",
+         "bAnswer": "<cite>",
+         "cAnswer": "<kbd >",
+         "dAnswer": "<strong >",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 16,
+         "qID": "5_16_5886",
+         "questionText": "The _________tag defines a hyperlink, which is used to link from one page to another.",
+         "aAnswer": "<a>",
+         "bAnswer": "<cite>",
+         "cAnswer": "<kbd >",
+         "dAnswer": "<strong >",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 17,
+         "qID": "5_17_1019",
+         "questionText": "The ________ele1ment defines a table row, the <th> element defines a table header, and the <td> element defines a table cell.",
+         "aAnswer": "<small>",
+         "bAnswer": "<tr>",
+         "cAnswer": "<kbd >",
+         "dAnswer": "<strong >",
+         "correctAnswer": "b"
+      },
+      {
+         "questionNo": 18,
+         "qID": "5_18_2302",
+         "questionText": "The _______ tag is used to create in an HTML table.",
+         "aAnswer": "<table>",
+         "bAnswer": "<tr>",
+         "cAnswer": "<td >",
+         "dAnswer": "<th >",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 19,
+         "qID": "5_19_6986",
+         "questionText": "CSS stands for ___________",
+         "aAnswer": "Cascading Style Sheets",
+         "bAnswer": "Cascading super Sheets",
+         "cAnswer": "Cascading Style excel sheet",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 20,
+         "qID": "5_20_8861",
+         "questionText": "_________means the way to move from one page to another page in website. To move from one page to another pages hyperlinks are used.",
+         "aAnswer": "HTTP",
+         "bAnswer": "Bandwidth",
+         "cAnswer": "Navigation",
+         "dAnswer": "Dream viewer",
+         "correctAnswer": "c"
+      },
+      {
+         "questionNo": 21,
+         "qID": "5_21_3982",
+         "questionText": "__________ is Web development software . Create, code and manage dynamic websites easily with a smart, simplified coding engine",
+         "aAnswer": "HTTP",
+         "bAnswer": "Bandwidth",
+         "cAnswer": "webpage",
+         "dAnswer": "Dream viewer",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 22,
+         "qID": "5_22_823",
+         "questionText": "________ is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.",
+         "aAnswer": "PHP",
+         "bAnswer": "java script",
+         "cAnswer": "Angular js",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 23,
+         "qID": "5_23_184",
+         "questionText": "_______ is a object oriented programming language , it is used to create the object...",
+         "aAnswer": "PHP",
+         "bAnswer": "java script",
+         "cAnswer": "Angular js",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 24,
+         "qID": "5_24_2783",
+         "questionText": "A ________ script can be placed anywhere in the document.",
+         "aAnswer": "PHP",
+         "bAnswer": "java script c",
+         "cAnswer": "Angular js",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 25,
+         "qID": "5_25_3557",
+         "questionText": "The default file extension for PHP files is _________",
+         "aAnswer": ".PHP",
+         "bAnswer": ".js",
+         "cAnswer": ".Ajs",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 26,
+         "qID": "5_26_2200",
+         "questionText": "__________ is used to show the out put ...or give message..same as printf in c language...",
+         "aAnswer": "Echo",
+         "bAnswer": "java script",
+         "cAnswer": "Angular js",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 27,
+         "qID": "5_27_5402",
+         "questionText": "A PHP script starts with <?php and ends with ?>:<?php// PHP code goes here?>",
+         "aAnswer": "true",
+         "bAnswer": "false",
+         "cAnswer": "both a and b",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 28,
+         "qID": "5_28_49",
+         "questionText": "PHP code is executed on the server, and the result is returned to the browser as plain HTML",
+         "aAnswer": "true",
+         "bAnswer": "false",
+         "cAnswer": "both a and b",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 29,
+         "qID": "5_29_449",
+         "questionText": "PHP files can contain text, HTML, CSS, JavaScript, and PHP code",
+         "aAnswer": "true",
+         "bAnswer": "false",
+         "cAnswer": "both a and b",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 30,
+         "qID": "5_30_4337",
+         "questionText": "PHP runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)",
+         "aAnswer": "true",
+         "bAnswer": "false",
+         "cAnswer": "both a and b",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 31,
+         "qID": "5_31_6154",
+         "questionText": "PHP is compatible with almost all servers used today (Apache, IIS, etc.)",
+         "aAnswer": "true",
+         "bAnswer": "false",
+         "cAnswer": "both a and b",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 32,
+         "qID": "5_32_682",
+         "questionText": "PHP supports a ___________ range of databases",
+         "aAnswer": "wide",
+         "bAnswer": "small",
+         "cAnswer": "short",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 33,
+         "qID": "5_33_263",
+         "questionText": "PHP supports the following data types:",
+         "aAnswer": "String",
+         "bAnswer": "Integer",
+         "cAnswer": "Float (floating point numbers - also called double)",
+         "dAnswer": "all of the above .",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 34,
+         "qID": "5_34_9268",
+         "questionText": "In PHP, an object must be_________declared.",
+         "aAnswer": "explicitly",
+         "bAnswer": "implicitly",
+         "cAnswer": "both a and b",
+         "dAnswer": "None of these",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 35,
+         "qID": "5_35_713",
+         "questionText": "PHP divides the operators in the following groups:",
+         "aAnswer": "Increment/Decrement operators",
+         "bAnswer": "Logical operators",
+         "cAnswer": "String operators",
+         "dAnswer": "all of the above",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 36,
+         "qID": "5_36_7682",
+         "questionText": "The basic assignment operator in PHP is __________ It means that the left operand gets set to the value of the assignment expression on the right.",
+         "aAnswer": "=",
+         "bAnswer": "++",
+         "cAnswer": "==",
+         "dAnswer": "?",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 37,
+         "qID": "5_37_5734",
+         "questionText": "the _________ statement is used to perform different actions based on different conditions",
+         "aAnswer": "switch",
+         "bAnswer": "if condition",
+         "cAnswer": "foreach",
+         "dAnswer": "while",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 38,
+         "qID": "5_38_6740",
+         "questionText": "In PHP, we have the following loop types:",
+         "aAnswer": "while loop",
+         "bAnswer": "for loop",
+         "cAnswer": "foreach",
+         "dAnswer": "all the these.",
+         "correctAnswer": "d"
+      },
+      {
+         "questionNo": 39,
+         "qID": "5_39_1314",
+         "questionText": "In php, A ___________ is a block of statements that can be used repeatedly in a program.",
+         "aAnswer": "function",
+         "bAnswer": "procedure",
+         "cAnswer": "block",
+         "dAnswer": "loop",
+         "correctAnswer": "a"
+      },
+      {
+         "questionNo": 40,
+         "qID": "5_40_1070",
+         "questionText": "In php A function will not execute automatically when a page loads.",
+         "aAnswer": "true",
+         "bAnswer": "false",
+         "cAnswer": "both a and b",
+         "dAnswer": "none of these",
+         "correctAnswer": "a"
+      }
+   ]
+}
