@@ -28,8 +28,6 @@ var answerResult = "";
   var settingsScreen = document.getElementById("settings-screen");
 }
 
-
-
 // var Buttons
 //goto buttons
 {
@@ -68,13 +66,17 @@ var answerResult = "";
   });
 }
 function isAnswerCorrect(ansText) {
-  // alert(ansText)
-  window.answerResult = "Correct";
-  if (thisQ['correctAnswer'].toUpperCase() == ansText.toUpperCase()) {
-    //  console.log("Correct");
+var corrAnswer = thisQ['correctAnswer'].toUpperCase() ;
+var givenAnswer = ansText.toUpperCase()
+var corrBtnName = '#' + corrAnswer.toLowerCase() + 'Answer' ;
+var wrongBtnName = '#' + givenAnswer.toLowerCase() + 'Answer' ;
+document.querySelector([corrBtnName]).style = ("background-color:green");
+
+  if (corrAnswer == givenAnswer ) {
+    window.answerResult = "Correct";
   } else {
-    //  console.log("Wrong")
-    window.answerResult = "Wrong";
+    document.querySelector([wrongBtnName]).style = ("background-color:red");
+    window.answerResult = "Wrong, correct answer is " + thisQ['correctAnswer'].toUpperCase() ;
   };
 }
 
