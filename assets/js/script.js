@@ -7,6 +7,7 @@ var defaultVals = {
   timeForQuiz: 5,
   timeDeducted: 20,
   subjectNames: ["Unit - 1: Web Essentials", "Unit - 2: Markup Languages", "Unit - 3: JavaScript"],
+  
   subjectSelect: [1, 2],
 }
 
@@ -118,7 +119,7 @@ submitSettingsBtn.addEventListener("click", function () {
 //eval('checkQ'+'1').labels[0].textContent
 
 //Make the areas for questions to be
- //Set localStorage to checkboxes 
+//Set localStorage to checkboxes 
 function setAreasLocaltoCheckbox() {
   var getCheckedList = [];
   var qtyChecks = document.querySelectorAll('#settings-checkbox input').length;
@@ -129,7 +130,7 @@ function setAreasLocaltoCheckbox() {
     }
   }
   //check for no entries and prevent
-  if (getCheckedList.length <= 1) {
+  if (getCheckedList.length < 1) {
     alert('There needs to be at least one area checked, we will apply the first item.');
     checkQ0.checked = true;
     localStorage.setItem("questionAreas", checkQ0.labels[0].textContent);
@@ -141,10 +142,10 @@ function setAreasLocaltoCheckbox() {
 //Set checkboxes to localStorage
 function setAreasCheckboxtoLocal() {
   var getCheckedList = localStorage.getItem("questionAreas");
-  if(getCheckedList=null){
+  if (!getCheckedList) {
     // getCheckedList = defaultVals.subjectNames;
-    setAreasLocaltoCheckbox();
-     getCheckedList = localStorage.getItem("questionAreas");
+    localStorage.setItem("questionAreas", defaultVals.subjectNames);
+    getCheckedList = localStorage.getItem("questionAreas");
   }
   var qtyChecks = document.querySelectorAll('#settings-checkbox input').length;
   for (i = 0; i < qtyChecks; i++) {
@@ -157,8 +158,8 @@ function setAreasCheckboxtoLocal() {
       eval('checkQ' + i).checked = false;
 
     }
-  }   
-   return window.areaList = getCheckedList;
+  }
+  return window.areaList = getCheckedList;
 }
 
 
@@ -193,7 +194,7 @@ function init() {
 
   //Use section below to test functions whilst developing
   // startQuiz();
- // goToSettingsScreen();
+  // goToSettingsScreen();
   // setAreasLocaltoCheckbox();
 
 }
@@ -279,8 +280,8 @@ function InitSettings() {
   deductedTimeSetting.value = localStorage.getItem("timeDeducted");
 
   //Question Areas - Use saved Checkbox preferences
-   setAreasCheckboxtoLocal()
-// setAreasLocaltoCheckbox()
+  setAreasCheckboxtoLocal()
+  // setAreasLocaltoCheckbox()
   saveSettings()
 }
 
@@ -303,7 +304,7 @@ function saveSettings() {
   {  //Set  deducted time for mistakes
     localStorage.setItem("timeDeducted", deductedTimeSetting.value);
     //Also apply to span on home page
-    timeDeductedSpan.textContent = localStorage.getItem("timeDeducted") + " seconds";
+    timeDeductedSpan.textContent = localStorage.getItem("timeDeducted") + String.fromCharCode(160) +"seconds"; //non breaking space
   }
   {//Set Area Checkboxes
     setAreasLocaltoCheckbox();
