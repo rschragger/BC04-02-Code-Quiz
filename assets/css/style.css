@@ -162,6 +162,16 @@ button[disabled] {
   text-align: left;
 }
 
+.roundel {
+  /* color:white; */
+  /* background-color: var(--darker); */
+  padding: 2px 6px;
+  margin: 2px;
+    border-radius: 1rem;
+    border: 1px solid var(--dark);
+  
+}
+
 /* #settings-checkbox +{
   text-align: left;
   text-justify: center;

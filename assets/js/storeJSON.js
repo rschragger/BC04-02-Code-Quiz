@@ -1,7 +1,7 @@
 //This is just a storage space for JSON data
 //We will save the below JSON to local storage under var jsonQandA 
 
-function init(){
+function init1(){
   localStorage.setItem("jsonQandA", jsonData );
 }
 var jsonData =JSON.stringify([
@@ -625,7 +625,7 @@ var jsonData =JSON.stringify([
     "course": "Unit - 2: Markup Languages",
     "questionNo": 17,
     "qID": "2_17_7323",
-    "questionText": "__________ this tag is used to make taxt to be aligned cantered.",
+    "questionText": "__________ this tag is used to make text to be aligned centered.",
     "aAnswer": "<p>",
     "bAnswer": "<center>",
     "cAnswer": "<pre>",
@@ -647,7 +647,7 @@ var jsonData =JSON.stringify([
     "course": "Unit - 2: Markup Languages",
     "questionNo": 19,
     "qID": "2_19_9443",
-    "questionText": "________ the space between is the space between content of the cell and cell wall .",
+    "questionText": "________ the space between is the space between content of the cell and cell wall.",
     "aAnswer": "<p>",
     "bAnswer": "<center>",
     "cAnswer": "cell spacing",
@@ -886,7 +886,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "a"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 1,
     "qID": "3_1_758",
     "questionText": "Which data type value is returned by all transcendental math functions?",
@@ -897,7 +897,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "c"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 2,
     "qID": "3_2_9726",
     "questionText": "Which of these coding types is used for data type characters in Java?",
@@ -908,7 +908,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "c"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 3,
     "qID": "3_3_8355",
     "questionText": "Which of these values can a boolean variable contain?",
@@ -919,7 +919,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "a"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 4,
     "qID": "3_4_2013",
     "questionText": "Which of these operators is used to allocate memory to array variable in Javascript?",
@@ -930,7 +930,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "c"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 5,
     "qID": "3_5_6057",
     "questionText": "Which of these is an incorrect array declaration?",
@@ -941,7 +941,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "d"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 6,
     "qID": "3_6_9003",
     "questionText": "Decrement operator, --, decreases the value of variable by what number?",
@@ -952,7 +952,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "a"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 7,
     "qID": "3_7_3193",
     "questionText": "Which of these is not a bitwise operator?",
@@ -963,7 +963,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "d"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 8,
     "qID": "3_8_5237",
     "questionText": "Which right shift operator preserves the sign of the value?",
@@ -974,7 +974,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "b"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 9,
     "qID": "3_9_9452",
     "questionText": "What is the output of relational operators?",
@@ -985,7 +985,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "b"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 10,
     "qID": "3_10_5172",
     "questionText": ". Which of these is returned by \"greater than\", \"less than\" and \"equal to\" operators?",
@@ -996,7 +996,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "c"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 11,
     "qID": "3_11_2786",
     "questionText": "Which of these selection statements test only for equality?",
@@ -1007,7 +1007,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "a"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 12,
     "qID": "3_12_2488",
     "questionText": "Which of the following loops will execute the body of loop even when condition controlling the loop is initially false?",
@@ -1018,7 +1018,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "a"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 13,
     "qID": "3_13_8248",
     "questionText": "Which of these jump statements can skip processing the remainder of the code in its body for a particular iteration?",
@@ -1029,7 +1029,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "d"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 14,
     "qID": "3_14_3340",
     "questionText": "Which of the following is not a decision making statement?",
@@ -1040,7 +1040,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "d"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 15,
     "qID": "3_15_3767",
     "questionText": "Which of the following is not a valid flow control statement?",
@@ -1051,7 +1051,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "a"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 16,
     "qID": "3_16_9058",
     "questionText": "The CSS background properties are used to define the ___________effects.",
@@ -1062,7 +1062,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "a"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 17,
     "qID": "3_17_1827",
     "questionText": "CSS border properties allow us to__________ the borders.",
@@ -1073,7 +1073,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "b"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 18,
     "qID": "3_18_7036",
     "questionText": "By applying an_______ a style can be applied to just a single tag.",
@@ -1084,7 +1084,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "d"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 19,
     "qID": "3_19_6138",
     "questionText": "_________selectors are used to specify a group of elements.",
@@ -1095,7 +1095,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "c"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 20,
     "qID": "3_20_5800",
     "questionText": "In CSS, \"font-size\" can be called as ________",
@@ -1106,7 +1106,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "a"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 21,
     "qID": "3_21_2906",
     "questionText": "In CSS, h1 can be called as _______",
@@ -1117,7 +1117,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "b"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 22,
     "qID": "3_22_1554",
     "questionText": "In , CSS \"color:red\" can be called as _____________",
@@ -1128,7 +1128,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "c"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 23,
     "qID": "3_23_7923",
     "questionText": "Reset (button) :- it is used to reset the button ( cancel the data) to upload",
@@ -1139,7 +1139,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "a"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 24,
     "qID": "3_24_4763",
     "questionText": "CSS different the tags and data .... it menace it store the data in different file and store the tags in different file . ...it minimize the size of the file .",
@@ -1150,7 +1150,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "a"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 25,
     "qID": "3_25_8294",
     "questionText": "_______ describes how HTML elements are to be displayed on screen, paper, or in other media",
@@ -1161,7 +1161,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "a"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 26,
     "qID": "3_26_198",
     "questionText": "Central Computer which is powerful than other computers in the network is called as ________",
@@ -1172,7 +1172,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "a"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 27,
     "qID": "3_27_9123",
     "questionText": "HTTP is a __________ protocol.",
@@ -1183,7 +1183,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "c"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 28,
     "qID": "3_28_5377",
     "questionText": "The FTP is a protocol that is used to transfer files between two computers over a ______________.",
@@ -1194,7 +1194,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "d"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 29,
     "qID": "3_29_1933",
     "questionText": "A client can use the ________request to get a web resource from the server.",
@@ -1205,7 +1205,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "c"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 30,
     "qID": "3_30_6694",
     "questionText": "Websites are uploaded _______",
@@ -1216,7 +1216,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "b"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 31,
     "qID": "3_31_9470",
     "questionText": "HTML web pages can be read and rendered by __________",
@@ -1227,7 +1227,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "a"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 32,
     "qID": "3_32_7153",
     "questionText": "The _________ tag is an inline container used to mark up a part of a text, or a part of a document.",
@@ -1238,7 +1238,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "b"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 33,
     "qID": "3_33_6704",
     "questionText": "<INPUT> is ________tag.",
@@ -1249,7 +1249,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "c"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 34,
     "qID": "3_34_9231",
     "questionText": "The HTML tag to left align the content inside a table cell is <td align = \"left\">.",
@@ -1260,7 +1260,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "a"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 35,
     "qID": "3_35_6781",
     "questionText": "The body tag usually used after _________",
@@ -1271,7 +1271,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "d"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 36,
     "qID": "3_36_4153",
     "questionText": "Tags and text that are not directly displayed on the page are written in ___________section.",
@@ -1282,7 +1282,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "d"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 37,
     "qID": "3_37_7949",
     "questionText": "Some tags enclose the text. Those tags are known as ___________",
@@ -1293,7 +1293,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "a"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 38,
     "qID": "3_38_1373",
     "questionText": "The <strike> tag is used to _________the text or sentence.",
@@ -1304,7 +1304,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "c"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 39,
     "qID": "3_39_1191",
     "questionText": "The <del> tag is used to display ________ text form a document",
@@ -1315,7 +1315,7 @@ var jsonData =JSON.stringify([
     "correctAnswer": "d"
   },
   {
-    "course": "Unit - 3: JAVA Script",
+    "course": "Unit - 3: JavaScript",
     "questionNo": 40,
     "qID": "3_40_7624",
     "questionText": "_________ is used to give additional information.",
@@ -2207,4 +2207,4 @@ var jsonData =JSON.stringify([
   }
  ]);
 
-init()
+init1()

@@ -6,7 +6,7 @@ var defaultVals = {
   qtyOfQuestions: 11,
   timeForQuiz: 5,
   timeDeducted: 20,
-  subjectNames: ["Unit - 1: Web Essentials", "Unit - 2: Markup Languages", "Unit - 3: JAVA Script"],
+  subjectNames: ["Unit - 1: Web Essentials", "Unit - 2: Markup Languages", "Unit - 3: JavaScript"],
   subjectSelect: [1, 2],
 }
 
@@ -33,15 +33,18 @@ var answerResult = "";
 {
   var homeBtn = document.querySelector("#home-btn");
   homeBtn.addEventListener("click", function () {
+    event.preventDefault();
     goToHomeScreen();
   });
   var highScoresBtn = document.querySelector("#high-score-btn");
   highScoresBtn.addEventListener("click", function () {
-    console.log("home button pushed");
+    event.preventDefault();
+    // console.log("home button pushed");
     goToHighScoreScreen();
   });
   var settingsBtn = document.querySelector("#settings-btn");
   settingsBtn.addEventListener("click", function () {
+    event.preventDefault();
     goToSettingsScreen()
   });
 }
@@ -50,18 +53,22 @@ var answerResult = "";
 {
   var answerBtnA = document.querySelector('#aAnswer');
   answerBtnA.addEventListener("click", function () {
+    event.preventDefault();
     isAnswerCorrect("A");
   });
   var answerBtnB = document.querySelector('#bAnswer');
   answerBtnB.addEventListener("click", function () {
+    event.preventDefault();
     isAnswerCorrect("B");
   });
   var answerBtnC = document.querySelector('#cAnswer');
   answerBtnC.addEventListener("click", function () {
+    event.preventDefault();
     isAnswerCorrect("C");
   });
   var answerBtnD = document.querySelector('#dAnswer');
   answerBtnD.addEventListener("click", function () {
+    event.preventDefault();
     isAnswerCorrect("D");
   });
 }
@@ -83,18 +90,24 @@ function isAnswerCorrect(ansText) {
 //Other buttons
 var startBtn = document.querySelector("#start-btn");
 startBtn.addEventListener("click", function () {
+  event.preventDefault();
   startQuiz();
 });
 
 var submitSettingsBtn = document.querySelector("#submit-settings-btn");
 submitSettingsBtn.addEventListener("click", function () {
   // console.log("Y");
+  event.preventDefault();
   saveSettings()
+  goToHomeScreen()
+
+
 });
 
 //Checkboxes
 //Will want to change to an array we can select from
 {
+  var areaList = []; //this will be the global var of areas to choose questions from
   var checkQ0 = document.querySelector("#question-type1"); //checkQ1.checked
   var checkQ1 = document.querySelector("#question-type2");
   var checkQ2 = document.querySelector("#question-type3");
@@ -104,7 +117,9 @@ submitSettingsBtn.addEventListener("click", function () {
 //checkQ0.labels[0].textContent
 //eval('checkQ'+'1').labels[0].textContent
 
-function getCheckedAreas() {
+//Make the areas for questions to be
+ //Set localStorage to checkboxes 
+function setAreasLocaltoCheckbox() {
   var getCheckedList = [];
   var qtyChecks = document.querySelectorAll('#settings-checkbox input').length;
   for (i = 0; i < qtyChecks; i++) {
@@ -112,38 +127,40 @@ function getCheckedAreas() {
     if (isChecked == true) {
       getCheckedList.push(eval('checkQ' + i).labels[0].textContent);
     }
-    //check for no entries and prevent
-    if (getCheckedList.length < 1) {
-      alert('There needs to be at least one area checked');
-      checkQ0.checked = true;
-    } else {
-      localStorage.setItem("questionAreas", getCheckedList);
-    }
+  }
+  //check for no entries and prevent
+  if (getCheckedList.length <= 1) {
+    alert('There needs to be at least one area checked, we will apply the first item.');
+    checkQ0.checked = true;
+    localStorage.setItem("questionAreas", checkQ0.labels[0].textContent);
+  } else {
+    localStorage.setItem("questionAreas", getCheckedList);
   }
 }
 
-function setCheckedAreas() {
-  var getCheckedList = localStorage.setItem("questionAreas");
+//Set checkboxes to localStorage
+function setAreasCheckboxtoLocal() {
+  var getCheckedList = localStorage.getItem("questionAreas");
+  if(getCheckedList=null){
+    // getCheckedList = defaultVals.subjectNames;
+    setAreasLocaltoCheckbox();
+     getCheckedList = localStorage.getItem("questionAreas");
+  }
   var qtyChecks = document.querySelectorAll('#settings-checkbox input').length;
   for (i = 0; i < qtyChecks; i++) {
 
-    var cbText = eval('checkQ' + i).labels[0].textContent ;
+    var cbText = eval('checkQ' + i).labels[0].textContent;
     var storeExists = getCheckedList.includes(cbText)
-    if( )
-    
-    // = eval('checkQ' + i).checked;
-    // if (isChecked == true) {
-    //   getCheckedList.push(eval('checkQ' + i).labels[0].textContent);
-    // }
-    // //check for no entries and prevent
-    // if (getCheckedList.length < 1) {
-    //   alert('There needs to be at least one area checked');
-    //   checkQ0.checked = true;
-    // } else {
-    //   localStorage.setItem("questionAreas", getCheckedList);
-    // }
-  }
+    if (storeExists == true) {
+      eval('checkQ' + i).checked = true;
+    } else {
+      eval('checkQ' + i).checked = false;
+
+    }
+  }   
+   return window.areaList = getCheckedList;
 }
+
 
 //spans
 {
@@ -171,15 +188,13 @@ function init() {
   //  Go to settings to recall client's setting first
   goToSettingsScreen();
 
-
-
   //Start from this point
   goToHomeScreen();
 
   //Use section below to test functions whilst developing
   // startQuiz();
-  goToSettingsScreen();
-  getCheckedAreas();
+ // goToSettingsScreen();
+  // setAreasLocaltoCheckbox();
 
 }
 
@@ -263,6 +278,9 @@ function InitSettings() {
   }
   deductedTimeSetting.value = localStorage.getItem("timeDeducted");
 
+  //Question Areas - Use saved Checkbox preferences
+   setAreasCheckboxtoLocal()
+// setAreasLocaltoCheckbox()
   saveSettings()
 }
 
@@ -287,6 +305,10 @@ function saveSettings() {
     //Also apply to span on home page
     timeDeductedSpan.textContent = localStorage.getItem("timeDeducted") + " seconds";
   }
+  {//Set Area Checkboxes
+    setAreasLocaltoCheckbox();
+    //setAreasCheckboxtoLocal();
+  }
 
   {//Set global variables
     window.qtyQuestions = localStorage.getItem("qtyOfQuestions");
@@ -306,7 +328,7 @@ function getQuestions() {
 
 function startQuiz() {
   goToQuestionScreen();
-  location.reload; //reset screen
+  //location.reload; //reset screen
 
   //Use Settings to get the required questions, time and deductions
   getQuestions()
@@ -325,7 +347,6 @@ function setoutQuestion(thisQ) {
     }
   }
 }
-
+InitSettings()
 init()
 
-InitSettings()
