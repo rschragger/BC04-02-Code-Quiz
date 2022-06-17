@@ -66,17 +66,17 @@ var answerResult = "";
   });
 }
 function isAnswerCorrect(ansText) {
-var corrAnswer = thisQ['correctAnswer'].toUpperCase() ;
-var givenAnswer = ansText.toUpperCase()
-var corrBtnName = '#' + corrAnswer.toLowerCase() + 'Answer' ;
-var wrongBtnName = '#' + givenAnswer.toLowerCase() + 'Answer' ;
-document.querySelector([corrBtnName]).style = ("background-color:green");
+  var corrAnswer = thisQ['correctAnswer'].toUpperCase();
+  var givenAnswer = ansText.toUpperCase()
+  var corrBtnName = '#' + corrAnswer.toLowerCase() + 'Answer';
+  var wrongBtnName = '#' + givenAnswer.toLowerCase() + 'Answer';
+  document.querySelector([corrBtnName]).style = ("background-color:green");
 
-  if (corrAnswer == givenAnswer ) {
+  if (corrAnswer == givenAnswer) {
     window.answerResult = "Correct";
   } else {
     document.querySelector([wrongBtnName]).style = ("background-color:red");
-    window.answerResult = "Wrong, correct answer is " + thisQ['correctAnswer'].toUpperCase() ;
+    window.answerResult = "Wrong, correct answer is " + thisQ['correctAnswer'].toUpperCase();
   };
 }
 
@@ -95,11 +95,54 @@ submitSettingsBtn.addEventListener("click", function () {
 //Checkboxes
 //Will want to change to an array we can select from
 {
-  var checkQ1 = document.querySelector("#question-type1"); //checkQ1.checked
-  var checkQ2 = document.querySelector("#question-type2");
-  var checkQ3 = document.querySelector("#question-type3");
-  var checkQ4 = document.querySelector("#question-type4");
-  var checkQ5 = document.querySelector("#question-type5");
+  var checkQ0 = document.querySelector("#question-type1"); //checkQ1.checked
+  var checkQ1 = document.querySelector("#question-type2");
+  var checkQ2 = document.querySelector("#question-type3");
+  var checkQ3 = document.querySelector("#question-type4");
+  var checkQ4 = document.querySelector("#question-type5");
+}
+//checkQ0.labels[0].textContent
+//eval('checkQ'+'1').labels[0].textContent
+
+function getCheckedAreas() {
+  var getCheckedList = [];
+  var qtyChecks = document.querySelectorAll('#settings-checkbox input').length;
+  for (i = 0; i < qtyChecks; i++) {
+    var isChecked = eval('checkQ' + i).checked;
+    if (isChecked == true) {
+      getCheckedList.push(eval('checkQ' + i).labels[0].textContent);
+    }
+    //check for no entries and prevent
+    if (getCheckedList.length < 1) {
+      alert('There needs to be at least one area checked');
+      checkQ0.checked = true;
+    } else {
+      localStorage.setItem("questionAreas", getCheckedList);
+    }
+  }
+}
+
+function setCheckedAreas() {
+  var getCheckedList = localStorage.setItem("questionAreas");
+  var qtyChecks = document.querySelectorAll('#settings-checkbox input').length;
+  for (i = 0; i < qtyChecks; i++) {
+
+    var cbText = eval('checkQ' + i).labels[0].textContent ;
+    var storeExists = getCheckedList.includes(cbText)
+    if( )
+    
+    // = eval('checkQ' + i).checked;
+    // if (isChecked == true) {
+    //   getCheckedList.push(eval('checkQ' + i).labels[0].textContent);
+    // }
+    // //check for no entries and prevent
+    // if (getCheckedList.length < 1) {
+    //   alert('There needs to be at least one area checked');
+    //   checkQ0.checked = true;
+    // } else {
+    //   localStorage.setItem("questionAreas", getCheckedList);
+    // }
+  }
 }
 
 //spans
@@ -135,7 +178,8 @@ function init() {
 
   //Use section below to test functions whilst developing
   // startQuiz();
-
+  goToSettingsScreen();
+  getCheckedAreas();
 
 }
 
@@ -226,32 +270,36 @@ function InitSettings() {
 function saveSettings() {
   qtyOfQuestionsSpan.textContent = localStorage.getItem("qtyOfQuestions");
 
-  //Set qty of Questions
-  localStorage.setItem("qtyOfQuestions", qtyOfQuestionsSetting.value)
-  //Also apply to span on home page
-  qtyOfQuestionsSpan.textContent = localStorage.getItem("qtyOfQuestions");
+  {//Set qty of Questions
+    localStorage.setItem("qtyOfQuestions", qtyOfQuestionsSetting.value)
+    //Also apply to span on home page
+    qtyOfQuestionsSpan.textContent = localStorage.getItem("qtyOfQuestions");
+  }
 
-  //Set time for quiz
-  localStorage.setItem("timeForQuiz", quizTimeSetting.value)
-  //Also apply to span on home page
-  timeForQuizSpan.textContent = localStorage.getItem("timeForQuiz") + " minutes";
+  {//Set time for quiz
+    localStorage.setItem("timeForQuiz", quizTimeSetting.value)
+    //Also apply to span on home page
+    timeForQuizSpan.textContent = localStorage.getItem("timeForQuiz") + " minutes";
+  }
 
-  //Set  deducted time for mistakes
-  localStorage.setItem("timeDeducted", deductedTimeSetting.value);
-  //Also apply to span on home page
-  timeDeductedSpan.textContent = localStorage.getItem("timeDeducted") + " seconds";
+  {  //Set  deducted time for mistakes
+    localStorage.setItem("timeDeducted", deductedTimeSetting.value);
+    //Also apply to span on home page
+    timeDeductedSpan.textContent = localStorage.getItem("timeDeducted") + " seconds";
+  }
 
-  //Set global variables
-  window.qtyQuestions = localStorage.getItem("qtyOfQuestions");
-  //Convert time values into milliseconds as global variables
-  window.timeForQuizMS = localStorage.getItem("timeForQuiz") * 1000 * 60; //in milliseconds
-  window.timeForDeductMS = localStorage.getItem("timeDeducted") * 1000; //in milliseconds
+  {//Set global variables
+    window.qtyQuestions = localStorage.getItem("qtyOfQuestions");
+    //Convert time values into milliseconds as global variables
+    window.timeForQuizMS = localStorage.getItem("timeForQuiz") * 1000 * 60; //in milliseconds
+    window.timeForDeductMS = localStorage.getItem("timeDeducted") * 1000; //in milliseconds
+  }
 
 } //end saveSettings()
 
 //Use Settings to get the required questions, time and deductions
-function getQuestions(   ){
-  var qCount = qtyQuestions ; //get global setting
+function getQuestions() {
+  var qCount = qtyQuestions; //get global setting
 
 
 }
@@ -260,8 +308,8 @@ function startQuiz() {
   goToQuestionScreen();
   location.reload; //reset screen
 
-//Use Settings to get the required questions, time and deductions
- getQuestions()
+  //Use Settings to get the required questions, time and deductions
+  getQuestions()
 
   // Setup question in HTML 
   window.thisQ = qAndA[120]; //********* */
