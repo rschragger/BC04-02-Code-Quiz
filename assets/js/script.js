@@ -7,7 +7,7 @@ var defaultVals = {
   timeForQuiz: 5,
   timeDeducted: 20,
   subjectNames: ["Unit - 1: Web Essentials", "Unit - 2: Markup Languages", "Unit - 3: JavaScript"],
-  
+
   subjectSelect: [1, 2],
 }
 
@@ -15,6 +15,7 @@ var defaultVals = {
 const qAndA = JSON.parse(localStorage.getItem("jsonQandA"));
 //Establish what the tags are in this data
 const qTags = ['course', 'qID', 'questionNo', 'questionText', 'aAnswer', 'bAnswer', 'cAnswer', 'dAnswer', 'correctAnswer'];
+var thisQList = [];
 var thisQ = [];
 var answerResult = "";
 
@@ -163,26 +164,27 @@ function setAreasCheckboxtoLocal() {
 }
 
 
-//spans
+//var spans in HTML text
 {
   var timeForQuizSpan = document.getElementById("time-for-quiz");
   var timeDeductedSpan = document.getElementById("time-deducted");
   var qtyOfQuestionsSpan = document.getElementById("qty-of-questions");
 }
 
-//Form Items
+//var Form Items
 //Settings
-var qtyOfQuestionsSetting = document.querySelector("#question-qty");
-var qtyQuestions = 10;
-// qtyOfQuestionsSpan.textContent = localStorage.getItem("qtyOfQuestions");
+{
+  var qtyOfQuestionsSetting = document.querySelector("#question-qty");
+  var qtyQuestions = 10;
+  // qtyOfQuestionsSpan.textContent = localStorage.getItem("qtyOfQuestions");
 
-var quizTimeSetting = document.querySelector("#quiz-time");
-// timeForQuizSpan.textContent = localStorage.getItem("timeForQuiz") + " minutes";
-// var timeForQuizMS = quizTimeSetting.value * 1000 * 60; //in milliseconds
+  var quizTimeSetting = document.querySelector("#quiz-time");
+  // timeForQuizSpan.textContent = localStorage.getItem("timeForQuiz") + " minutes";
+  // var timeForQuizMS = quizTimeSetting.value * 1000 * 60; //in milliseconds
 
-var deductedTimeSetting = document.querySelector("#deducted-time");
-// var timeForDeductMS = deductedTimeSetting.value * 1000; //in milliseconds
-
+  var deductedTimeSetting = document.querySelector("#deducted-time");
+  // var timeForDeductMS = deductedTimeSetting.value * 1000; //in milliseconds
+}
 
 // Functions ---------------------------------------------------------
 function init() {
@@ -304,7 +306,7 @@ function saveSettings() {
   {  //Set  deducted time for mistakes
     localStorage.setItem("timeDeducted", deductedTimeSetting.value);
     //Also apply to span on home page
-    timeDeductedSpan.textContent = localStorage.getItem("timeDeducted") + String.fromCharCode(160) +"seconds"; //non breaking space
+    timeDeductedSpan.textContent = localStorage.getItem("timeDeducted") + String.fromCharCode(160) + "seconds"; //non breaking space
   }
   {//Set Area Checkboxes
     setAreasLocaltoCheckbox();
@@ -320,11 +322,30 @@ function saveSettings() {
 
 } //end saveSettings()
 
-//Use Settings to get the required questions, time and deductions
+//Use Settings to get a randomised question list
 function getQuestions() {
-  var qCount = qtyQuestions; //get global setting
+  //globals are qtyQuestions, 
+  var qCount = localStorage.getItem("qtyOfQuestions"); //get global setting
+  var origQList = qAndA;
+  var qAreas = localStorage.getItem("questionAreas");
+  var areasQlist = [];
+  var finalQList = [];
+  
+  //Pick the questions avaiable from Areas checked
+  origQList.forEach(pickQs);
+  function pickQs(item) {
+    //getCheckedList.includes(cbText)
+    if (qAreas.includes(item.course)) {
+      areasQlist.push(item);
+    }
+  }
 
-
+  //Pick a random set of questions
+  for(q=0; q<qCount ; q++){
+    var randNo = Math.floor(Math.random()*(areasQlist.length));
+finalQList.push(areasQlist[randNo]);
+  }
+  window.thisQList = finalQList;
 }
 
 function startQuiz() {
@@ -333,9 +354,11 @@ function startQuiz() {
 
   //Use Settings to get the required questions, time and deductions
   getQuestions()
+  console.log(getQuestions())
 
   // Setup question in HTML 
-  window.thisQ = qAndA[120]; //********* */
+  // window.thisQ = qAndA[120]; //********* */
+  window.thisQ = thisQList[0]
   setoutQuestion(thisQ)
 }
 
