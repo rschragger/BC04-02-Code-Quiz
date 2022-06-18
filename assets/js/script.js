@@ -8,7 +8,7 @@ var defaultVals = {
   timeDeducted: 20,
   subjectNames: ["Unit - 1: Web Essentials", "Unit - 2: Markup Languages", "Unit - 3: JavaScript"],
   subjectSelect: [1, 2],
-  hsResults: [{ 'name': 'reeve', 'score': '100' }, { 'name': 'John', 'score': '10' }],
+  hsResults: [{ 'name': 'No scores yet', 'score': 0 }]//, { 'name': 'John', 'score': 10 }],
 }
 
 //Get JSON object for Q and As
@@ -19,8 +19,8 @@ var thisQList = [];
 var thisQ = [];
 var answerResult = "";
 var thisScore = 0;
-var hsList = [{}];
-var hsList = [];
+// var hsList = [{}];
+// var hsList = [];
 
 //Screens
 {
@@ -410,28 +410,54 @@ function nextQuestion() {
 
 function addScoreToStorage() {
   if (localStorage.getItem("hsResults") == null) {
-    localStorage.setItem("hsResults", JSON.stringify( defaultVals.hsResults));
+    localStorage.setItem("hsResults", JSON.stringify(defaultVals.hsResults));
   }
   var hsName = document.getElementById('hs-name').value;
   // var hsScore = window.thisScore ;
-  var hsList1 = JSON.parse(localStorage.getItem("hsResults"));
+  var hsList = JSON.parse(localStorage.getItem("hsResults"));
   // hsList1 = JSON.parse(hsList1);
-  console.log(hsList1);
-  hsList1.push({ 'name': hsName, 'score': window.thisScore });
+  console.log(hsList);
+  hsList.push({ 'name': hsName, 'score': window.thisScore });
   // hsList1.push({'name':'xxx','score':'11'});
-  console.log(hsList1);
-  localStorage.setItem("hsResults", JSON.stringify(hsList1));
-
+  console.log(hsList);
+  localStorage.setItem("hsResults", JSON.stringify(hsList));
 }
 
 function getHScoresFromStorage() {
-  if (1 == 1) { 1 }
   // localStorage.setItem("hsResults", push)
+  var hsList = JSON.parse(localStorage.getItem("hsResults"));
 
+//Sort by score descending
+  hsList.sort((a, b) => {
+    return b.score - a.score;
+  });
 
+  //delete the table body for replacement
+  var tBody = document.getElementById('hsCells');
+  tBody.textContent = "";
+  // tBody.innerHTML = "";
 
+  // var newTag = document.createElement(tagName);
+  // newTag.textContent = "new Text"
+  // document.hsCells.appendChild(tag);
+
+  // repeat for table rows
+  for (trNo = 0; trNo < hsList.length; trNo++) {
+    var thisRow = hsList[trNo];
+    var trTag = document.createElement('tr');
+    var trID = 'tr' + trNo;
+    tBody.appendChild(trTag);
+    trTag.id = trID;
+    //repeat for table cells
+    for (tdNo = 0; tdNo < Object.values(thisRow).length; tdNo++) {
+      var tdTag = document.createElement('td');
+      tdTag.textContent = Object.values(thisRow)[tdNo];
+      trTag.appendChild(tdTag);
+    } //end repeat td
+
+  } //end repeat tr
 }
+
 
 InitSettings()
 init()
-
