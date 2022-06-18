@@ -237,7 +237,7 @@ function init() {
   }
   function goToResultScreen() {
     clearScreens()
-    resultScreen.setAttribute("style", "display:block");
+    resultScreen.setAttribute("style", "display:flex");
     //set buttons
     homeBtn.setAttribute("style", "display:block");
     settingsBtn.setAttribute("style", "display:block");
@@ -357,6 +357,9 @@ function setoutQuestion(thisQ) {
     // document.getElementById(obj[q]).innerHTML = obj[q].value();
     var thisElement = qTags[q];
     if (document.getElementById([thisElement]) != null) {
+      //first reset styles (green and red buttons)
+      document.getElementById([thisElement]).style = "";
+      //then add text
       document.getElementById([thisElement]).innerText = thisQ[thisElement];
     }
   }
@@ -387,6 +390,10 @@ if(qNo < (thisQList.length+1)){
   setoutQuestion(thisQ)}
   else {
     goToResultScreen()
+    document.getElementById('totalQNo').textContent = thisQList.length;
+    document.getElementById('qNo').textContent = qNo;
+    document.getElementById('thisScore').textContent = thisScore;
+    
   }
   
 }

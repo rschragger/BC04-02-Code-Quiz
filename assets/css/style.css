@@ -237,8 +237,23 @@ li:nth-child(even) button {
   background-color: black;
   color: var(--highlight);
 }
-
-
+#result-screen{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+/* #result-table */
+table {
+  max-width: 90%;
+  min-width: 250px;
+}
+/* #result-table  */
+td{
+  box-shadow: 1px 1px 4px var(--dark);
+  margin: 8px;
+  padding: 2px 10px;
+}
 
 #footer-sec,
 #footer-sec p {
