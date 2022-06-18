@@ -201,7 +201,7 @@ function init() {
   // startQuiz();
   // goToSettingsScreen();
   // setAreasLocaltoCheckbox();
-
+  goToHighScoreScreen()
 }
 
 //Clear Screens
@@ -242,15 +242,25 @@ function init() {
     homeBtn.setAttribute("style", "display:block");
     settingsBtn.setAttribute("style", "display:block");
     highScoresBtn.setAttribute("style", "display:block");
+
+    //make table
+    //Note qNo is -1 because a question not answered shall be considered not attempted
+    document.getElementById('totalQNo').textContent = thisQList.length;
+    document.getElementById('qNo').textContent = qNo-1;
+    document.getElementById('timeAssigned').textContent = localStorage.getItem("timeForQuiz") ;
+    document.getElementById('timeTaken').textContent = "TO DO";
+    document.getElementById('thisScore').textContent = thisScore;
+
   }
   function goToHighScoreScreen() {
     clearScreens()
-    highScoreScreen.setAttribute("style", "display:block");
+    highScoreScreen.setAttribute("style", "display:flex");
     //set buttons
     homeBtn.setAttribute("style", "display:block");
     settingsBtn.setAttribute("style", "display:block");
     highScoresBtn.setAttribute("style", "display:none");
   }
+
   function goToSettingsScreen() {
     clearScreens()
     settingsScreen.setAttribute("style", "display:block");
@@ -390,9 +400,6 @@ if(qNo < (thisQList.length+1)){
   setoutQuestion(thisQ)}
   else {
     goToResultScreen()
-    document.getElementById('totalQNo').textContent = thisQList.length;
-    document.getElementById('qNo').textContent = qNo;
-    document.getElementById('thisScore').textContent = thisScore;
     
   }
   

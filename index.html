@@ -26,9 +26,11 @@
     <!-- Home Screen ___________________________ -->
     <div id="home-screen">
       <h2>Welcome to the Coding Quiz!</h2>
-      <p>This is a quiz to determine your competency with coding.<br>You'll be given <span class="roundel" id="qty-of-questions">10</span> random questions from a list. <br>
-        You'll have <span class="roundel"  id="time-for-quiz">2 minutes</span> to answer the questions. <br>
-        You'll get a point for every correct answer, but you'll have <span class="roundel" id="time-deducted">5 seconds</span> deducted
+      <p>This is a quiz to determine your competency with coding.<br>You'll be given <span class="roundel"
+          id="qty-of-questions">10</span> random questions from a list. <br>
+        You'll have <span class="roundel" id="time-for-quiz">2 minutes</span> to answer the questions. <br>
+        You'll get a point for every correct answer, but you'll have <span class="roundel" id="time-deducted">5
+          seconds</span> deducted
         from your time if you get an answer wrong!
       </p>
       <button class="btn" id="start-btn">Start Quiz</button>
@@ -50,6 +52,7 @@
       <div class="question-class">
         <h3>Question <span id="questionNo">X</span></h3>
         <p id="questionText">This is q1 text<br></p>
+        <hr>
         <ol type="A" id="answer-list">
           <li><button id="aAnswer" class="aButton" data-value="A">AnswerA</button></li>
           <li><button id="bAnswer" class="aButton" data-value="B">AnswerB</button></li>
@@ -77,18 +80,45 @@
           <td id="qNo">1</td>
         </tr>
         <tr>
+          <td>Time Assigned</td>
+          <td id="timeAssigned">1</td>
+        </tr>
+        <tr>
+          <td>Time Taken</td>
+          <td id="timeTaken">1</td>
+        </tr>
+        <tr>
           <td>Score</td>
           <td id="thisScore">1</td>
         </tr>
       </table>
-      <br><div id="submit-high-scores">
-        <form action=""></form>
+      <br>
+      <div id="submit-high-scores">
+        <form id="high-score-form">
+          <label for="hs-name">Enter your name for high score:<br></label>
+          <input type="text" id="hs-name">
+          <button class="btn" id="hs-submit">Submit</button>
+        </form>
       </div>
     </div>
 
     <!-- High Score Screen  ___________________________  -->
     <div id="high-score-screen">
       <h1>High Scores</h1>
+      <table id="hs-table">
+        <tr>
+        <th id="hsName">Name</th>
+        <th id="score">Score</th>
+        </tr>
+        <tr>
+          <td>Name 1 csam caslm caspm camlm</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Name 2</td>
+          <td>5</td>
+        </tr>
+      </table>
     </div>
 
     <!-- Settings Screen ___________________________ -->
@@ -120,7 +150,7 @@
             <input class="checkbox" id="question-type2" type="checkbox" />
             <label for="question-type2">Unit - 2: Markup Languages</label><br>
 
-            <input class="checkbox" id="question-type3" type="checkbox"  />
+            <input class="checkbox" id="question-type3" type="checkbox" />
             <label for="question-type3">Unit - 3: JavaScript</label><br>
             <!--
             <input class="checkbox" id="question-type4" type="checkbox" />

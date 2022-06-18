@@ -81,7 +81,7 @@ p {
   font-size: 22px;
   line-height: 22px;
   margin: 16px 16px 16px 20px;
-  padding: 14px 34px;
+  padding: 5px 34px;
   text-align: center;
   cursor: pointer;
   box-sizing: content-box;
@@ -154,7 +154,7 @@ button[disabled] {
   justify-content: center;
   padding: 5px 10px;
   margin-left: 3px;
-  color:var(--highlight);
+  color: var(--highlight);
   background-color: var(--darker);
 }
 
@@ -167,9 +167,9 @@ button[disabled] {
   /* background-color: var(--darker); */
   padding: 2px 6px;
   margin: 2px;
-    border-radius: 1rem;
-    border: 1px solid var(--dark);
-  
+  border-radius: 1rem;
+  border: 1px solid var(--dark);
+
 }
 
 /* #settings-checkbox +{
@@ -237,22 +237,32 @@ li:nth-child(even) button {
   background-color: black;
   color: var(--highlight);
 }
-#result-screen{
+
+#high-score-screen,
+#result-screen {
   display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
 }
-/* #result-table */
+
 table {
   max-width: 90%;
   min-width: 250px;
 }
-/* #result-table  */
-td{
+
+th {
+  background-color: var(--bggrey);
+}
+
+td, th{
   box-shadow: 1px 1px 4px var(--dark);
   margin: 8px;
   padding: 2px 10px;
+}
+
+#hsName {
+  width:70%;
 }
 
 #footer-sec,
@@ -260,14 +270,14 @@ td{
   margin: 10px 10px 0 5px;
   font-size: 10px;
   text-align: right;
-  color:var(--dark); 
+  color: var(--dark);
 }
 
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
-    padding: 10px 15px;
+    padding: 5px 15px;
   }
 
   #password {
