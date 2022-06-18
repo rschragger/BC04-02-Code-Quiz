@@ -7,8 +7,8 @@ var defaultVals = {
   timeForQuiz: 5,
   timeDeducted: 20,
   subjectNames: ["Unit - 1: Web Essentials", "Unit - 2: Markup Languages", "Unit - 3: JavaScript"],
-
   subjectSelect: [1, 2],
+  hsResults: [{ 'name': 'reeve', 'score': '100' }, { 'name': 'John', 'score': '10' }],
 }
 
 //Get JSON object for Q and As
@@ -19,6 +19,8 @@ var thisQList = [];
 var thisQ = [];
 var answerResult = "";
 var thisScore = 0;
+var hsList = [{}];
+var hsList = [];
 
 //Screens
 {
@@ -246,8 +248,8 @@ function init() {
     //make table
     //Note qNo is -1 because a question not answered shall be considered not attempted
     document.getElementById('totalQNo').textContent = thisQList.length;
-    document.getElementById('qNo').textContent = qNo-1;
-    document.getElementById('timeAssigned').textContent = localStorage.getItem("timeForQuiz") ;
+    document.getElementById('qNo').textContent = qNo - 1;
+    document.getElementById('timeAssigned').textContent = localStorage.getItem("timeForQuiz");
     document.getElementById('timeTaken').textContent = "TO DO";
     document.getElementById('thisScore').textContent = thisScore;
 
@@ -377,8 +379,8 @@ function setoutQuestion(thisQ) {
 
 function startQuiz() {
   goToQuestionScreen();
-  window.thisScore=0;
-  window.qNo = 0 ;
+  window.thisScore = 0;
+  window.qNo = 0;
   //location.reload; //reset screen
 
   //Use Settings to get the required questions, time and deductions
@@ -386,25 +388,49 @@ function startQuiz() {
   console.log(getQuestions())
 
   //Go to first question
-nextQuestion()
+  nextQuestion()
 
 }
 
-function nextQuestion(){
-  window.qNo++ ;
-  
+function nextQuestion() {
+  window.qNo++;
+
   // Setup question in HTML 
-      // window.thisQ = qAndA[120]; //********* */
-window.thisQ = thisQList[qNo-1];
-if(qNo < (thisQList.length+1)){
-  setoutQuestion(thisQ)}
+  // window.thisQ = qAndA[120]; //********* */
+  window.thisQ = thisQList[qNo - 1];
+  if (qNo < (thisQList.length + 1)) {
+    setoutQuestion(thisQ)
+  }
   else {
     goToResultScreen()
-    
+
   }
-  
+
 }
 
+function addScoreToStorage() {
+  if (localStorage.getItem("hsResults") == null) {
+    localStorage.setItem("hsResults", JSON.stringify( defaultVals.hsResults));
+  }
+  var hsName = document.getElementById('hs-name').value;
+  // var hsScore = window.thisScore ;
+  var hsList1 = JSON.parse(localStorage.getItem("hsResults"));
+  // hsList1 = JSON.parse(hsList1);
+  console.log(hsList1);
+  hsList1.push({ 'name': hsName, 'score': window.thisScore });
+  // hsList1.push({'name':'xxx','score':'11'});
+  console.log(hsList1);
+  localStorage.setItem("hsResults", JSON.stringify(hsList1));
+
+}
+
+function getHScoresFromStorage() {
+  if (1 == 1) { 1 }
+  // localStorage.setItem("hsResults", push)
+
+
+
+}
 
 InitSettings()
 init()
