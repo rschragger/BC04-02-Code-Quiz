@@ -18,6 +18,7 @@ const qTags = ['course', 'qID', 'questionNo', 'questionText', 'aAnswer', 'bAnswe
 var thisQList = [];
 var thisQ = [];
 var answerResult = "";
+var thisScore = 0;
 
 //Screens
 {
@@ -83,10 +84,12 @@ function isAnswerCorrect(ansText) {
 
   if (corrAnswer == givenAnswer) {
     window.answerResult = "Correct";
+    window.thisScore++;//add to score
   } else {
     document.querySelector([wrongBtnName]).style = ("background-color:red");
     window.answerResult = "Wrong, correct answer is " + thisQ['correctAnswer'].toUpperCase();
-  };
+  }
+  nextQuestion()
 }
 
 //Other buttons
@@ -201,7 +204,8 @@ function init() {
 
 }
 
-//Clear Screens - this function makes all screen divs disappear so that we can turn on the screen we want
+//Clear Screens
+//        this function makes all screen divs disappear so that we can turn on the screen we want
 {
   function clearScreens() {
     for (i = 0; i < screensDiv.length; i++) {
@@ -330,7 +334,7 @@ function getQuestions() {
   var qAreas = localStorage.getItem("questionAreas");
   var areasQlist = [];
   var finalQList = [];
-  
+
   //Pick the questions avaiable from Areas checked
   origQList.forEach(pickQs);
   function pickQs(item) {
@@ -341,25 +345,11 @@ function getQuestions() {
   }
 
   //Pick a random set of questions
-  for(q=0; q<qCount ; q++){
-    var randNo = Math.floor(Math.random()*(areasQlist.length));
-finalQList.push(areasQlist[randNo]);
+  for (q = 0; q < qCount; q++) {
+    var randNo = Math.floor(Math.random() * (areasQlist.length));
+    finalQList.push(areasQlist[randNo]);
   }
   window.thisQList = finalQList;
-}
-
-function startQuiz() {
-  goToQuestionScreen();
-  //location.reload; //reset screen
-
-  //Use Settings to get the required questions, time and deductions
-  getQuestions()
-  console.log(getQuestions())
-
-  // Setup question in HTML 
-  // window.thisQ = qAndA[120]; //********* */
-  window.thisQ = thisQList[0]
-  setoutQuestion(thisQ)
 }
 
 function setoutQuestion(thisQ) {
@@ -371,6 +361,37 @@ function setoutQuestion(thisQ) {
     }
   }
 }
+
+function startQuiz() {
+  goToQuestionScreen();
+  window.thisScore=0;
+  window.qNo = 0 ;
+  //location.reload; //reset screen
+
+  //Use Settings to get the required questions, time and deductions
+  getQuestions()
+  console.log(getQuestions())
+
+  //Go to first question
+nextQuestion()
+
+}
+
+function nextQuestion(){
+  window.qNo++ ;
+  
+  // Setup question in HTML 
+      // window.thisQ = qAndA[120]; //********* */
+window.thisQ = thisQList[qNo-1];
+if(qNo < (thisQList.length+1)){
+  setoutQuestion(thisQ)}
+  else {
+    goToResultScreen()
+  }
+  
+}
+
+
 InitSettings()
 init()
 
