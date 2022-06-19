@@ -133,9 +133,9 @@ button[disabled] {
 
 /* #header-nav,  */
 #header-nav button {
-  display: flex;
-  justify-content: center;
-  padding: 5px 10px;
+  /* display: flex; */
+  /* justify-content: center; */
+  padding: 5px 15px;
   margin-left: 3px;
   color: var(--highlight);
   background-color: var(--darker);
@@ -146,7 +146,7 @@ h4, #timer{
   color: white;
   padding: 6px 20px;
   font-size: 20px;
-  margin: 0;
+  margin: 0 10px;
   background-color: var(--darker);
   text-shadow: 2px 2px 3px black;
 }
@@ -266,14 +266,19 @@ td, th{
     padding: 5px 15px;
   }
 
-  #password {
-    font-size: 1rem;
-  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
 
   .btn {
     font-size: 0.8rem;
+  }
+  #header-div {
+    justify-content: center;
+  }
+  #header-div h1 {
+    padding: 10px 30px;
+    margin: 5px;
+  width:100%;
   }
 }
