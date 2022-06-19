@@ -19,6 +19,9 @@ var thisQList = [];
 var thisQ = [];
 var answerResult = "";
 var thisScore = 0;
+var quizCounter = 0;
+var quizCounterFail = false ;
+var quizCounterArray = [];
 // var hsList = [{}];
 // var hsList = [];
 
@@ -34,7 +37,7 @@ var thisScore = 0;
 }
 
 // var Buttons
-//goto buttons
+//goto buttons (and the timer display)
 {
   var homeBtn = document.querySelector("#home-btn");
   homeBtn.addEventListener("click", function () {
@@ -52,10 +55,8 @@ var thisScore = 0;
     event.preventDefault();
     goToSettingsScreen()
   });
-}
 
-function pauseNextQuestion() {
-  nextQuestion()
+  var timerDisplay = document.getElementById("timer");
 }
 
 //Answer buttons - A,B,C,D - causes function isAnswerCorrect()
@@ -87,7 +88,7 @@ function isAnswerCorrect(ansText) {
   var corrBtnName = '#' + corrAnswer.toLowerCase() + 'Answer';
   var wrongBtnName = '#' + givenAnswer.toLowerCase() + 'Answer';
   document.querySelector([corrBtnName]).style = ("background-color:green");
-
+  quizCounterArray.push(quizCounter);
 
   if (corrAnswer == givenAnswer) {
     //Correct answer
@@ -98,6 +99,7 @@ function isAnswerCorrect(ansText) {
     //Wrong answer
     document.querySelector([wrongBtnName]).style = ("background-color:red");
     window.answerResult = "Wrong, correct answer is " + thisQ['correctAnswer'].toUpperCase();
+    quizCounter = quizCounter - timeForDeductGb;
     setTimeout(pauseNextQuestion, 1000);
   }
 
@@ -205,10 +207,10 @@ function setAreasCheckboxtoLocal() {
 
   var quizTimeSetting = document.querySelector("#quiz-time");
   // timeForQuizSpan.textContent = localStorage.getItem("timeForQuiz") + " minutes";
-  // var timeForQuizMS = quizTimeSetting.value * 1000 * 60; //in milliseconds
+  // var timeForQuizGb = quizTimeSetting.value * 1000 * 60; //in milliseconds
 
   var deductedTimeSetting = document.querySelector("#deducted-time");
-  // var timeForDeductMS = deductedTimeSetting.value * 1000; //in milliseconds
+  // var timeForDeductGb = deductedTimeSetting.value * 1000; //in milliseconds
 }
 
 // Functions ---------------------------------------------------------
@@ -239,9 +241,11 @@ function init() {
       };
     }
   } //This is (should be) referenced in all goTo functions
+}
 
   //Show other screens functions - - - -
-  function goToHomeScreen() {
+ {
+   function goToHomeScreen() {
     clearScreens()
     homeScreen.setAttribute("style", "display:block");
     homeBtn.setAttribute("style", "display:none");
@@ -257,8 +261,10 @@ function init() {
     highScoresBtn.setAttribute("style", "display:none");
 
   }
+
   function goToResultScreen() {
     clearScreens()
+    // clearInterval(quizSeconds);
     resultScreen.setAttribute("style", "display:flex");
     //set buttons
     homeBtn.setAttribute("style", "display:block");
@@ -266,14 +272,28 @@ function init() {
     highScoresBtn.setAttribute("style", "display:block");
 
     //make table
+    //If nothing attempted do this
+    var lastQTime = quizCounterArray.slice(-1);
+    if (lastQTime == '') {
+        document.getElementById('timeTaken').textContent = "N/A";
+      }
+      else if (quizCounter > 0) {
+      document.getElementById('timeTaken').textContent = (timeForQuizGb - lastQTime);
+      // quizCounter = timeForQuizGb + 5;
+      quizCounterFail = true ;
+    }else{
+      document.getElementById('timeTaken').textContent = timeForQuizGb;
+    } //just in case {  Math.max(quizCounter,0)  }
+    
     //Note qNo is -1 because a question not answered shall be considered not attempted
     document.getElementById('totalQNo').textContent = thisQList.length;
     document.getElementById('qNo').textContent = qNo - 1;
     document.getElementById('timeAssigned').textContent = localStorage.getItem("timeForQuiz");
-    document.getElementById('timeTaken').textContent = "TO DO";
     document.getElementById('thisScore').textContent = thisScore;
 
+    quizCounterArray=[];//reset
   }
+
   function goToHighScoreScreen() {
     clearScreens()
     highScoreScreen.setAttribute("style", "display:flex");
@@ -294,8 +314,8 @@ function init() {
     highScoresBtn.setAttribute("style", "display:block");
 
   }
-  //End show other screens functions - - - -
-}
+}//End show other screens functions - - - -
+
 
 function InitSettings() {
   //Set qty of questions
@@ -354,8 +374,8 @@ function saveSettings() {
   {//Set global variables
     window.qtyQuestions = localStorage.getItem("qtyOfQuestions");
     //Convert time values into milliseconds as global variables
-    window.timeForQuizMS = localStorage.getItem("timeForQuiz") * 1000 * 60; //in milliseconds
-    window.timeForDeductMS = localStorage.getItem("timeDeducted") * 1000; //in milliseconds
+    window.timeForQuizGb = localStorage.getItem("timeForQuiz") * 60; //in minutes
+    window.timeForDeductGb = localStorage.getItem("timeDeducted"); //in seconds
   }
 
 } //end saveSettings()
@@ -408,11 +428,41 @@ function startQuiz() {
 
   //Use Settings to get the required questions, time and deductions
   getQuestions()
-  console.log(getQuestions())
+
+  //start of timer ------
+  quizCounter = timeForQuizGb;
+  quizCounterFail = false ;
+  var quizSeconds = setInterval(quizTimer, 1000);
+
+  function quizTimer() {
+    quizCounter--
+    if (quizCounterFail == true) {
+      clearInterval(quizSeconds);
+      //We will already be in result screen
+    }
+    else if (quizCounter <= 0) {
+      timerDisplay.style = ("display:none");
+      clearInterval(quizSeconds);
+      goToResultScreen()
+    } else {
+      displayTimer(quizCounter)
+    }
+  }
+  //End of timer ------
 
   //Go to first question
   nextQuestion()
+}
 
+// function checkTime() {
+//   if (quizSeconds < 0) {
+//     clearInterval(quizSeconds);
+//     alert("time's up");
+//   }
+// }
+
+function pauseNextQuestion() {
+  nextQuestion()
 }
 
 function nextQuestion() {
@@ -423,6 +473,7 @@ function nextQuestion() {
   window.thisQ = thisQList[qNo - 1];
   if (qNo < (thisQList.length + 1)) {
     setoutQuestion(thisQ)
+    displayTimer();
   }
   else {
     goToResultScreen()
@@ -488,6 +539,16 @@ function getHScoresFromStorage() {
     } //end repeat td
 
   } //end repeat tr
+}
+
+function displayTimer(secsLeft) {
+  var td = window.timerDisplay;
+  // var qs = window.quizSeconds;
+  td.style = ("display:flex");
+  td.textContent = secsLeft;
+
+  // timerDisplay.style=("display:flex");
+  // timerDisplay.textContent = quizSeconds.value ;
 }
 
 
