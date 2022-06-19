@@ -224,6 +224,7 @@ function init() {
   //Use section below to test functions whilst developing
   // startQuiz();
   // goToSettingsScreen();
+  // goToQuestionScreen()
   // setAreasLocaltoCheckbox();
   // goToHighScoreScreen()
 }
@@ -260,6 +261,7 @@ function init() {
     settingsBtn.setAttribute("style", "display:none");
     highScoresBtn.setAttribute("style", "display:none");
 
+    displayTimer(quizCounter);
   }
 
   function goToResultScreen() {
@@ -478,7 +480,7 @@ function nextQuestion() {
   window.thisQ = thisQList[qNo - 1];
   if (qNo < (thisQList.length + 1)) {
     setoutQuestion(thisQ)
-    displayTimer();
+    displayTimer(quizCounter);
   }
   else {
     goToResultScreen()
@@ -550,10 +552,13 @@ function displayTimer(secsLeft) {
   var td = window.timerDisplay;
   // var qs = window.quizSeconds;
   td.style = ("display:flex");
-  td.textContent = secsLeft;
+  td.textContent = secondsToMMSS(secsLeft);
+if(secsLeft<30){
+  td.style = ("color:red")
+}else if(secsLeft<60){
+  td.style = ("color:yellow")
+}
 
-  // timerDisplay.style=("display:flex");
-  // timerDisplay.textContent = quizSeconds.value ;
 }
 
 

@@ -158,6 +158,15 @@ button[disabled] {
   background-color: var(--darker);
 }
 
+h4, #timer{
+  color: white;
+  padding: 6px 20px;
+  font-size: 20px;
+  margin: 0;
+  background-color: var(--darker);
+  text-shadow: 2px 2px 3px black;
+}
+
 #settings-form * {
   text-align: left;
 }
