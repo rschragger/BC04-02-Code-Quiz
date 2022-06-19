@@ -3,18 +3,21 @@
 //defaults
 
 var defaultVals = {
-  qtyOfQuestions: 11,
-  timeForQuiz: 5,
-  timeDeducted: 20,
+  qtyOfQuestions: 10,
+  timeForQuiz: 2,
+  timeDeducted: 15,
   subjectNames: ["Unit - 1: Web Essentials", "Unit - 2: Markup Languages", "Unit - 3: JavaScript"],
-  subjectSelect: [1, 2],
+  // subjectSelect: [1, 2],
   hsResults: [{ 'name': 'No scores yet', 'score': 0 }]//, { 'name': 'John', 'score': 10 }],
 }
 
 //Get JSON object for Q and As
 const qAndA = JSON.parse(localStorage.getItem("jsonQandA"));
+
 //Establish what the tags are in this data
 const qTags = ['course', 'qID', 'questionNo', 'questionText', 'aAnswer', 'bAnswer', 'cAnswer', 'dAnswer', 'correctAnswer'];
+
+//Other Variables required
 var thisQList = [];
 var thisQ = [];
 var answerResult = "";
@@ -22,8 +25,6 @@ var thisScore = 0;
 var quizCounter = 0;
 var quizCounterFail = false;
 var quizCounterArray = [];
-// var hsList = [{}];
-// var hsList = [];
 
 //Screens
 {
@@ -81,7 +82,7 @@ var quizCounterArray = [];
     event.preventDefault();
     isAnswerCorrect("D");
   });
-}
+
 function isAnswerCorrect(ansText) {
   var corrAnswer = thisQ['correctAnswer'].toUpperCase();
   var givenAnswer = ansText.toUpperCase()
@@ -106,6 +107,7 @@ function isAnswerCorrect(ansText) {
   // nextQuestion()
   // next Question is now handled through a timeout so that users can get an idea if they were wrong or right
   //Correct answers are quick and they will see a quick flash of green, wrong answers are paused a little longer
+}
 }
 
 //Other buttons
@@ -134,7 +136,6 @@ submitHScoresBtn.addEventListener("click", function () {
 });
 
 //Checkboxes
-//Will want to change to an array we can select from
 {
   var areaList = []; //this will be the global var of areas to choose questions from
   var checkQ0 = document.querySelector("#question-type1"); //checkQ1.checked
@@ -143,10 +144,8 @@ submitHScoresBtn.addEventListener("click", function () {
   var checkQ3 = document.querySelector("#question-type4");
   var checkQ4 = document.querySelector("#question-type5");
 }
-//checkQ0.labels[0].textContent
-//eval('checkQ'+'1').labels[0].textContent
 
-//Make the areas for questions to be
+//Make the knowledge areas for questions to be chosen from
 //Set localStorage to checkboxes 
 function setAreasLocaltoCheckbox() {
   var getCheckedList = [];
@@ -190,7 +189,6 @@ function setAreasCheckboxtoLocal() {
   return window.areaList = getCheckedList;
 }
 
-
 //var spans in HTML text
 {
   var timeForQuizSpan = document.getElementById("time-for-quiz");
@@ -230,7 +228,7 @@ function init() {
 }
 
 //Clear Screens
-//        this function makes all screen divs disappear so that we can turn on the screen we want
+// this function makes all screen divs disappear so that we can turn on the screen we want
 {
   function clearScreens() {
     for (i = 0; i < screensDiv.length; i++) {
@@ -481,6 +479,7 @@ function nextQuestion() {
   if (qNo < (thisQList.length + 1)) {
     setoutQuestion(thisQ)
     displayTimer(quizCounter);
+    document.getElementById('questionNo').textContent = qNo + " of " + (thisQList.length + 1) ;
   }
   else {
     goToResultScreen()
@@ -527,12 +526,11 @@ function getHScoresFromStorage() {
   tBody.textContent = "";
   // tBody.innerHTML = "";
 
-  // var newTag = document.createElement(tagName);
-  // newTag.textContent = "new Text"
-  // document.hsCells.appendChild(tag);
 
   // repeat for table rows
-  for (trNo = 0; trNo < hsList.length; trNo++) {
+  //top 12 scores only to limit page length
+  var MaxRows = Math.min(hsList.length , 12 );
+  for (trNo = 0; trNo < MaxRows ; trNo++) {
     var thisRow = hsList[trNo];
     var trTag = document.createElement('tr');
     var trID = 'tr' + trNo;

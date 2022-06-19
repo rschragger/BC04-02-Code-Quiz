@@ -38,36 +38,23 @@ body {
 }
 
 h2 {
-  margin: 20px;
+  margin: 10px;
+  font-size: 1.5rem;
+  padding: 2px 10px;
 }
+
+/* h2::after, h2::before{
+  content: "  <>  ";
+  color: var(--highlight);
+  text-shadow: 2px 2px 4px var(--dark);
+  font-size: 1.8rem;
+} */
 
 p {
   margin: 5px 0;
 }
 
-/* Classes ----------------- */
-/* .wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.card {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
-  border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: var(--darkest);
-  font-size: 18px;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 30px 40px;
-} */
-
-
 .btn {
-  /* border: none; */
-  /* background-color: hsl(360, 91%, 36%); */
   background-image: linear-gradient(var(--darker) 0%,
       var(--dark) 40%,
       var(--dark) 60%,
@@ -103,11 +90,10 @@ button[disabled] {
   background: #c0c7cf;
 }
 
-
-
+/* 
 .float-right {
   float: right;
-}
+} */
 
 /* IDs */
 
@@ -137,10 +123,7 @@ button[disabled] {
 }
 
 #header-div h1 {
-  /* display: flex; */
-  /* justify-content: left; */
   background-color: black;
-  /* border-radius: 10px; */
   padding: 10px 30px;
   margin: 5px;
 
@@ -159,6 +142,7 @@ button[disabled] {
 }
 
 h4, #timer{
+  display:none;
   color: white;
   padding: 6px 20px;
   font-size: 20px;
@@ -172,8 +156,6 @@ h4, #timer{
 }
 
 .roundel {
-  /* color:white; */
-  /* background-color: var(--darker); */
   padding: 2px 6px;
   margin: 2px;
   border-radius: 1rem;
@@ -181,10 +163,6 @@ h4, #timer{
 
 }
 
-/* #settings-checkbox +{
-  text-align: left;
-  text-justify: center;
-} */
 
 /* Question screen */
 #question-screen {
@@ -212,7 +190,6 @@ h4, #timer{
 
 #answer-list {
   list-style-type: upper-alpha;
-  /* list-style-position: inside; */
   display: flex;
   justify-content: left;
   flex-direction: column;
