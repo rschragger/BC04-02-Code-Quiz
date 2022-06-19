@@ -54,6 +54,10 @@ var thisScore = 0;
   });
 }
 
+function pauseMe(){    
+  nextQuestion()
+}
+
 //Answer buttons - A,B,C,D - causes function isAnswerCorrect()
 {
   var answerBtnA = document.querySelector('#aAnswer');
@@ -85,13 +89,20 @@ function isAnswerCorrect(ansText) {
   document.querySelector([corrBtnName]).style = ("background-color:green");
 
   if (corrAnswer == givenAnswer) {
+    //Correct answer
     window.answerResult = "Correct";
     window.thisScore++;//add to score
+    setTimeout( pauseMe , 300);
   } else {
+    //Wrong answer
     document.querySelector([wrongBtnName]).style = ("background-color:red");
     window.answerResult = "Wrong, correct answer is " + thisQ['correctAnswer'].toUpperCase();
+    setTimeout( pauseMe , 1000);
   }
-  nextQuestion()
+ 
+ // nextQuestion()
+ // next Question is now handled through a timeout so that users can get an idea if they were wrong or right
+//Correct answers are quick and they will see a quick flash of green, wrong answers are paused a little longer
 }
 
 //Other buttons
@@ -421,6 +432,8 @@ function addScoreToStorage() {
   // hsList1.push({'name':'xxx','score':'11'});
   console.log(hsList);
   localStorage.setItem("hsResults", JSON.stringify(hsList));
+
+  getHScoresFromStorage()
 }
 
 function getHScoresFromStorage() {
