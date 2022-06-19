@@ -20,7 +20,7 @@ var thisQ = [];
 var answerResult = "";
 var thisScore = 0;
 var quizCounter = 0;
-var quizCounterFail = false ;
+var quizCounterFail = false;
 var quizCounterArray = [];
 // var hsList = [{}];
 // var hsList = [];
@@ -243,9 +243,9 @@ function init() {
   } //This is (should be) referenced in all goTo functions
 }
 
-  //Show other screens functions - - - -
- {
-   function goToHomeScreen() {
+//Show other screens functions - - - -
+{
+  function goToHomeScreen() {
     clearScreens()
     homeScreen.setAttribute("style", "display:block");
     homeBtn.setAttribute("style", "display:none");
@@ -270,28 +270,30 @@ function init() {
     homeBtn.setAttribute("style", "display:block");
     settingsBtn.setAttribute("style", "display:block");
     highScoresBtn.setAttribute("style", "display:block");
+    timerDisplay.style = ("display:none");
 
     //make table
-    //If nothing attempted do this
+    //Below will fix the times
+    quizCounterFail = true;
     var lastQTime = quizCounterArray.slice(-1);
     if (lastQTime == '') {
-        document.getElementById('timeTaken').textContent = "N/A";
-      }
-      else if (quizCounter > 0) {
-      document.getElementById('timeTaken').textContent = (timeForQuizGb - lastQTime);
+      document.getElementById('timeTaken').textContent = "N/A";
+    }
+    else if (quizCounter > 0) {
+      document.getElementById('timeTaken').textContent = secondsToMMSS(timeForQuizGb - lastQTime);
       // quizCounter = timeForQuizGb + 5;
-      quizCounterFail = true ;
-    }else{
-      document.getElementById('timeTaken').textContent = timeForQuizGb;
+    } else {
+      document.getElementById('timeTaken').textContent = secondsToMMSS(timeForQuizGb);
     } //just in case {  Math.max(quizCounter,0)  }
-    
+
     //Note qNo is -1 because a question not answered shall be considered not attempted
     document.getElementById('totalQNo').textContent = thisQList.length;
     document.getElementById('qNo').textContent = qNo - 1;
-    document.getElementById('timeAssigned').textContent = localStorage.getItem("timeForQuiz");
+    document.getElementById('timeAssigned').textContent = secondsToMMSS(timeForQuizGb);
+    // document.getElementById('timeAssigned').textContent = minutesToMMSS(localStorage.getItem("timeForQuiz"));
     document.getElementById('thisScore').textContent = thisScore;
 
-    quizCounterArray=[];//reset
+    quizCounterArray = [];//reset
   }
 
   function goToHighScoreScreen() {
@@ -431,7 +433,7 @@ function startQuiz() {
 
   //start of timer ------
   quizCounter = timeForQuizGb;
-  quizCounterFail = false ;
+  quizCounterFail = false;
   var quizSeconds = setInterval(quizTimer, 1000);
 
   function quizTimer() {
@@ -454,12 +456,15 @@ function startQuiz() {
   nextQuestion()
 }
 
-// function checkTime() {
-//   if (quizSeconds < 0) {
-//     clearInterval(quizSeconds);
-//     alert("time's up");
-//   }
-// }
+function secondsToMMSS(timeInSeconds) {
+  min = Math.floor(timeInSeconds / 60);
+  sec = (timeInSeconds - (60 * min)).toString().padStart(2, "0");
+  return min + ":" + sec;
+}
+
+function minutesToMMSS(timeInMinutes) {
+  return secondsToMMSS((timeInMinutes * 60));
+}
 
 function pauseNextQuestion() {
   nextQuestion()
