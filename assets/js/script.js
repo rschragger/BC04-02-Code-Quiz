@@ -54,7 +54,7 @@ var thisScore = 0;
   });
 }
 
-function pauseMe(){    
+function pauseNextQuestion() {
   nextQuestion()
 }
 
@@ -88,21 +88,22 @@ function isAnswerCorrect(ansText) {
   var wrongBtnName = '#' + givenAnswer.toLowerCase() + 'Answer';
   document.querySelector([corrBtnName]).style = ("background-color:green");
 
+
   if (corrAnswer == givenAnswer) {
     //Correct answer
     window.answerResult = "Correct";
     window.thisScore++;//add to score
-    setTimeout( pauseMe , 300);
+    setTimeout(pauseNextQuestion, 300);
   } else {
     //Wrong answer
     document.querySelector([wrongBtnName]).style = ("background-color:red");
     window.answerResult = "Wrong, correct answer is " + thisQ['correctAnswer'].toUpperCase();
-    setTimeout( pauseMe , 1000);
+    setTimeout(pauseNextQuestion, 1000);
   }
- 
- // nextQuestion()
- // next Question is now handled through a timeout so that users can get an idea if they were wrong or right
-//Correct answers are quick and they will see a quick flash of green, wrong answers are paused a little longer
+
+  // nextQuestion()
+  // next Question is now handled through a timeout so that users can get an idea if they were wrong or right
+  //Correct answers are quick and they will see a quick flash of green, wrong answers are paused a little longer
 }
 
 //Other buttons
@@ -120,6 +121,14 @@ submitSettingsBtn.addEventListener("click", function () {
   goToHomeScreen()
 
 
+});
+
+var submitHScoresBtn = document.querySelector("#hs-submit-btn");
+submitHScoresBtn.addEventListener("click", function () {
+  // console.log("Y");
+  event.preventDefault();
+  addScoreToStorage();
+  goToHighScoreScreen();
 });
 
 //Checkboxes
@@ -214,7 +223,7 @@ function init() {
   // startQuiz();
   // goToSettingsScreen();
   // setAreasLocaltoCheckbox();
-  goToHighScoreScreen()
+  // goToHighScoreScreen()
 }
 
 //Clear Screens
@@ -272,6 +281,8 @@ function init() {
     homeBtn.setAttribute("style", "display:block");
     settingsBtn.setAttribute("style", "display:block");
     highScoresBtn.setAttribute("style", "display:none");
+
+    getHScoresFromStorage()
   }
 
   function goToSettingsScreen() {
@@ -380,6 +391,7 @@ function setoutQuestion(thisQ) {
     // document.getElementById(obj[q]).innerHTML = obj[q].value();
     var thisElement = qTags[q];
     if (document.getElementById([thisElement]) != null) {
+
       //first reset styles (green and red buttons)
       document.getElementById([thisElement]).style = "";
       //then add text
@@ -414,15 +426,16 @@ function nextQuestion() {
   }
   else {
     goToResultScreen()
-
   }
 
 }
 
 function addScoreToStorage() {
   if (localStorage.getItem("hsResults") == null) {
-    localStorage.setItem("hsResults", JSON.stringify(defaultVals.hsResults));
+    // localStorage.setItem("hsResults", JSON.stringify(defaultVals.hsResults));
+    localStorage.setItem("hsResults", JSON.stringify([]));
   }
+
   var hsName = document.getElementById('hs-name').value;
   // var hsScore = window.thisScore ;
   var hsList = JSON.parse(localStorage.getItem("hsResults"));
@@ -433,6 +446,7 @@ function addScoreToStorage() {
   console.log(hsList);
   localStorage.setItem("hsResults", JSON.stringify(hsList));
 
+  document.getElementById('hs-name').value = "";
   getHScoresFromStorage()
 }
 
@@ -440,7 +454,12 @@ function getHScoresFromStorage() {
   // localStorage.setItem("hsResults", push)
   var hsList = JSON.parse(localStorage.getItem("hsResults"));
 
-//Sort by score descending
+  //if no scores yet, fail gracefully
+  if (hsList == null) {
+    return
+  }
+
+  //Sort by score descending
   hsList.sort((a, b) => {
     return b.score - a.score;
   });
