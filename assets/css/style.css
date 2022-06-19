@@ -156,10 +156,11 @@ h4, #timer{
 }
 
 .roundel {
-  padding: 2px 6px;
+  padding: 0px 6px;
   margin: 2px;
   border-radius: 1rem;
-  border: 1px solid var(--dark);
+  border: 1px solid var(--bggrey);
+  box-shadow: 1px 1px 3px var(--dark);
 
 }
 
