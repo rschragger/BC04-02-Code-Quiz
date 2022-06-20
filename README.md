@@ -63,6 +63,11 @@ http://www.convertcsv.com/csv-to-json.htm
 Questions were sourced from the PDF:<br>
 http://dimr.edu.in/wp-content/uploads/2020/10/BBACA_502-_Web-Technologies.pdf
 
+Sounds sourced from https://freesound.org/.
+Wrong answer - https://freesound.org/people/Jacco18/sounds/419023/#
+Correct answer - https://freesound.org/people/LittleRainySeasons/sounds/335908/
+
+
 ## License
 
 © Copyright Reeve Schragger 2022
@@ -76,3 +81,4 @@ http://dimr.edu.in/wp-content/uploads/2020/10/BBACA_502-_Web-Technologies.pdf
 - There is a timer on the questions which actively counts down
     - it changes to yellow when there is 1 minute left
     - it changes to red when there is only 30 seconds left
+- Sounds have been added for correct or wrong answers

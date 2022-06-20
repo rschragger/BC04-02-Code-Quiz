@@ -26,6 +26,10 @@ var quizCounter = 0;
 var quizCounterFail = false;
 var quizCounterArray = [];
 
+//Sounds
+var correctSound = new Audio('./assets/sounds/335908__littlerainyseasons__correct.mp3') ;
+var wrongSound = new Audio('./assets/sounds/419023__jacco18__acess-denied-buzz.mp3')
+
 //Screens
 {
   var screens = document.getElementById("screens");
@@ -95,12 +99,14 @@ function isAnswerCorrect(ansText) {
     //Correct answer
     window.answerResult = "Correct";
     window.thisScore++;//add to score
+    correctSound.play()
     setTimeout(pauseNextQuestion, 300);
   } else {
     //Wrong answer
     document.querySelector([wrongBtnName]).style = ("background-color:red");
     window.answerResult = "Wrong, correct answer is " + thisQ['correctAnswer'].toUpperCase();
     quizCounter = quizCounter - timeForDeductGb;
+    wrongSound.play()
     setTimeout(pauseNextQuestion, 1000);
   }
 
