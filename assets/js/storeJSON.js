@@ -1,6 +1,9 @@
 //This is just a storage space for JSON data
 //We will save the below JSON to local storage under var jsonQandA 
 
+// Questions were sourced from the PDF:
+// http://dimr.edu.in/wp-content/uploads/2020/10/BBACA_502-_Web-Technologies.pdf
+
 function init1(){
   localStorage.setItem("jsonQandA", jsonData );
 }
